@@ -1,361 +1,3225 @@
-"directed","interaction","name","rating","selected","shared interaction","shared name","yards"
-"true","produces","1W (produces) SWING1","good","false","produces","1W (produces) SWING1","10"
-"true","produces","2H (produces) SWING2","bad","false","produces","2H (produces) SWING2","11"
-"true","produces","3H (produces) SWING3","good","false","produces","3H (produces) SWING3","12"
-"true","produces","5H (produces) SWING4","bad","false","produces","5H (produces) SWING4","13"
-"true","produces","6i (produces) SWING5","good","false","produces","6i (produces) SWING5","14"
-"true","produces","8i (produces) SWING6","bad","false","produces","8i (produces) SWING6","15"
-"true","produces","9i (produces) SWING7","good","false","produces","9i (produces) SWING7","16"
-"true","produces","PW (produces) SWING8","bad","false","produces","PW (produces) SWING8","17"
-"true","produces","52 (produces) SWING9","good","false","produces","52 (produces) SWING9","18"
-"true","produces","56 (produces) SWING10","bad","false","produces","56 (produces) SWING10","19"
-"true","produces","60 (produces) SWING11","good","false","produces","60 (produces) SWING11","20"
-"true","produces","CH (produces) SWING12","bad","false","produces","CH (produces) SWING12","21"
-"true","produces","1W (produces) SWING13","good","false","produces","1W (produces) SWING13","22"
-"true","produces","2H (produces) SWING14","bad","false","produces","2H (produces) SWING14","23"
-"true","produces","3H (produces) SWING15","good","false","produces","3H (produces) SWING15","24"
-"true","produces","5H (produces) SWING16","bad","false","produces","5H (produces) SWING16","25"
-"true","produces","6i (produces) SWING17","good","false","produces","6i (produces) SWING17","26"
-"true","produces","8i (produces) SWING18","bad","false","produces","8i (produces) SWING18","27"
-"true","produces","9i (produces) SWING19","good","false","produces","9i (produces) SWING19","28"
-"true","produces","PW (produces) SWING20","bad","false","produces","PW (produces) SWING20","29"
-"true","produces","52 (produces) SWING21","good","false","produces","52 (produces) SWING21","30"
-"true","produces","56 (produces) SWING22","bad","false","produces","56 (produces) SWING22","31"
-"true","produces","60 (produces) SWING23","good","false","produces","60 (produces) SWING23","32"
-"true","produces","CH (produces) SWING24","bad","false","produces","CH (produces) SWING24","33"
-"true","produces","1W (produces) SWING25","good","false","produces","1W (produces) SWING25","34"
-"true","produces","2H (produces) SWING26","bad","false","produces","2H (produces) SWING26","35"
-"true","produces","3H (produces) SWING27","good","false","produces","3H (produces) SWING27","36"
-"true","produces","5H (produces) SWING28","bad","false","produces","5H (produces) SWING28","37"
-"true","produces","6i (produces) SWING29","good","false","produces","6i (produces) SWING29","38"
-"true","produces","8i (produces) SWING30","bad","false","produces","8i (produces) SWING30","39"
-"true","produces","9i (produces) SWING31","good","false","produces","9i (produces) SWING31","40"
-"true","produces","PW (produces) SWING32","bad","false","produces","PW (produces) SWING32","41"
-"true","produces","52 (produces) SWING33","good","false","produces","52 (produces) SWING33","42"
-"true","produces","56 (produces) SWING34","bad","false","produces","56 (produces) SWING34","43"
-"true","produces","60 (produces) SWING35","good","false","produces","60 (produces) SWING35","44"
-"true","produces","CH (produces) SWING36","bad","false","produces","CH (produces) SWING36","45"
-"true","produces","1W (produces) SWING37","good","false","produces","1W (produces) SWING37","46"
-"true","produces","2H (produces) SWING38","bad","false","produces","2H (produces) SWING38","47"
-"true","produces","3H (produces) SWING39","good","false","produces","3H (produces) SWING39","48"
-"true","produces","5H (produces) SWING40","bad","false","produces","5H (produces) SWING40","49"
-"true","produces","6i (produces) SWING41","good","false","produces","6i (produces) SWING41","50"
-"true","produces","8i (produces) SWING42","bad","false","produces","8i (produces) SWING42","51"
-"true","produces","9i (produces) SWING43","good","false","produces","9i (produces) SWING43","52"
-"true","produces","PW (produces) SWING44","bad","false","produces","PW (produces) SWING44","53"
-"true","produces","52 (produces) SWING45","good","false","produces","52 (produces) SWING45","54"
-"true","produces","56 (produces) SWING46","bad","false","produces","56 (produces) SWING46","55"
-"true","produces","60 (produces) SWING47","good","false","produces","60 (produces) SWING47","56"
-"true","produces","CH (produces) SWING48","bad","false","produces","CH (produces) SWING48","57"
-"true","produces","1W (produces) SWING49","good","false","produces","1W (produces) SWING49","58"
-"true","produces","2H (produces) SWING50","bad","false","produces","2H (produces) SWING50","59"
-"true","produces","3H (produces) SWING51","good","false","produces","3H (produces) SWING51","60"
-"true","produces","5H (produces) SWING52","bad","false","produces","5H (produces) SWING52","61"
-"true","produces","6i (produces) SWING53","good","false","produces","6i (produces) SWING53","62"
-"true","produces","8i (produces) SWING54","bad","false","produces","8i (produces) SWING54","63"
-"true","produces","9i (produces) SWING55","good","false","produces","9i (produces) SWING55","64"
-"true","produces","PW (produces) SWING56","bad","false","produces","PW (produces) SWING56","65"
-"true","produces","52 (produces) SWING57","good","false","produces","52 (produces) SWING57","66"
-"true","produces","56 (produces) SWING58","bad","false","produces","56 (produces) SWING58","67"
-"true","produces","60 (produces) SWING59","good","false","produces","60 (produces) SWING59","68"
-"true","produces","CH (produces) SWING60","bad","false","produces","CH (produces) SWING60","69"
-"true","produces","1W (produces) SWING61","good","false","produces","1W (produces) SWING61","70"
-"true","produces","2H (produces) SWING62","bad","false","produces","2H (produces) SWING62","71"
-"true","produces","3H (produces) SWING63","good","false","produces","3H (produces) SWING63","72"
-"true","produces","5H (produces) SWING64","bad","false","produces","5H (produces) SWING64","73"
-"true","produces","6i (produces) SWING65","good","false","produces","6i (produces) SWING65","74"
-"true","produces","8i (produces) SWING66","bad","false","produces","8i (produces) SWING66","75"
-"true","produces","9i (produces) SWING67","good","false","produces","9i (produces) SWING67","76"
-"true","produces","PW (produces) SWING68","bad","false","produces","PW (produces) SWING68","77"
-"true","produces","52 (produces) SWING69","good","false","produces","52 (produces) SWING69","78"
-"true","produces","56 (produces) SWING70","bad","false","produces","56 (produces) SWING70","79"
-"true","produces","60 (produces) SWING71","good","false","produces","60 (produces) SWING71","80"
-"true","produces","CH (produces) SWING72","bad","false","produces","CH (produces) SWING72","81"
-"true","produces","1W (produces) SWING73","good","false","produces","1W (produces) SWING73","82"
-"true","produces","2H (produces) SWING74","bad","false","produces","2H (produces) SWING74","83"
-"true","produces","3H (produces) SWING75","good","false","produces","3H (produces) SWING75","84"
-"true","produces","5H (produces) SWING76","bad","false","produces","5H (produces) SWING76","85"
-"true","produces","6i (produces) SWING77","good","false","produces","6i (produces) SWING77","86"
-"true","produces","8i (produces) SWING78","bad","false","produces","8i (produces) SWING78","87"
-"true","produces","9i (produces) SWING79","good","false","produces","9i (produces) SWING79","88"
-"true","produces","PW (produces) SWING80","bad","false","produces","PW (produces) SWING80","89"
-"true","produces","52 (produces) SWING81","good","false","produces","52 (produces) SWING81","90"
-"true","produces","56 (produces) SWING82","bad","false","produces","56 (produces) SWING82","91"
-"true","produces","60 (produces) SWING83","good","false","produces","60 (produces) SWING83","92"
-"true","produces","CH (produces) SWING84","bad","false","produces","CH (produces) SWING84","93"
-"true","produces","1W (produces) SWING85","good","false","produces","1W (produces) SWING85","94"
-"true","produces","2H (produces) SWING86","bad","false","produces","2H (produces) SWING86","95"
-"true","produces","3H (produces) SWING87","good","false","produces","3H (produces) SWING87","96"
-"true","produces","5H (produces) SWING88","bad","false","produces","5H (produces) SWING88","97"
-"true","produces","6i (produces) SWING89","good","false","produces","6i (produces) SWING89","98"
-"true","produces","8i (produces) SWING90","bad","false","produces","8i (produces) SWING90","99"
-"true","produces","9i (produces) SWING91","good","false","produces","9i (produces) SWING91","100"
-"true","produces","PW (produces) SWING92","bad","false","produces","PW (produces) SWING92","101"
-"true","produces","52 (produces) SWING93","good","false","produces","52 (produces) SWING93","102"
-"true","produces","56 (produces) SWING94","bad","false","produces","56 (produces) SWING94","103"
-"true","produces","60 (produces) SWING95","good","false","produces","60 (produces) SWING95","104"
-"true","produces","CH (produces) SWING96","bad","false","produces","CH (produces) SWING96","105"
-"true","produces","1W (produces) SWING97","good","false","produces","1W (produces) SWING97","106"
-"true","produces","2H (produces) SWING98","bad","false","produces","2H (produces) SWING98","107"
-"true","produces","3H (produces) SWING99","good","false","produces","3H (produces) SWING99","108"
-"true","produces","5H (produces) SWING100","bad","false","produces","5H (produces) SWING100","109"
-"true","produces","6i (produces) SWING101","good","false","produces","6i (produces) SWING101","110"
-"true","produces","8i (produces) SWING102","bad","false","produces","8i (produces) SWING102","111"
-"true","produces","9i (produces) SWING103","good","false","produces","9i (produces) SWING103","112"
-"true","produces","PW (produces) SWING104","bad","false","produces","PW (produces) SWING104","113"
-"true","produces","52 (produces) SWING105","good","false","produces","52 (produces) SWING105","114"
-"true","produces","56 (produces) SWING106","bad","false","produces","56 (produces) SWING106","115"
-"true","produces","60 (produces) SWING107","good","false","produces","60 (produces) SWING107","116"
-"true","produces","CH (produces) SWING108","bad","false","produces","CH (produces) SWING108","117"
-"true","produces","1W (produces) SWING109","good","false","produces","1W (produces) SWING109","118"
-"true","produces","2H (produces) SWING110","bad","false","produces","2H (produces) SWING110","119"
-"true","produces","3H (produces) SWING111","good","false","produces","3H (produces) SWING111","120"
-"true","produces","5H (produces) SWING112","bad","false","produces","5H (produces) SWING112","121"
-"true","produces","6i (produces) SWING113","good","false","produces","6i (produces) SWING113","122"
-"true","produces","8i (produces) SWING114","bad","false","produces","8i (produces) SWING114","123"
-"true","produces","9i (produces) SWING115","good","false","produces","9i (produces) SWING115","124"
-"true","produces","PW (produces) SWING116","bad","false","produces","PW (produces) SWING116","125"
-"true","produces","52 (produces) SWING117","good","false","produces","52 (produces) SWING117","126"
-"true","produces","56 (produces) SWING118","bad","false","produces","56 (produces) SWING118","127"
-"true","produces","60 (produces) SWING119","good","false","produces","60 (produces) SWING119","128"
-"true","produces","CH (produces) SWING120","bad","false","produces","CH (produces) SWING120","129"
-"true","produces","1W (produces) SWING121","good","false","produces","1W (produces) SWING121","130"
-"true","produces","2H (produces) SWING122","bad","false","produces","2H (produces) SWING122","131"
-"true","produces","3H (produces) SWING123","good","false","produces","3H (produces) SWING123","132"
-"true","produces","5H (produces) SWING124","bad","false","produces","5H (produces) SWING124","133"
-"true","produces","6i (produces) SWING125","good","false","produces","6i (produces) SWING125","134"
-"true","produces","8i (produces) SWING126","bad","false","produces","8i (produces) SWING126","135"
-"true","produces","9i (produces) SWING127","good","false","produces","9i (produces) SWING127","136"
-"true","produces","PW (produces) SWING128","bad","false","produces","PW (produces) SWING128","137"
-"true","produces","52 (produces) SWING129","good","false","produces","52 (produces) SWING129","138"
-"true","produces","56 (produces) SWING130","bad","false","produces","56 (produces) SWING130","139"
-"true","produces","60 (produces) SWING131","good","false","produces","60 (produces) SWING131","140"
-"true","produces","CH (produces) SWING132","bad","false","produces","CH (produces) SWING132","141"
-"true","produces","1W (produces) SWING133","good","false","produces","1W (produces) SWING133","142"
-"true","produces","2H (produces) SWING134","bad","false","produces","2H (produces) SWING134","143"
-"true","produces","3H (produces) SWING135","good","false","produces","3H (produces) SWING135","144"
-"true","produces","5H (produces) SWING136","bad","false","produces","5H (produces) SWING136","145"
-"true","produces","6i (produces) SWING137","good","false","produces","6i (produces) SWING137","146"
-"true","produces","8i (produces) SWING138","bad","false","produces","8i (produces) SWING138","147"
-"true","produces","9i (produces) SWING139","good","false","produces","9i (produces) SWING139","148"
-"true","produces","PW (produces) SWING140","bad","false","produces","PW (produces) SWING140","149"
-"true","produces","52 (produces) SWING141","good","false","produces","52 (produces) SWING141","150"
-"true","produces","56 (produces) SWING142","bad","false","produces","56 (produces) SWING142","151"
-"true","produces","60 (produces) SWING143","good","false","produces","60 (produces) SWING143","152"
-"true","produces","CH (produces) SWING144","bad","false","produces","CH (produces) SWING144","153"
-"true","produces","1W (produces) SWING145","good","false","produces","1W (produces) SWING145","154"
-"true","produces","2H (produces) SWING146","bad","false","produces","2H (produces) SWING146","155"
-"true","produces","3H (produces) SWING147","good","false","produces","3H (produces) SWING147","156"
-"true","produces","5H (produces) SWING148","bad","false","produces","5H (produces) SWING148","157"
-"true","produces","6i (produces) SWING149","good","false","produces","6i (produces) SWING149","158"
-"true","produces","8i (produces) SWING150","bad","false","produces","8i (produces) SWING150","159"
-"true","produces","9i (produces) SWING151","good","false","produces","9i (produces) SWING151","160"
-"true","produces","PW (produces) SWING152","bad","false","produces","PW (produces) SWING152","161"
-"true","produces","52 (produces) SWING153","good","false","produces","52 (produces) SWING153","162"
-"true","produces","56 (produces) SWING154","bad","false","produces","56 (produces) SWING154","163"
-"true","produces","60 (produces) SWING155","good","false","produces","60 (produces) SWING155","164"
-"true","produces","CH (produces) SWING156","bad","false","produces","CH (produces) SWING156","165"
-"true","produces","1W (produces) SWING157","good","false","produces","1W (produces) SWING157","166"
-"true","produces","2H (produces) SWING158","bad","false","produces","2H (produces) SWING158","167"
-"true","produces","3H (produces) SWING159","good","false","produces","3H (produces) SWING159","168"
-"true","produces","5H (produces) SWING160","bad","false","produces","5H (produces) SWING160","169"
-"true","produces","6i (produces) SWING161","good","false","produces","6i (produces) SWING161","170"
-"true","produces","8i (produces) SWING162","bad","false","produces","8i (produces) SWING162","171"
-"true","produces","9i (produces) SWING163","good","false","produces","9i (produces) SWING163","172"
-"true","produces","PW (produces) SWING164","bad","false","produces","PW (produces) SWING164","173"
-"true","produces","52 (produces) SWING165","good","false","produces","52 (produces) SWING165","174"
-"true","produces","56 (produces) SWING166","bad","false","produces","56 (produces) SWING166","175"
-"true","produces","60 (produces) SWING167","good","false","produces","60 (produces) SWING167","176"
-"true","produces","CH (produces) SWING168","bad","false","produces","CH (produces) SWING168","177"
-"true","produces","1W (produces) SWING169","good","false","produces","1W (produces) SWING169","178"
-"true","produces","2H (produces) SWING170","bad","false","produces","2H (produces) SWING170","179"
-"true","produces","3H (produces) SWING171","good","false","produces","3H (produces) SWING171","180"
-"true","produces","5H (produces) SWING172","bad","false","produces","5H (produces) SWING172","181"
-"true","produces","6i (produces) SWING173","good","false","produces","6i (produces) SWING173","182"
-"true","produces","8i (produces) SWING174","bad","false","produces","8i (produces) SWING174","183"
-"true","produces","9i (produces) SWING175","good","false","produces","9i (produces) SWING175","184"
-"true","produces","PW (produces) SWING176","bad","false","produces","PW (produces) SWING176","185"
-"true","produces","52 (produces) SWING177","good","false","produces","52 (produces) SWING177","186"
-"true","produces","56 (produces) SWING178","bad","false","produces","56 (produces) SWING178","187"
-"true","produces","60 (produces) SWING179","good","false","produces","60 (produces) SWING179","188"
-"true","produces","CH (produces) SWING180","bad","false","produces","CH (produces) SWING180","189"
-"true","produces","1W (produces) SWING181","good","false","produces","1W (produces) SWING181","190"
-"true","produces","2H (produces) SWING182","bad","false","produces","2H (produces) SWING182","191"
-"true","produces","3H (produces) SWING183","good","false","produces","3H (produces) SWING183","192"
-"true","produces","5H (produces) SWING184","bad","false","produces","5H (produces) SWING184","193"
-"true","produces","6i (produces) SWING185","good","false","produces","6i (produces) SWING185","194"
-"true","produces","8i (produces) SWING186","bad","false","produces","8i (produces) SWING186","195"
-"true","produces","9i (produces) SWING187","good","false","produces","9i (produces) SWING187","196"
-"true","produces","PW (produces) SWING188","bad","false","produces","PW (produces) SWING188","197"
-"true","produces","52 (produces) SWING189","good","false","produces","52 (produces) SWING189","198"
-"true","produces","56 (produces) SWING190","bad","false","produces","56 (produces) SWING190","199"
-"true","produces","60 (produces) SWING191","good","false","produces","60 (produces) SWING191","200"
-"true","produces","CH (produces) SWING192","bad","false","produces","CH (produces) SWING192","201"
-"true","produces","1W (produces) SWING193","good","false","produces","1W (produces) SWING193","202"
-"true","produces","2H (produces) SWING194","bad","false","produces","2H (produces) SWING194","203"
-"true","produces","3H (produces) SWING195","good","false","produces","3H (produces) SWING195","204"
-"true","produces","5H (produces) SWING196","bad","false","produces","5H (produces) SWING196","205"
-"true","produces","6i (produces) SWING197","good","false","produces","6i (produces) SWING197","206"
-"true","produces","8i (produces) SWING198","bad","false","produces","8i (produces) SWING198","207"
-"true","produces","9i (produces) SWING199","good","false","produces","9i (produces) SWING199","208"
-"true","produces","PW (produces) SWING200","bad","false","produces","PW (produces) SWING200","209"
-"true","produces","52 (produces) SWING201","good","false","produces","52 (produces) SWING201","210"
-"true","produces","56 (produces) SWING202","bad","false","produces","56 (produces) SWING202","211"
-"true","produces","60 (produces) SWING203","good","false","produces","60 (produces) SWING203","212"
-"true","produces","CH (produces) SWING204","bad","false","produces","CH (produces) SWING204","213"
-"true","produces","1W (produces) SWING205","good","false","produces","1W (produces) SWING205","214"
-"true","produces","2H (produces) SWING206","bad","false","produces","2H (produces) SWING206","215"
-"true","produces","3H (produces) SWING207","good","false","produces","3H (produces) SWING207","216"
-"true","produces","5H (produces) SWING208","bad","false","produces","5H (produces) SWING208","217"
-"true","produces","6i (produces) SWING209","good","false","produces","6i (produces) SWING209","218"
-"true","produces","8i (produces) SWING210","bad","false","produces","8i (produces) SWING210","219"
-"true","produces","9i (produces) SWING211","good","false","produces","9i (produces) SWING211","220"
-"true","produces","PW (produces) SWING212","bad","false","produces","PW (produces) SWING212","221"
-"true","produces","52 (produces) SWING213","good","false","produces","52 (produces) SWING213","222"
-"true","produces","56 (produces) SWING214","bad","false","produces","56 (produces) SWING214","223"
-"true","produces","60 (produces) SWING215","good","false","produces","60 (produces) SWING215","224"
-"true","produces","CH (produces) SWING216","bad","false","produces","CH (produces) SWING216","225"
-"true","produces","1W (produces) SWING217","good","false","produces","1W (produces) SWING217","226"
-"true","produces","2H (produces) SWING218","bad","false","produces","2H (produces) SWING218","227"
-"true","produces","3H (produces) SWING219","good","false","produces","3H (produces) SWING219","228"
-"true","produces","5H (produces) SWING220","bad","false","produces","5H (produces) SWING220","229"
-"true","produces","6i (produces) SWING221","good","false","produces","6i (produces) SWING221","230"
-"true","produces","8i (produces) SWING222","bad","false","produces","8i (produces) SWING222","231"
-"true","produces","9i (produces) SWING223","good","false","produces","9i (produces) SWING223","232"
-"true","produces","PW (produces) SWING224","bad","false","produces","PW (produces) SWING224","233"
-"true","produces","52 (produces) SWING225","good","false","produces","52 (produces) SWING225","234"
-"true","produces","56 (produces) SWING226","bad","false","produces","56 (produces) SWING226","235"
-"true","produces","60 (produces) SWING227","good","false","produces","60 (produces) SWING227","236"
-"true","produces","CH (produces) SWING228","bad","false","produces","CH (produces) SWING228","237"
-"true","produces","1W (produces) SWING229","good","false","produces","1W (produces) SWING229","238"
-"true","produces","2H (produces) SWING230","bad","false","produces","2H (produces) SWING230","239"
-"true","produces","3H (produces) SWING231","good","false","produces","3H (produces) SWING231","240"
-"true","produces","5H (produces) SWING232","bad","false","produces","5H (produces) SWING232","241"
-"true","produces","6i (produces) SWING233","good","false","produces","6i (produces) SWING233","242"
-"true","produces","8i (produces) SWING234","bad","false","produces","8i (produces) SWING234","243"
-"true","produces","9i (produces) SWING235","good","false","produces","9i (produces) SWING235","244"
-"true","produces","PW (produces) SWING236","bad","false","produces","PW (produces) SWING236","245"
-"true","produces","52 (produces) SWING237","good","false","produces","52 (produces) SWING237","246"
-"true","produces","56 (produces) SWING238","bad","false","produces","56 (produces) SWING238","247"
-"true","produces","60 (produces) SWING239","good","false","produces","60 (produces) SWING239","248"
-"true","produces","CH (produces) SWING240","bad","false","produces","CH (produces) SWING240","249"
-"true","produces","1W (produces) SWING241","good","false","produces","1W (produces) SWING241","250"
-"true","produces","2H (produces) SWING242","bad","false","produces","2H (produces) SWING242","251"
-"true","produces","3H (produces) SWING243","good","false","produces","3H (produces) SWING243","252"
-"true","produces","5H (produces) SWING244","bad","false","produces","5H (produces) SWING244","253"
-"true","produces","6i (produces) SWING245","good","false","produces","6i (produces) SWING245","254"
-"true","produces","8i (produces) SWING246","bad","false","produces","8i (produces) SWING246","255"
-"true","produces","9i (produces) SWING247","good","false","produces","9i (produces) SWING247","256"
-"true","produces","PW (produces) SWING248","bad","false","produces","PW (produces) SWING248","257"
-"true","produces","52 (produces) SWING249","good","false","produces","52 (produces) SWING249","258"
-"true","produces","56 (produces) SWING250","bad","false","produces","56 (produces) SWING250","259"
-"true","produces","60 (produces) SWING251","good","false","produces","60 (produces) SWING251","260"
-"true","produces","CH (produces) SWING252","bad","false","produces","CH (produces) SWING252","261"
-"true","produces","1W (produces) SWING253","good","false","produces","1W (produces) SWING253","262"
-"true","produces","2H (produces) SWING254","bad","false","produces","2H (produces) SWING254","263"
-"true","produces","3H (produces) SWING255","good","false","produces","3H (produces) SWING255","264"
-"true","produces","5H (produces) SWING256","bad","false","produces","5H (produces) SWING256","265"
-"true","produces","6i (produces) SWING257","good","false","produces","6i (produces) SWING257","266"
-"true","produces","8i (produces) SWING258","bad","false","produces","8i (produces) SWING258","267"
-"true","produces","9i (produces) SWING259","good","false","produces","9i (produces) SWING259","268"
-"true","produces","PW (produces) SWING260","bad","false","produces","PW (produces) SWING260","269"
-"true","produces","52 (produces) SWING261","good","false","produces","52 (produces) SWING261","270"
-"true","produces","56 (produces) SWING262","bad","false","produces","56 (produces) SWING262","271"
-"true","produces","60 (produces) SWING263","good","false","produces","60 (produces) SWING263","272"
-"true","produces","CH (produces) SWING264","bad","false","produces","CH (produces) SWING264","273"
-"true","produces","1W (produces) SWING265","good","false","produces","1W (produces) SWING265","274"
-"true","produces","2H (produces) SWING266","bad","false","produces","2H (produces) SWING266","275"
-"true","produces","3H (produces) SWING267","good","false","produces","3H (produces) SWING267","276"
-"true","produces","5H (produces) SWING268","bad","false","produces","5H (produces) SWING268","277"
-"true","produces","6i (produces) SWING269","good","false","produces","6i (produces) SWING269","278"
-"true","produces","8i (produces) SWING270","bad","false","produces","8i (produces) SWING270","279"
-"true","produces","9i (produces) SWING271","good","false","produces","9i (produces) SWING271","280"
-"true","produces","PW (produces) SWING272","bad","false","produces","PW (produces) SWING272","281"
-"true","produces","52 (produces) SWING273","good","false","produces","52 (produces) SWING273","282"
-"true","produces","56 (produces) SWING274","bad","false","produces","56 (produces) SWING274","283"
-"true","produces","60 (produces) SWING275","good","false","produces","60 (produces) SWING275","284"
-"true","produces","CH (produces) SWING276","bad","false","produces","CH (produces) SWING276","285"
-"true","produces","1W (produces) SWING277","good","false","produces","1W (produces) SWING277","286"
-"true","produces","2H (produces) SWING278","bad","false","produces","2H (produces) SWING278","287"
-"true","produces","3H (produces) SWING279","good","false","produces","3H (produces) SWING279","288"
-"true","produces","5H (produces) SWING280","bad","false","produces","5H (produces) SWING280","289"
-"true","produces","6i (produces) SWING281","good","false","produces","6i (produces) SWING281","290"
-"true","produces","8i (produces) SWING282","bad","false","produces","8i (produces) SWING282","291"
-"true","produces","9i (produces) SWING283","good","false","produces","9i (produces) SWING283","292"
-"true","produces","PW (produces) SWING284","bad","false","produces","PW (produces) SWING284","293"
-"true","produces","52 (produces) SWING285","good","false","produces","52 (produces) SWING285","294"
-"true","produces","56 (produces) SWING286","bad","false","produces","56 (produces) SWING286","295"
-"true","produces","60 (produces) SWING287","good","false","produces","60 (produces) SWING287","296"
-"true","produces","CH (produces) SWING288","bad","false","produces","CH (produces) SWING288","297"
-"true","produces","1W (produces) SWING289","good","false","produces","1W (produces) SWING289","298"
-"true","produces","2H (produces) SWING290","bad","false","produces","2H (produces) SWING290","299"
-"true","produces","3H (produces) SWING291","good","false","produces","3H (produces) SWING291","300"
-"true","produces","5H (produces) SWING292","bad","false","produces","5H (produces) SWING292","301"
-"true","produces","6i (produces) SWING293","good","false","produces","6i (produces) SWING293","302"
-"true","produces","8i (produces) SWING294","bad","false","produces","8i (produces) SWING294","303"
-"true","produces","9i (produces) SWING295","good","false","produces","9i (produces) SWING295","304"
-"true","produces","PW (produces) SWING296","bad","false","produces","PW (produces) SWING296","305"
-"true","produces","52 (produces) SWING297","good","false","produces","52 (produces) SWING297","306"
-"true","produces","56 (produces) SWING298","bad","false","produces","56 (produces) SWING298","307"
-"true","produces","60 (produces) SWING299","good","false","produces","60 (produces) SWING299","308"
-"true","produces","CH (produces) SWING300","bad","false","produces","CH (produces) SWING300","309"
-"true","produces","1W (produces) SWING301","good","false","produces","1W (produces) SWING301","310"
-"true","produces","2H (produces) SWING302","bad","false","produces","2H (produces) SWING302","311"
-"true","produces","3H (produces) SWING303","good","false","produces","3H (produces) SWING303","312"
-"true","produces","5H (produces) SWING304","bad","false","produces","5H (produces) SWING304","313"
-"true","produces","6i (produces) SWING305","good","false","produces","6i (produces) SWING305","314"
-"true","produces","8i (produces) SWING306","bad","false","produces","8i (produces) SWING306","315"
-"true","produces","9i (produces) SWING307","good","false","produces","9i (produces) SWING307","316"
-"true","produces","PW (produces) SWING308","bad","false","produces","PW (produces) SWING308","317"
-"true","produces","52 (produces) SWING309","good","false","produces","52 (produces) SWING309","318"
-"true","produces","56 (produces) SWING310","bad","false","produces","56 (produces) SWING310","319"
-"true","produces","60 (produces) SWING311","good","false","produces","60 (produces) SWING311","320"
-"true","produces","CH (produces) SWING312","bad","false","produces","CH (produces) SWING312","321"
-"true","produces","1W (produces) SWING313","good","false","produces","1W (produces) SWING313","322"
-"true","produces","2H (produces) SWING314","bad","false","produces","2H (produces) SWING314","323"
-"true","produces","3H (produces) SWING315","good","false","produces","3H (produces) SWING315","324"
-"true","produces","5H (produces) SWING316","bad","false","produces","5H (produces) SWING316","325"
-"true","produces","6i (produces) SWING317","good","false","produces","6i (produces) SWING317","326"
-"true","produces","8i (produces) SWING318","bad","false","produces","8i (produces) SWING318","327"
-"true","produces","9i (produces) SWING319","good","false","produces","9i (produces) SWING319","328"
-"true","produces","PW (produces) SWING320","bad","false","produces","PW (produces) SWING320","329"
-"true","produces","52 (produces) SWING321","good","false","produces","52 (produces) SWING321","330"
-"true","produces","56 (produces) SWING322","bad","false","produces","56 (produces) SWING322","331"
-"true","produces","60 (produces) SWING323","good","false","produces","60 (produces) SWING323","332"
-"true","produces","CH (produces) SWING324","bad","false","produces","CH (produces) SWING324","333"
-"true","produces","1W (produces) SWING325","good","false","produces","1W (produces) SWING325","334"
-"true","produces","2H (produces) SWING326","bad","false","produces","2H (produces) SWING326","335"
-"true","produces","3H (produces) SWING327","good","false","produces","3H (produces) SWING327","336"
-"true","produces","5H (produces) SWING328","bad","false","produces","5H (produces) SWING328","337"
-"true","produces","6i (produces) SWING329","good","false","produces","6i (produces) SWING329","338"
-"true","produces","8i (produces) SWING330","bad","false","produces","8i (produces) SWING330","339"
-"true","produces","9i (produces) SWING331","good","false","produces","9i (produces) SWING331","340"
-"true","produces","PW (produces) SWING332","bad","false","produces","PW (produces) SWING332","341"
-"true","produces","52 (produces) SWING333","good","false","produces","52 (produces) SWING333","342"
-"true","produces","56 (produces) SWING334","bad","false","produces","56 (produces) SWING334","343"
-"true","produces","60 (produces) SWING335","good","false","produces","60 (produces) SWING335","344"
-"true","produces","CH (produces) SWING336","bad","false","produces","CH (produces) SWING336","345"
-"true","produces","1W (produces) SWING337","good","false","produces","1W (produces) SWING337","346"
-"true","produces","2H (produces) SWING338","bad","false","produces","2H (produces) SWING338","347"
-"true","produces","3H (produces) SWING339","good","false","produces","3H (produces) SWING339","348"
-"true","produces","5H (produces) SWING340","bad","false","produces","5H (produces) SWING340","349"
-"true","produces","6i (produces) SWING341","good","false","produces","6i (produces) SWING341","350"
-"true","produces","8i (produces) SWING342","bad","false","produces","8i (produces) SWING342","351"
-"true","produces","9i (produces) SWING343","good","false","produces","9i (produces) SWING343","352"
-"true","produces","PW (produces) SWING344","bad","false","produces","PW (produces) SWING344","353"
-"true","produces","52 (produces) SWING345","good","false","produces","52 (produces) SWING345","354"
-"true","produces","56 (produces) SWING346","bad","false","produces","56 (produces) SWING346","355"
-"true","produces","60 (produces) SWING347","good","false","produces","60 (produces) SWING347","356"
-"true","produces","CH (produces) SWING348","bad","false","produces","CH (produces) SWING348","357"
-"true","produces","1W (produces) SWING349","good","false","produces","1W (produces) SWING349","358"
-"true","produces","2H (produces) SWING350","bad","false","produces","2H (produces) SWING350","359"
-"true","produces","3H (produces) SWING351","good","false","produces","3H (produces) SWING351","360"
-"true","produces","5H (produces) SWING352","bad","false","produces","5H (produces) SWING352","361"
-"true","produces","6i (produces) SWING353","good","false","produces","6i (produces) SWING353","362"
-"true","produces","8i (produces) SWING354","bad","false","produces","8i (produces) SWING354","363"
-"true","produces","9i (produces) SWING355","good","false","produces","9i (produces) SWING355","364"
-"true","produces","PW (produces) SWING356","bad","false","produces","PW (produces) SWING356","365"
-"true","produces","52 (produces) SWING357","good","false","produces","52 (produces) SWING357","366"
-"true","produces","56 (produces) SWING358","bad","false","produces","56 (produces) SWING358","367"
-"true","produces","60 (produces) SWING359","good","false","produces","60 (produces) SWING359","368"
-"true","produces","CH (produces) SWING360","bad","false","produces","CH (produces) SWING360","369"
+graph_id,src,dst,time_a,time_b,interaction
+0,0,1,1,1663032661072,swing
+0,1,2,1663032661072,1663032661094,swing
+0,2,3,1663032661094,1663032661116,swing
+0,3,4,1663032661116,1663032661157,swing
+0,4,5,1663032661157,1663032661175,swing
+0,5,6,1663032661175,1663032661197,swing
+0,6,7,1663032661197,1663032661219,swing
+0,7,8,1663032661219,1663032661240,swing
+0,8,9,1663032661240,1663032661258,swing
+0,9,10,1663032661258,1663032661274,swing
+0,10,11,1663032661274,1663032661291,swing
+0,11,12,1663032661291,1663032661308,swing
+0,12,13,1663032661308,1663032661323,swing
+0,13,14,1663032661323,1663032661341,swing
+0,14,15,1663032661341,1663032661357,swing
+0,15,16,1663032661357,1663032661375,swing
+0,16,17,1663032661375,1663032661391,swing
+0,17,18,1663032661391,1663032661409,swing
+0,18,19,1663032661409,1663032661426,swing
+0,19,20,1663032661426,1663032661441,swing
+0,20,21,1663032661441,1663032661458,swing
+0,21,22,1663032661458,1663032661474,swing
+0,22,23,1663032661474,1663032661490,swing
+0,23,24,1663032661490,1663032661507,swing
+0,24,25,1663032661507,1663032661524,swing
+0,25,26,1663032661524,1663032661541,swing
+0,26,27,1663032661541,1663032661557,swing
+0,27,28,1663032661557,1663032661574,swing
+0,28,29,1663032661574,1663032661591,swing
+0,29,30,1663032661591,1663032661607,swing
+0,30,31,1663032661607,1663032661624,swing
+0,31,32,1663032661624,1663032661641,swing
+0,32,33,1663032661641,1663032661658,swing
+0,33,34,1663032661658,1663032661674,swing
+0,34,35,1663032661674,1663032661691,swing
+0,35,36,1663032661691,1663032661709,swing
+0,36,37,1663032661709,1663032661724,swing
+0,37,38,1663032661724,1663032661742,swing
+0,38,39,1663032661742,1663032661758,swing
+0,39,40,1663032661758,1663032661776,swing
+0,40,41,1663032661776,1663032661791,swing
+0,41,42,1663032661791,1663032661808,swing
+0,42,43,1663032661808,1663032661825,swing
+0,43,44,1663032661825,1663032661842,swing
+0,44,45,1663032661842,1663032661858,swing
+0,45,46,1663032661858,1663032661875,swing
+0,46,47,1663032661875,1663032661891,swing
+0,47,48,1663032661891,1663032661909,swing
+0,48,49,1663032661909,1663032661925,swing
+0,49,50,1663032661925,1663032661942,swing
+0,50,51,1663032661942,1663032661959,swing
+0,51,52,1663032661959,1663032661975,swing
+0,52,53,1663032661975,1663032661992,swing
+0,53,54,1663032661992,1663032662008,swing
+0,54,55,1663032662008,1663032662026,swing
+0,55,56,1663032662026,1663032662042,swing
+0,56,57,1663032662042,1663032662058,swing
+0,57,58,1663032662058,1663032662076,swing
+0,58,59,1663032662076,1663032662093,swing
+0,59,60,1663032662093,1663032662109,swing
+0,60,61,1663032662109,1663032662126,swing
+0,61,62,1663032662126,1663032662142,swing
+0,62,63,1663032662142,1663032662159,swing
+0,63,64,1663032662159,1663032662175,swing
+0,64,65,1663032662175,1663032662192,swing
+0,65,66,1663032662192,1663032662209,swing
+0,66,67,1663032662209,1663032662226,swing
+0,67,68,1663032662226,1663032662242,swing
+0,68,69,1663032662242,1663032662259,swing
+0,69,70,1663032662259,1663032662275,swing
+0,70,71,1663032662275,1663032662292,swing
+0,71,72,1663032662292,1663032662309,swing
+0,72,73,1663032662309,1663032662325,swing
+0,73,74,1663032662325,1663032662342,swing
+0,74,75,1663032662342,1663032662359,swing
+0,75,76,1663032662359,1663032662376,swing
+0,76,77,1663032662376,1663032662392,swing
+0,77,78,1663032662392,1663032662409,swing
+0,78,79,1663032662409,1663032662426,swing
+0,79,80,1663032662426,1663032662443,swing
+0,80,81,1663032662443,1663032662459,swing
+0,81,82,1663032662459,1663032662476,swing
+0,82,83,1663032662476,1663032662492,swing
+0,83,84,1663032662492,1663032662510,swing
+0,84,85,1663032662510,1663032662526,swing
+0,85,86,1663032662526,1663032662543,swing
+0,86,87,1663032662543,1663032662559,swing
+0,87,88,1663032662559,1663032662576,swing
+0,88,89,1663032662576,1663032662593,swing
+0,89,90,1663032662593,1663032662609,swing
+0,90,91,1663032662609,1663032662626,swing
+0,91,92,1663032662626,1663032662642,swing
+0,92,93,1663032662642,1663032662659,swing
+0,93,94,1663032662659,1663032662677,swing
+0,94,95,1663032662677,1663032662693,swing
+0,95,96,1663032662693,1663032662710,swing
+0,96,97,1663032662710,1663032662726,swing
+0,97,98,1663032662726,1663032662743,swing
+0,98,99,1663032662743,1663032662760,swing
+0,99,100,1663032662760,1663032662777,swing
+0,100,101,1663032662777,1663032662793,swing
+0,101,102,1663032662793,1663032662810,swing
+0,102,103,1663032662810,1663032662826,swing
+0,103,104,1663032662826,1663032662843,swing
+0,104,105,1663032662843,1663032662860,swing
+0,105,106,1663032662860,1663032662877,swing
+0,106,107,1663032662877,1663032662893,swing
+0,107,108,1663032662893,1663032662910,swing
+0,108,109,1663032662910,1663032662927,swing
+0,109,110,1663032662927,1663032662944,swing
+0,110,111,1663032662944,1663032662960,swing
+0,111,112,1663032662960,1663032662977,swing
+0,112,113,1663032662977,1663032662993,swing
+0,113,114,1663032662993,1663032663010,swing
+0,114,115,1663032663010,1663032663027,swing
+0,115,116,1663032663027,1663032663044,swing
+0,116,117,1663032663044,1663032663060,swing
+0,117,118,1663032663060,1663032663077,swing
+0,118,119,1663032663077,1663032663093,swing
+0,119,120,1663032663093,1663032663111,swing
+0,120,121,1663032663111,1663032663127,swing
+0,121,122,1663032663127,1663032663144,swing
+0,122,123,1663032663144,1663032663160,swing
+0,123,124,1663032663160,1663032663177,swing
+0,124,125,1663032663177,1663032663193,swing
+0,125,126,1663032663193,1663032663211,swing
+0,126,127,1663032663211,1663032663228,swing
+0,127,128,1663032663228,1663032663245,swing
+0,128,129,1663032663245,1663032663260,swing
+0,129,130,1663032663260,1663032663278,swing
+0,130,131,1663032663278,1663032663294,swing
+0,131,132,1663032663294,1663032663311,swing
+0,132,133,1663032663311,1663032663327,swing
+0,133,134,1663032663327,1663032663344,swing
+0,134,135,1663032663344,1663032663361,swing
+0,135,136,1663032663361,1663032663378,swing
+0,136,137,1663032663378,1663032663394,swing
+0,137,138,1663032663394,1663032663411,swing
+0,138,139,1663032663411,1663032663427,swing
+0,139,140,1663032663427,1663032663444,swing
+0,140,141,1663032663444,1663032663461,swing
+0,141,142,1663032663461,1663032663478,swing
+0,142,143,1663032663478,1663032663494,swing
+0,143,144,1663032663494,1663032663511,swing
+0,144,145,1663032663511,1663032663528,swing
+0,145,146,1663032663528,1663032663544,swing
+0,146,147,1663032663544,1663032663561,swing
+0,147,148,1663032663561,1663032663578,swing
+0,148,149,1663032663578,1663032663594,swing
+0,149,150,1663032663594,1663032663611,swing
+0,150,151,1663032663611,1663032663627,swing
+0,151,152,1663032663627,1663032663645,swing
+0,152,153,1663032663645,1663032663661,swing
+0,153,154,1663032663661,1663032663678,swing
+0,154,155,1663032663678,1663032663695,swing
+0,155,156,1663032663695,1663032663712,swing
+0,156,157,1663032663712,1663032663728,swing
+0,157,158,1663032663728,1663032663745,swing
+0,158,159,1663032663745,1663032663761,swing
+0,159,160,1663032663761,1663032663778,swing
+0,160,161,1663032663778,1663032663795,swing
+0,161,162,1663032663795,1663032663812,swing
+0,162,163,1663032663812,1663032663828,swing
+0,163,164,1663032663828,1663032663845,swing
+0,164,165,1663032663845,1663032663862,swing
+0,165,166,1663032663862,1663032663878,swing
+0,166,167,1663032663878,1663032663895,swing
+0,167,168,1663032663895,1663032663912,swing
+0,168,169,1663032663912,1663032663928,swing
+0,169,170,1663032663928,1663032663945,swing
+0,170,171,1663032663945,1663032663962,swing
+0,171,172,1663032663962,1663032663979,swing
+0,172,173,1663032663979,1663032663995,swing
+1,0,1,1,1663032720005,swing
+1,1,2,1663032720005,1663032720021,swing
+1,2,3,1663032720021,1663032720038,swing
+1,3,4,1663032720038,1663032720054,swing
+1,4,5,1663032720054,1663032720072,swing
+1,5,6,1663032720072,1663032720088,swing
+1,6,7,1663032720088,1663032720105,swing
+1,7,8,1663032720105,1663032720121,swing
+1,8,9,1663032720121,1663032720138,swing
+1,9,10,1663032720138,1663032720155,swing
+1,10,11,1663032720155,1663032720172,swing
+1,11,12,1663032720172,1663032720188,swing
+1,12,13,1663032720188,1663032720205,swing
+1,13,14,1663032720205,1663032720222,swing
+1,14,15,1663032720222,1663032720238,swing
+1,15,16,1663032720238,1663032720255,swing
+1,16,17,1663032720255,1663032720272,swing
+1,17,18,1663032720272,1663032720289,swing
+1,18,19,1663032720289,1663032720305,swing
+1,19,20,1663032720305,1663032720322,swing
+1,20,21,1663032720322,1663032720339,swing
+1,21,22,1663032720339,1663032720355,swing
+1,22,23,1663032720355,1663032720372,swing
+1,23,24,1663032720372,1663032720388,swing
+1,24,25,1663032720388,1663032720406,swing
+1,25,26,1663032720406,1663032720422,swing
+1,26,27,1663032720422,1663032720439,swing
+1,27,28,1663032720439,1663032720455,swing
+1,28,29,1663032720455,1663032720473,swing
+1,29,30,1663032720473,1663032720489,swing
+1,30,31,1663032720489,1663032720506,swing
+1,31,32,1663032720506,1663032720522,swing
+1,32,33,1663032720522,1663032720539,swing
+1,33,34,1663032720539,1663032720556,swing
+1,34,35,1663032720556,1663032720572,swing
+1,35,36,1663032720572,1663032720589,swing
+1,36,37,1663032720589,1663032720606,swing
+1,37,38,1663032720606,1663032720623,swing
+1,38,39,1663032720623,1663032720639,swing
+1,39,40,1663032720639,1663032720656,swing
+1,40,41,1663032720656,1663032720673,swing
+1,41,42,1663032720673,1663032720689,swing
+1,42,43,1663032720689,1663032720706,swing
+1,43,44,1663032720706,1663032720722,swing
+1,44,45,1663032720722,1663032720740,swing
+1,45,46,1663032720740,1663032720756,swing
+1,46,47,1663032720756,1663032720773,swing
+1,47,48,1663032720773,1663032720789,swing
+1,48,49,1663032720789,1663032720806,swing
+1,49,50,1663032720806,1663032720823,swing
+1,50,51,1663032720823,1663032720840,swing
+1,51,52,1663032720840,1663032720856,swing
+1,52,53,1663032720856,1663032720873,swing
+1,53,54,1663032720873,1663032720889,swing
+1,54,55,1663032720889,1663032720907,swing
+1,55,56,1663032720907,1663032720923,swing
+1,56,57,1663032720923,1663032720940,swing
+1,57,58,1663032720940,1663032720957,swing
+1,58,59,1663032720957,1663032720973,swing
+1,59,60,1663032720973,1663032720990,swing
+1,60,61,1663032720990,1663032721007,swing
+1,61,62,1663032721007,1663032721023,swing
+1,62,63,1663032721023,1663032721040,swing
+1,63,64,1663032721040,1663032721056,swing
+1,64,65,1663032721056,1663032721073,swing
+1,65,66,1663032721073,1663032721090,swing
+1,66,67,1663032721090,1663032721107,swing
+1,67,68,1663032721107,1663032721123,swing
+1,68,69,1663032721123,1663032721140,swing
+1,69,70,1663032721140,1663032721157,swing
+1,70,71,1663032721157,1663032721174,swing
+1,71,72,1663032721174,1663032721190,swing
+1,72,73,1663032721190,1663032721207,swing
+1,73,74,1663032721207,1663032721224,swing
+1,74,75,1663032721224,1663032721240,swing
+1,75,76,1663032721240,1663032721257,swing
+1,76,77,1663032721257,1663032721274,swing
+1,77,78,1663032721274,1663032721290,swing
+1,78,79,1663032721290,1663032721307,swing
+1,79,80,1663032721307,1663032721324,swing
+1,80,81,1663032721324,1663032721341,swing
+1,81,82,1663032721341,1663032721357,swing
+1,82,83,1663032721357,1663032721374,swing
+1,83,84,1663032721374,1663032721390,swing
+1,84,85,1663032721390,1663032721407,swing
+1,85,86,1663032721407,1663032721424,swing
+1,86,87,1663032721424,1663032721441,swing
+1,87,88,1663032721441,1663032721457,swing
+1,88,89,1663032721457,1663032721474,swing
+1,89,90,1663032721474,1663032721490,swing
+1,90,91,1663032721490,1663032721507,swing
+1,91,92,1663032721507,1663032721524,swing
+1,92,93,1663032721524,1663032721541,swing
+1,93,94,1663032721541,1663032721557,swing
+1,94,95,1663032721557,1663032721575,swing
+1,95,96,1663032721575,1663032721591,swing
+1,96,97,1663032721591,1663032721608,swing
+1,97,98,1663032721608,1663032721624,swing
+1,98,99,1663032721624,1663032721641,swing
+1,99,100,1663032721641,1663032721658,swing
+1,100,101,1663032721658,1663032721674,swing
+1,101,102,1663032721674,1663032721691,swing
+1,102,103,1663032721691,1663032721708,swing
+1,103,104,1663032721708,1663032721724,swing
+1,104,105,1663032721724,1663032721741,swing
+1,105,106,1663032721741,1663032721758,swing
+1,106,107,1663032721758,1663032721775,swing
+1,107,108,1663032721775,1663032721791,swing
+1,108,109,1663032721791,1663032721809,swing
+1,109,110,1663032721809,1663032721825,swing
+1,110,111,1663032721825,1663032721842,swing
+1,111,112,1663032721842,1663032721858,swing
+1,112,113,1663032721858,1663032721875,swing
+1,113,114,1663032721875,1663032721891,swing
+1,114,115,1663032721891,1663032721909,swing
+1,115,116,1663032721909,1663032721925,swing
+1,116,117,1663032721925,1663032721942,swing
+1,117,118,1663032721942,1663032721958,swing
+1,118,119,1663032721958,1663032721975,swing
+1,119,120,1663032721975,1663032721992,swing
+1,120,121,1663032721992,1663032722009,swing
+1,121,122,1663032722009,1663032722025,swing
+1,122,123,1663032722025,1663032722042,swing
+1,123,124,1663032722042,1663032722059,swing
+1,124,125,1663032722059,1663032722075,swing
+1,125,126,1663032722075,1663032722092,swing
+1,126,127,1663032722092,1663032722109,swing
+1,127,128,1663032722109,1663032722125,swing
+1,128,129,1663032722125,1663032722143,swing
+1,129,130,1663032722143,1663032722159,swing
+1,130,131,1663032722159,1663032722176,swing
+1,131,132,1663032722176,1663032722192,swing
+1,132,133,1663032722192,1663032722209,swing
+1,133,134,1663032722209,1663032722225,swing
+1,134,135,1663032722225,1663032722243,swing
+1,135,136,1663032722243,1663032722259,swing
+1,136,137,1663032722259,1663032722276,swing
+1,137,138,1663032722276,1663032722293,swing
+1,138,139,1663032722293,1663032722310,swing
+1,139,140,1663032722310,1663032722326,swing
+1,140,141,1663032722326,1663032722343,swing
+1,141,142,1663032722343,1663032722359,swing
+1,142,143,1663032722359,1663032722376,swing
+1,143,144,1663032722376,1663032722393,swing
+1,144,145,1663032722393,1663032722410,swing
+1,145,146,1663032722410,1663032722426,swing
+1,146,147,1663032722426,1663032722443,swing
+1,147,148,1663032722443,1663032722460,swing
+1,148,149,1663032722460,1663032722477,swing
+1,149,150,1663032722477,1663032722493,swing
+1,150,151,1663032722493,1663032722510,swing
+1,151,152,1663032722510,1663032722526,swing
+1,152,153,1663032722526,1663032722543,swing
+1,153,154,1663032722543,1663032722560,swing
+1,154,155,1663032722560,1663032722577,swing
+1,155,156,1663032722577,1663032722593,swing
+1,156,157,1663032722593,1663032722610,swing
+1,157,158,1663032722610,1663032722627,swing
+1,158,159,1663032722627,1663032722644,swing
+1,159,160,1663032722644,1663032722660,swing
+1,160,161,1663032722660,1663032722677,swing
+1,161,162,1663032722677,1663032722693,swing
+1,162,163,1663032722693,1663032722710,swing
+1,163,164,1663032722710,1663032722727,swing
+1,164,165,1663032722727,1663032722744,swing
+1,165,166,1663032722744,1663032722760,swing
+1,166,167,1663032722760,1663032722777,swing
+1,167,168,1663032722777,1663032722794,swing
+1,168,169,1663032722794,1663032722811,swing
+1,169,170,1663032722811,1663032722827,swing
+1,170,171,1663032722827,1663032722844,swing
+1,171,172,1663032722844,1663032722860,swing
+1,172,173,1663032722860,1663032722877,swing
+1,173,174,1663032722877,1663032722894,swing
+1,174,175,1663032722894,1663032722911,swing
+1,175,176,1663032722911,1663032722927,swing
+1,176,177,1663032722927,1663032722944,swing
+1,177,178,1663032722944,1663032722960,swing
+1,178,179,1663032722960,1663032722977,swing
+1,179,180,1663032722977,1663032722994,swing
+1,180,181,1663032722994,1663032723011,swing
+1,181,182,1663032723011,1663032723027,swing
+1,182,183,1663032723027,1663032723044,swing
+1,183,184,1663032723044,1663032723061,swing
+1,184,185,1663032723061,1663032723077,swing
+1,185,186,1663032723077,1663032723094,swing
+1,186,187,1663032723094,1663032723111,swing
+1,187,188,1663032723111,1663032723127,swing
+1,188,189,1663032723127,1663032723144,swing
+1,189,190,1663032723144,1663032723161,swing
+1,190,191,1663032723161,1663032723178,swing
+1,191,192,1663032723178,1663032723194,swing
+1,192,193,1663032723194,1663032723211,swing
+1,193,194,1663032723211,1663032723228,swing
+1,194,195,1663032723228,1663032723245,swing
+1,195,196,1663032723245,1663032723261,swing
+1,196,197,1663032723261,1663032723278,swing
+1,197,198,1663032723278,1663032723294,swing
+1,198,199,1663032723294,1663032723311,swing
+1,199,200,1663032723311,1663032723328,swing
+1,200,201,1663032723328,1663032723344,swing
+1,201,202,1663032723344,1663032723361,swing
+1,202,203,1663032723361,1663032723378,swing
+1,203,204,1663032723378,1663032723394,swing
+1,204,205,1663032723394,1663032723411,swing
+1,205,206,1663032723411,1663032723428,swing
+1,206,207,1663032723428,1663032723445,swing
+1,207,208,1663032723445,1663032723461,swing
+1,208,209,1663032723461,1663032723478,swing
+1,209,210,1663032723478,1663032723495,swing
+1,210,211,1663032723495,1663032723512,swing
+1,211,212,1663032723512,1663032723528,swing
+1,212,213,1663032723528,1663032723545,swing
+1,213,214,1663032723545,1663032723561,swing
+1,214,215,1663032723561,1663032723578,swing
+1,215,216,1663032723578,1663032723595,swing
+1,216,217,1663032723595,1663032723612,swing
+1,217,218,1663032723612,1663032723628,swing
+1,218,219,1663032723628,1663032723645,swing
+1,219,220,1663032723645,1663032723661,swing
+1,220,221,1663032723661,1663032723678,swing
+1,221,222,1663032723678,1663032723695,swing
+1,222,223,1663032723695,1663032723712,swing
+1,223,224,1663032723712,1663032723728,swing
+1,224,225,1663032723728,1663032723745,swing
+1,225,226,1663032723745,1663032723762,swing
+1,226,227,1663032723762,1663032723779,swing
+1,227,228,1663032723779,1663032723795,swing
+1,228,229,1663032723795,1663032723812,swing
+1,229,230,1663032723812,1663032723829,swing
+1,230,231,1663032723829,1663032723846,swing
+1,231,232,1663032723846,1663032723862,swing
+1,232,233,1663032723862,1663032723879,swing
+1,233,234,1663032723879,1663032723896,swing
+1,234,235,1663032723896,1663032723913,swing
+1,235,236,1663032723913,1663032723929,swing
+1,236,237,1663032723929,1663032723946,swing
+1,237,238,1663032723946,1663032723962,swing
+1,238,239,1663032723962,1663032723980,swing
+1,239,240,1663032723980,1663032723996,swing
+2,0,1,1,1663032780005,swing
+2,1,2,1663032780005,1663032780022,swing
+2,2,3,1663032780022,1663032780038,swing
+2,3,4,1663032780038,1663032780055,swing
+2,4,5,1663032780055,1663032780072,swing
+2,5,6,1663032780072,1663032780089,swing
+2,6,7,1663032780089,1663032780105,swing
+2,7,8,1663032780105,1663032780122,swing
+2,8,9,1663032780122,1663032780139,swing
+2,9,10,1663032780139,1663032780155,swing
+2,10,11,1663032780155,1663032780172,swing
+2,11,12,1663032780172,1663032780189,swing
+2,12,13,1663032780189,1663032780206,swing
+2,13,14,1663032780206,1663032780222,swing
+2,14,15,1663032780222,1663032780239,swing
+2,15,16,1663032780239,1663032780256,swing
+2,16,17,1663032780256,1663032780272,swing
+2,17,18,1663032780272,1663032780289,swing
+2,18,19,1663032780289,1663032780306,swing
+2,19,20,1663032780306,1663032780322,swing
+2,20,21,1663032780322,1663032780339,swing
+2,21,22,1663032780339,1663032780356,swing
+2,22,23,1663032780356,1663032780372,swing
+2,23,24,1663032780372,1663032780389,swing
+2,24,25,1663032780389,1663032780406,swing
+2,25,26,1663032780406,1663032780422,swing
+2,26,27,1663032780422,1663032780439,swing
+2,27,28,1663032780439,1663032780456,swing
+2,28,29,1663032780456,1663032780473,swing
+2,29,30,1663032780473,1663032780489,swing
+2,30,31,1663032780489,1663032780506,swing
+2,31,32,1663032780506,1663032780523,swing
+2,32,33,1663032780523,1663032780540,swing
+2,33,34,1663032780540,1663032780556,swing
+2,34,35,1663032780556,1663032780573,swing
+2,35,36,1663032780573,1663032780589,swing
+2,36,37,1663032780589,1663032780606,swing
+2,37,38,1663032780606,1663032780623,swing
+2,38,39,1663032780623,1663032780640,swing
+2,39,40,1663032780640,1663032780656,swing
+2,40,41,1663032780656,1663032780673,swing
+2,41,42,1663032780673,1663032780690,swing
+2,42,43,1663032780690,1663032780706,swing
+2,43,44,1663032780706,1663032780723,swing
+2,44,45,1663032780723,1663032780740,swing
+2,45,46,1663032780740,1663032780756,swing
+2,46,47,1663032780756,1663032780773,swing
+2,47,48,1663032780773,1663032780790,swing
+2,48,49,1663032780790,1663032780807,swing
+2,49,50,1663032780807,1663032780823,swing
+2,50,51,1663032780823,1663032780840,swing
+2,51,52,1663032780840,1663032780857,swing
+2,52,53,1663032780857,1663032780874,swing
+2,53,54,1663032780874,1663032780890,swing
+2,54,55,1663032780890,1663032780907,swing
+2,55,56,1663032780907,1663032780923,swing
+2,56,57,1663032780923,1663032780940,swing
+2,57,58,1663032780940,1663032780957,swing
+2,58,59,1663032780957,1663032780973,swing
+2,59,60,1663032780973,1663032780990,swing
+2,60,61,1663032780990,1663032781007,swing
+2,61,62,1663032781007,1663032781023,swing
+2,62,63,1663032781023,1663032781040,swing
+2,63,64,1663032781040,1663032781057,swing
+2,64,65,1663032781057,1663032781074,swing
+2,65,66,1663032781074,1663032781090,swing
+2,66,67,1663032781090,1663032781107,swing
+2,67,68,1663032781107,1663032781124,swing
+2,68,69,1663032781124,1663032781141,swing
+2,69,70,1663032781141,1663032781157,swing
+2,70,71,1663032781157,1663032781174,swing
+2,71,72,1663032781174,1663032781190,swing
+2,72,73,1663032781190,1663032781207,swing
+2,73,74,1663032781207,1663032781224,swing
+2,74,75,1663032781224,1663032781241,swing
+2,75,76,1663032781241,1663032781257,swing
+2,76,77,1663032781257,1663032781274,swing
+2,77,78,1663032781274,1663032781291,swing
+2,78,79,1663032781291,1663032781308,swing
+2,79,80,1663032781308,1663032781324,swing
+2,80,81,1663032781324,1663032781341,swing
+2,81,82,1663032781341,1663032781357,swing
+2,82,83,1663032781357,1663032781374,swing
+2,83,84,1663032781374,1663032781391,swing
+2,84,85,1663032781391,1663032781408,swing
+2,85,86,1663032781408,1663032781424,swing
+2,86,87,1663032781424,1663032781441,swing
+2,87,88,1663032781441,1663032781457,swing
+2,88,89,1663032781457,1663032781474,swing
+2,89,90,1663032781474,1663032781491,swing
+2,90,91,1663032781491,1663032781508,swing
+2,91,92,1663032781508,1663032781524,swing
+2,92,93,1663032781524,1663032781541,swing
+2,93,94,1663032781541,1663032781558,swing
+2,94,95,1663032781558,1663032781575,swing
+2,95,96,1663032781575,1663032781591,swing
+2,96,97,1663032781591,1663032781608,swing
+2,97,98,1663032781608,1663032781625,swing
+2,98,99,1663032781625,1663032781641,swing
+2,99,100,1663032781641,1663032781658,swing
+2,100,101,1663032781658,1663032781675,swing
+2,101,102,1663032781675,1663032781691,swing
+2,102,103,1663032781691,1663032781708,swing
+2,103,104,1663032781708,1663032781725,swing
+2,104,105,1663032781725,1663032781742,swing
+2,105,106,1663032781742,1663032781758,swing
+2,106,107,1663032781758,1663032781775,swing
+2,107,108,1663032781775,1663032781792,swing
+2,108,109,1663032781792,1663032781809,swing
+2,109,110,1663032781809,1663032781825,swing
+2,110,111,1663032781825,1663032781842,swing
+2,111,112,1663032781842,1663032781859,swing
+2,112,113,1663032781859,1663032781876,swing
+2,113,114,1663032781876,1663032781892,swing
+2,114,115,1663032781892,1663032781909,swing
+2,115,116,1663032781909,1663032781925,swing
+2,116,117,1663032781925,1663032781942,swing
+2,117,118,1663032781942,1663032781959,swing
+2,118,119,1663032781959,1663032781975,swing
+2,119,120,1663032781975,1663032781992,swing
+2,120,121,1663032781992,1663032782009,swing
+2,121,122,1663032782009,1663032782026,swing
+2,122,123,1663032782026,1663032782042,swing
+2,123,124,1663032782042,1663032782059,swing
+2,124,125,1663032782059,1663032782076,swing
+2,125,126,1663032782076,1663032782092,swing
+2,126,127,1663032782092,1663032782109,swing
+2,127,128,1663032782109,1663032782126,swing
+2,128,129,1663032782126,1663032782143,swing
+2,129,130,1663032782143,1663032782159,swing
+2,130,131,1663032782159,1663032782176,swing
+2,131,132,1663032782176,1663032782193,swing
+2,132,133,1663032782193,1663032782210,swing
+2,133,134,1663032782210,1663032782226,swing
+2,134,135,1663032782226,1663032782243,swing
+2,135,136,1663032782243,1663032782259,swing
+2,136,137,1663032782259,1663032782276,swing
+2,137,138,1663032782276,1663032782293,swing
+2,138,139,1663032782293,1663032782310,swing
+2,139,140,1663032782310,1663032782326,swing
+2,140,141,1663032782326,1663032782343,swing
+2,141,142,1663032782343,1663032782359,swing
+2,142,143,1663032782359,1663032782376,swing
+2,143,144,1663032782376,1663032782393,swing
+2,144,145,1663032782393,1663032782410,swing
+2,145,146,1663032782410,1663032782426,swing
+2,146,147,1663032782426,1663032782443,swing
+2,147,148,1663032782443,1663032782460,swing
+2,148,149,1663032782460,1663032782476,swing
+2,149,150,1663032782476,1663032782493,swing
+2,150,151,1663032782493,1663032782510,swing
+2,151,152,1663032782510,1663032782527,swing
+2,152,153,1663032782527,1663032782543,swing
+2,153,154,1663032782543,1663032782560,swing
+2,154,155,1663032782560,1663032782577,swing
+2,155,156,1663032782577,1663032782593,swing
+2,156,157,1663032782593,1663032782610,swing
+2,157,158,1663032782610,1663032782627,swing
+2,158,159,1663032782627,1663032782644,swing
+2,159,160,1663032782644,1663032782660,swing
+2,160,161,1663032782660,1663032782677,swing
+2,161,162,1663032782677,1663032782693,swing
+2,162,163,1663032782693,1663032782711,swing
+2,163,164,1663032782711,1663032782727,swing
+2,164,165,1663032782727,1663032782744,swing
+2,165,166,1663032782744,1663032782760,swing
+2,166,167,1663032782760,1663032782777,swing
+2,167,168,1663032782777,1663032782794,swing
+2,168,169,1663032782794,1663032782810,swing
+2,169,170,1663032782810,1663032782827,swing
+2,170,171,1663032782827,1663032782844,swing
+2,171,172,1663032782844,1663032782860,swing
+2,172,173,1663032782860,1663032782877,swing
+2,173,174,1663032782877,1663032782894,swing
+2,174,175,1663032782894,1663032782911,swing
+2,175,176,1663032782911,1663032782928,swing
+2,176,177,1663032782928,1663032782950,swing
+2,177,178,1663032782950,1663032782965,swing
+2,178,179,1663032782965,1663032782977,swing
+2,179,180,1663032782977,1663032782994,swing
+2,180,181,1663032782994,1663032783011,swing
+2,181,182,1663032783011,1663032783027,swing
+2,182,183,1663032783027,1663032783044,swing
+2,183,184,1663032783044,1663032783061,swing
+2,184,185,1663032783061,1663032783078,swing
+2,185,186,1663032783078,1663032783094,swing
+2,186,187,1663032783094,1663032783113,swing
+2,187,188,1663032783113,1663032783127,swing
+2,188,189,1663032783127,1663032783144,swing
+2,189,190,1663032783144,1663032783161,swing
+2,190,191,1663032783161,1663032783178,swing
+2,191,192,1663032783178,1663032783194,swing
+2,192,193,1663032783194,1663032783211,swing
+2,193,194,1663032783211,1663032783227,swing
+2,194,195,1663032783227,1663032783244,swing
+2,195,196,1663032783244,1663032783261,swing
+2,196,197,1663032783261,1663032783278,swing
+2,197,198,1663032783278,1663032783294,swing
+2,198,199,1663032783294,1663032783311,swing
+2,199,200,1663032783311,1663032783328,swing
+2,200,201,1663032783328,1663032783345,swing
+2,201,202,1663032783345,1663032783361,swing
+2,202,203,1663032783361,1663032783378,swing
+2,203,204,1663032783378,1663032783395,swing
+2,204,205,1663032783395,1663032783412,swing
+2,205,206,1663032783412,1663032783428,swing
+2,206,207,1663032783428,1663032783445,swing
+2,207,208,1663032783445,1663032783462,swing
+2,208,209,1663032783462,1663032783478,swing
+2,209,210,1663032783478,1663032783495,swing
+2,210,211,1663032783495,1663032783512,swing
+2,211,212,1663032783512,1663032783528,swing
+2,212,213,1663032783528,1663032783545,swing
+2,213,214,1663032783545,1663032783562,swing
+2,214,215,1663032783562,1663032783578,swing
+2,215,216,1663032783578,1663032783595,swing
+2,216,217,1663032783595,1663032783612,swing
+2,217,218,1663032783612,1663032783628,swing
+2,218,219,1663032783628,1663032783645,swing
+2,219,220,1663032783645,1663032783662,swing
+2,220,221,1663032783662,1663032783679,swing
+2,221,222,1663032783679,1663032783695,swing
+2,222,223,1663032783695,1663032783712,swing
+2,223,224,1663032783712,1663032783729,swing
+2,224,225,1663032783729,1663032783746,swing
+2,225,226,1663032783746,1663032783762,swing
+2,226,227,1663032783762,1663032783779,swing
+2,227,228,1663032783779,1663032783796,swing
+2,228,229,1663032783796,1663032783812,swing
+2,229,230,1663032783812,1663032783829,swing
+2,230,231,1663032783829,1663032783846,swing
+2,231,232,1663032783846,1663032783863,swing
+2,232,233,1663032783863,1663032783879,swing
+2,233,234,1663032783879,1663032783896,swing
+2,234,235,1663032783896,1663032783913,swing
+2,235,236,1663032783913,1663032783929,swing
+2,236,237,1663032783929,1663032783946,swing
+2,237,238,1663032783946,1663032783963,swing
+2,238,239,1663032783963,1663032783979,swing
+2,239,240,1663032783979,1663032783996,swing
+3,0,1,1,1663032840006,swing
+3,1,2,1663032840006,1663032840022,swing
+3,2,3,1663032840022,1663032840039,swing
+3,3,4,1663032840039,1663032840055,swing
+3,4,5,1663032840055,1663032840072,swing
+3,5,6,1663032840072,1663032840089,swing
+3,6,7,1663032840089,1663032840106,swing
+3,7,8,1663032840106,1663032840122,swing
+3,8,9,1663032840122,1663032840139,swing
+3,9,10,1663032840139,1663032840156,swing
+3,10,11,1663032840156,1663032840173,swing
+3,11,12,1663032840173,1663032840189,swing
+3,12,13,1663032840189,1663032840206,swing
+3,13,14,1663032840206,1663032840223,swing
+3,14,15,1663032840223,1663032840240,swing
+3,15,16,1663032840240,1663032840256,swing
+3,16,17,1663032840256,1663032840273,swing
+3,17,18,1663032840273,1663032840290,swing
+3,18,19,1663032840290,1663032840306,swing
+3,19,20,1663032840306,1663032840323,swing
+3,20,21,1663032840323,1663032840340,swing
+3,21,22,1663032840340,1663032840356,swing
+3,22,23,1663032840356,1663032840373,swing
+3,23,24,1663032840373,1663032840390,swing
+3,24,25,1663032840390,1663032840407,swing
+3,25,26,1663032840407,1663032840423,swing
+3,26,27,1663032840423,1663032840440,swing
+3,27,28,1663032840440,1663032840457,swing
+3,28,29,1663032840457,1663032840474,swing
+3,29,30,1663032840474,1663032840490,swing
+3,30,31,1663032840490,1663032840507,swing
+3,31,32,1663032840507,1663032840523,swing
+3,32,33,1663032840523,1663032840540,swing
+3,33,34,1663032840540,1663032840557,swing
+3,34,35,1663032840557,1663032840574,swing
+3,35,36,1663032840574,1663032840590,swing
+3,36,37,1663032840590,1663032840607,swing
+3,37,38,1663032840607,1663032840623,swing
+3,38,39,1663032840623,1663032840640,swing
+3,39,40,1663032840640,1663032840657,swing
+3,40,41,1663032840657,1663032840674,swing
+3,41,42,1663032840674,1663032840690,swing
+3,42,43,1663032840690,1663032840707,swing
+3,43,44,1663032840707,1663032840724,swing
+3,44,45,1663032840724,1663032840740,swing
+3,45,46,1663032840740,1663032840757,swing
+3,46,47,1663032840757,1663032840774,swing
+3,47,48,1663032840774,1663032840790,swing
+3,48,49,1663032840790,1663032840807,swing
+3,49,50,1663032840807,1663032840824,swing
+3,50,51,1663032840824,1663032840841,swing
+3,51,52,1663032840841,1663032840857,swing
+3,52,53,1663032840857,1663032840874,swing
+3,53,54,1663032840874,1663032840891,swing
+3,54,55,1663032840891,1663032840908,swing
+3,55,56,1663032840908,1663032840924,swing
+3,56,57,1663032840924,1663032840941,swing
+3,57,58,1663032840941,1663032840957,swing
+3,58,59,1663032840957,1663032840973,swing
+3,59,60,1663032840973,1663032840991,swing
+3,60,61,1663032840991,1663032841008,swing
+3,61,62,1663032841008,1663032841024,swing
+3,62,63,1663032841024,1663032841041,swing
+3,63,64,1663032841041,1663032841058,swing
+3,64,65,1663032841058,1663032841075,swing
+3,65,66,1663032841075,1663032841091,swing
+3,66,67,1663032841091,1663032841108,swing
+3,67,68,1663032841108,1663032841125,swing
+3,68,69,1663032841125,1663032841142,swing
+3,69,70,1663032841142,1663032841158,swing
+3,70,71,1663032841158,1663032841175,swing
+3,71,72,1663032841175,1663032841192,swing
+3,72,73,1663032841192,1663032841208,swing
+3,73,74,1663032841208,1663032841225,swing
+3,74,75,1663032841225,1663032841242,swing
+3,75,76,1663032841242,1663032841258,swing
+3,76,77,1663032841258,1663032841275,swing
+3,77,78,1663032841275,1663032841292,swing
+3,78,79,1663032841292,1663032841309,swing
+3,79,80,1663032841309,1663032841325,swing
+3,80,81,1663032841325,1663032841342,swing
+3,81,82,1663032841342,1663032841359,swing
+3,82,83,1663032841359,1663032841376,swing
+3,83,84,1663032841376,1663032841392,swing
+3,84,85,1663032841392,1663032841409,swing
+3,85,86,1663032841409,1663032841426,swing
+3,86,87,1663032841426,1663032841442,swing
+3,87,88,1663032841442,1663032841458,swing
+3,88,89,1663032841458,1663032841476,swing
+3,89,90,1663032841476,1663032841492,swing
+3,90,91,1663032841492,1663032841510,swing
+3,91,92,1663032841510,1663032841526,swing
+3,92,93,1663032841526,1663032841542,swing
+3,93,94,1663032841542,1663032841559,swing
+3,94,95,1663032841559,1663032841574,swing
+3,95,96,1663032841574,1663032841592,swing
+3,96,97,1663032841592,1663032841610,swing
+3,97,98,1663032841610,1663032841626,swing
+3,98,99,1663032841626,1663032841642,swing
+3,99,100,1663032841642,1663032841659,swing
+3,100,101,1663032841659,1663032841676,swing
+3,101,102,1663032841676,1663032841693,swing
+3,102,103,1663032841693,1663032841709,swing
+3,103,104,1663032841709,1663032841726,swing
+3,104,105,1663032841726,1663032841743,swing
+3,105,106,1663032841743,1663032841759,swing
+3,106,107,1663032841759,1663032841776,swing
+3,107,108,1663032841776,1663032841793,swing
+3,108,109,1663032841793,1663032841809,swing
+3,109,110,1663032841809,1663032841826,swing
+3,110,111,1663032841826,1663032841843,swing
+3,111,112,1663032841843,1663032841859,swing
+3,112,113,1663032841859,1663032841876,swing
+3,113,114,1663032841876,1663032841892,swing
+3,114,115,1663032841892,1663032841909,swing
+3,115,116,1663032841909,1663032841926,swing
+3,116,117,1663032841926,1663032841942,swing
+3,117,118,1663032841942,1663032841959,swing
+3,118,119,1663032841959,1663032841976,swing
+3,119,120,1663032841976,1663032841992,swing
+3,120,121,1663032841992,1663032842010,swing
+3,121,122,1663032842010,1663032842026,swing
+3,122,123,1663032842026,1663032842043,swing
+3,123,124,1663032842043,1663032842059,swing
+3,124,125,1663032842059,1663032842077,swing
+3,125,126,1663032842077,1663032842093,swing
+3,126,127,1663032842093,1663032842110,swing
+3,127,128,1663032842110,1663032842126,swing
+3,128,129,1663032842126,1663032842143,swing
+3,129,130,1663032842143,1663032842160,swing
+3,130,131,1663032842160,1663032842177,swing
+3,131,132,1663032842177,1663032842193,swing
+3,132,133,1663032842193,1663032842210,swing
+3,133,134,1663032842210,1663032842227,swing
+3,134,135,1663032842227,1663032842243,swing
+3,135,136,1663032842243,1663032842260,swing
+3,136,137,1663032842260,1663032842277,swing
+3,137,138,1663032842277,1663032842294,swing
+3,138,139,1663032842294,1663032842310,swing
+3,139,140,1663032842310,1663032842327,swing
+3,140,141,1663032842327,1663032842344,swing
+3,141,142,1663032842344,1663032842360,swing
+3,142,143,1663032842360,1663032842377,swing
+3,143,144,1663032842377,1663032842393,swing
+3,144,145,1663032842393,1663032842411,swing
+3,145,146,1663032842411,1663032842427,swing
+3,146,147,1663032842427,1663032842444,swing
+3,147,148,1663032842444,1663032842460,swing
+3,148,149,1663032842460,1663032842477,swing
+3,149,150,1663032842477,1663032842494,swing
+3,150,151,1663032842494,1663032842511,swing
+3,151,152,1663032842511,1663032842527,swing
+3,152,153,1663032842527,1663032842544,swing
+3,153,154,1663032842544,1663032842561,swing
+3,154,155,1663032842561,1663032842578,swing
+3,155,156,1663032842578,1663032842594,swing
+3,156,157,1663032842594,1663032842611,swing
+3,157,158,1663032842611,1663032842628,swing
+3,158,159,1663032842628,1663032842644,swing
+3,159,160,1663032842644,1663032842661,swing
+3,160,161,1663032842661,1663032842678,swing
+3,161,162,1663032842678,1663032842694,swing
+3,162,163,1663032842694,1663032842711,swing
+3,163,164,1663032842711,1663032842728,swing
+3,164,165,1663032842728,1663032842744,swing
+3,165,166,1663032842744,1663032842761,swing
+3,166,167,1663032842761,1663032842778,swing
+3,167,168,1663032842778,1663032842794,swing
+3,168,169,1663032842794,1663032842811,swing
+3,169,170,1663032842811,1663032842828,swing
+3,170,171,1663032842828,1663032842845,swing
+3,171,172,1663032842845,1663032842862,swing
+3,172,173,1663032842862,1663032842878,swing
+3,173,174,1663032842878,1663032842895,swing
+3,174,175,1663032842895,1663032842911,swing
+3,175,176,1663032842911,1663032842928,swing
+3,176,177,1663032842928,1663032842945,swing
+3,177,178,1663032842945,1663032842962,swing
+3,178,179,1663032842962,1663032842978,swing
+3,179,180,1663032842978,1663032842995,swing
+3,180,181,1663032842995,1663032843012,swing
+3,181,182,1663032843012,1663032843028,swing
+3,182,183,1663032843028,1663032843045,swing
+3,183,184,1663032843045,1663032843062,swing
+3,184,185,1663032843062,1663032843078,swing
+3,185,186,1663032843078,1663032843095,swing
+3,186,187,1663032843095,1663032843112,swing
+3,187,188,1663032843112,1663032843128,swing
+3,188,189,1663032843128,1663032843145,swing
+3,189,190,1663032843145,1663032843162,swing
+3,190,191,1663032843162,1663032843179,swing
+3,191,192,1663032843179,1663032843195,swing
+3,192,193,1663032843195,1663032843212,swing
+3,193,194,1663032843212,1663032843228,swing
+3,194,195,1663032843228,1663032843245,swing
+3,195,196,1663032843245,1663032843262,swing
+3,196,197,1663032843262,1663032843279,swing
+3,197,198,1663032843279,1663032843296,swing
+3,198,199,1663032843296,1663032843312,swing
+3,199,200,1663032843312,1663032843329,swing
+3,200,201,1663032843329,1663032843345,swing
+3,201,202,1663032843345,1663032843362,swing
+3,202,203,1663032843362,1663032843379,swing
+3,203,204,1663032843379,1663032843396,swing
+3,204,205,1663032843396,1663032843412,swing
+3,205,206,1663032843412,1663032843429,swing
+3,206,207,1663032843429,1663032843446,swing
+3,207,208,1663032843446,1663032843462,swing
+3,208,209,1663032843462,1663032843479,swing
+3,209,210,1663032843479,1663032843496,swing
+3,210,211,1663032843496,1663032843512,swing
+3,211,212,1663032843512,1663032843529,swing
+3,212,213,1663032843529,1663032843546,swing
+3,213,214,1663032843546,1663032843563,swing
+3,214,215,1663032843563,1663032843579,swing
+3,215,216,1663032843579,1663032843596,swing
+3,216,217,1663032843596,1663032843613,swing
+3,217,218,1663032843613,1663032843630,swing
+3,218,219,1663032843630,1663032843646,swing
+3,219,220,1663032843646,1663032843663,swing
+3,220,221,1663032843663,1663032843679,swing
+3,221,222,1663032843679,1663032843696,swing
+3,222,223,1663032843696,1663032843713,swing
+3,223,224,1663032843713,1663032843729,swing
+3,224,225,1663032843729,1663032843746,swing
+3,225,226,1663032843746,1663032843763,swing
+3,226,227,1663032843763,1663032843779,swing
+3,227,228,1663032843779,1663032843796,swing
+3,228,229,1663032843796,1663032843813,swing
+3,229,230,1663032843813,1663032843830,swing
+3,230,231,1663032843830,1663032843846,swing
+3,231,232,1663032843846,1663032843863,swing
+3,232,233,1663032843863,1663032843880,swing
+3,233,234,1663032843880,1663032843897,swing
+3,234,235,1663032843897,1663032843913,swing
+3,235,236,1663032843913,1663032843930,swing
+3,236,237,1663032843930,1663032843946,swing
+3,237,238,1663032843946,1663032843963,swing
+3,238,239,1663032843963,1663032843980,swing
+3,239,240,1663032843980,1663032843996,swing
+4,0,1,1,1663032900006,swing
+4,1,2,1663032900006,1663032900023,swing
+4,2,3,1663032900023,1663032900039,swing
+4,3,4,1663032900039,1663032900056,swing
+4,4,5,1663032900056,1663032900073,swing
+4,5,6,1663032900073,1663032900090,swing
+4,6,7,1663032900090,1663032900106,swing
+4,7,8,1663032900106,1663032900123,swing
+4,8,9,1663032900123,1663032900140,swing
+4,9,10,1663032900140,1663032900156,swing
+4,10,11,1663032900156,1663032900173,swing
+4,11,12,1663032900173,1663032900190,swing
+4,12,13,1663032900190,1663032900206,swing
+4,13,14,1663032900206,1663032900223,swing
+4,14,15,1663032900223,1663032900240,swing
+4,15,16,1663032900240,1663032900256,swing
+4,16,17,1663032900256,1663032900274,swing
+4,17,18,1663032900274,1663032900290,swing
+4,18,19,1663032900290,1663032900306,swing
+4,19,20,1663032900306,1663032900323,swing
+4,20,21,1663032900323,1663032900340,swing
+4,21,22,1663032900340,1663032900357,swing
+4,22,23,1663032900357,1663032900374,swing
+4,23,24,1663032900374,1663032900390,swing
+4,24,25,1663032900390,1663032900407,swing
+4,25,26,1663032900407,1663032900423,swing
+4,26,27,1663032900423,1663032900440,swing
+4,27,28,1663032900440,1663032900457,swing
+4,28,29,1663032900457,1663032900474,swing
+4,29,30,1663032900474,1663032900491,swing
+4,30,31,1663032900491,1663032900507,swing
+4,31,32,1663032900507,1663032900524,swing
+4,32,33,1663032900524,1663032900541,swing
+4,33,34,1663032900541,1663032900557,swing
+4,34,35,1663032900557,1663032900574,swing
+4,35,36,1663032900574,1663032900591,swing
+4,36,37,1663032900591,1663032900607,swing
+4,37,38,1663032900607,1663032900624,swing
+4,38,39,1663032900624,1663032900640,swing
+4,39,40,1663032900640,1663032900657,swing
+4,40,41,1663032900657,1663032900674,swing
+4,41,42,1663032900674,1663032900691,swing
+4,42,43,1663032900691,1663032900707,swing
+4,43,44,1663032900707,1663032900724,swing
+4,44,45,1663032900724,1663032900741,swing
+4,45,46,1663032900741,1663032900758,swing
+4,46,47,1663032900758,1663032900774,swing
+4,47,48,1663032900774,1663032900791,swing
+4,48,49,1663032900791,1663032900808,swing
+4,49,50,1663032900808,1663032900825,swing
+4,50,51,1663032900825,1663032900841,swing
+4,51,52,1663032900841,1663032900858,swing
+4,52,53,1663032900858,1663032900874,swing
+4,53,54,1663032900874,1663032900891,swing
+4,54,55,1663032900891,1663032900908,swing
+4,55,56,1663032900908,1663032900925,swing
+4,56,57,1663032900925,1663032900941,swing
+4,57,58,1663032900941,1663032900958,swing
+4,58,59,1663032900958,1663032900975,swing
+4,59,60,1663032900975,1663032900991,swing
+4,60,61,1663032900991,1663032901008,swing
+4,61,62,1663032901008,1663032901025,swing
+4,62,63,1663032901025,1663032901042,swing
+4,63,64,1663032901042,1663032901058,swing
+4,64,65,1663032901058,1663032901075,swing
+4,65,66,1663032901075,1663032901092,swing
+4,66,67,1663032901092,1663032901109,swing
+4,67,68,1663032901109,1663032901125,swing
+4,68,69,1663032901125,1663032901142,swing
+4,69,70,1663032901142,1663032901160,swing
+4,70,71,1663032901160,1663032901175,swing
+4,71,72,1663032901175,1663032901192,swing
+4,72,73,1663032901192,1663032901209,swing
+4,73,74,1663032901209,1663032901225,swing
+4,74,75,1663032901225,1663032901242,swing
+4,75,76,1663032901242,1663032901259,swing
+4,76,77,1663032901259,1663032901275,swing
+4,77,78,1663032901275,1663032901292,swing
+4,78,79,1663032901292,1663032901309,swing
+4,79,80,1663032901309,1663032901326,swing
+4,80,81,1663032901326,1663032901342,swing
+4,81,82,1663032901342,1663032901359,swing
+4,82,83,1663032901359,1663032901376,swing
+4,83,84,1663032901376,1663032901392,swing
+4,84,85,1663032901392,1663032901409,swing
+4,85,86,1663032901409,1663032901425,swing
+4,86,87,1663032901425,1663032901442,swing
+4,87,88,1663032901442,1663032901459,swing
+4,88,89,1663032901459,1663032901476,swing
+4,89,90,1663032901476,1663032901492,swing
+4,90,91,1663032901492,1663032901509,swing
+4,91,92,1663032901509,1663032901526,swing
+4,92,93,1663032901526,1663032901542,swing
+4,93,94,1663032901542,1663032901559,swing
+4,94,95,1663032901559,1663032901576,swing
+4,95,96,1663032901576,1663032901592,swing
+4,96,97,1663032901592,1663032901609,swing
+4,97,98,1663032901609,1663032901626,swing
+4,98,99,1663032901626,1663032901643,swing
+4,99,100,1663032901643,1663032901659,swing
+4,100,101,1663032901659,1663032901676,swing
+4,101,102,1663032901676,1663032901693,swing
+4,102,103,1663032901693,1663032901709,swing
+4,103,104,1663032901709,1663032901726,swing
+4,104,105,1663032901726,1663032901743,swing
+4,105,106,1663032901743,1663032901760,swing
+4,106,107,1663032901760,1663032901776,swing
+4,107,108,1663032901776,1663032901793,swing
+4,108,109,1663032901793,1663032901809,swing
+4,109,110,1663032901809,1663032901827,swing
+4,110,111,1663032901827,1663032901843,swing
+4,111,112,1663032901843,1663032901860,swing
+4,112,113,1663032901860,1663032901876,swing
+4,113,114,1663032901876,1663032901893,swing
+4,114,115,1663032901893,1663032901910,swing
+4,115,116,1663032901910,1663032901927,swing
+4,116,117,1663032901927,1663032901943,swing
+4,117,118,1663032901943,1663032901961,swing
+4,118,119,1663032901961,1663032901989,swing
+4,119,120,1663032901989,1663032902010,swing
+4,120,121,1663032902010,1663032902027,swing
+4,121,122,1663032902027,1663032902043,swing
+4,122,123,1663032902043,1663032902060,swing
+4,123,124,1663032902060,1663032902077,swing
+4,124,125,1663032902077,1663032902094,swing
+4,125,126,1663032902094,1663032902110,swing
+4,126,127,1663032902110,1663032902127,swing
+4,127,128,1663032902127,1663032902143,swing
+4,128,129,1663032902143,1663032902160,swing
+4,129,130,1663032902160,1663032902177,swing
+4,130,131,1663032902177,1663032902194,swing
+4,131,132,1663032902194,1663032902210,swing
+4,132,133,1663032902210,1663032902227,swing
+4,133,134,1663032902227,1663032902244,swing
+4,134,135,1663032902244,1663032902261,swing
+4,135,136,1663032902261,1663032902277,swing
+4,136,137,1663032902277,1663032902294,swing
+4,137,138,1663032902294,1663032902310,swing
+4,138,139,1663032902310,1663032902327,swing
+4,139,140,1663032902327,1663032902344,swing
+4,140,141,1663032902344,1663032902361,swing
+4,141,142,1663032902361,1663032902377,swing
+4,142,143,1663032902377,1663032902394,swing
+4,143,144,1663032902394,1663032902411,swing
+4,144,145,1663032902411,1663032902428,swing
+4,145,146,1663032902428,1663032902444,swing
+4,146,147,1663032902444,1663032902461,swing
+4,147,148,1663032902461,1663032902478,swing
+4,148,149,1663032902478,1663032902494,swing
+4,149,150,1663032902494,1663032902511,swing
+4,150,151,1663032902511,1663032902528,swing
+4,151,152,1663032902528,1663032902545,swing
+4,152,153,1663032902545,1663032902562,swing
+4,153,154,1663032902562,1663032902578,swing
+4,154,155,1663032902578,1663032902595,swing
+4,155,156,1663032902595,1663032902611,swing
+4,156,157,1663032902611,1663032902628,swing
+4,157,158,1663032902628,1663032902645,swing
+4,158,159,1663032902645,1663032902662,swing
+4,159,160,1663032902662,1663032902678,swing
+4,160,161,1663032902678,1663032902695,swing
+4,161,162,1663032902695,1663032902712,swing
+4,162,163,1663032902712,1663032902729,swing
+4,163,164,1663032902729,1663032902745,swing
+4,164,165,1663032902745,1663032902762,swing
+4,165,166,1663032902762,1663032902778,swing
+4,166,167,1663032902778,1663032902795,swing
+4,167,168,1663032902795,1663032902812,swing
+4,168,169,1663032902812,1663032902829,swing
+4,169,170,1663032902829,1663032902845,swing
+4,170,171,1663032902845,1663032902862,swing
+4,171,172,1663032902862,1663032902879,swing
+4,172,173,1663032902879,1663032902895,swing
+4,173,174,1663032902895,1663032902912,swing
+4,174,175,1663032902912,1663032902929,swing
+4,175,176,1663032902929,1663032902945,swing
+4,176,177,1663032902945,1663032902962,swing
+4,177,178,1663032902962,1663032902979,swing
+4,178,179,1663032902979,1663032902996,swing
+4,179,180,1663032902996,1663032903012,swing
+4,180,181,1663032903012,1663032903029,swing
+4,181,182,1663032903029,1663032903045,swing
+4,182,183,1663032903045,1663032903062,swing
+4,183,184,1663032903062,1663032903079,swing
+4,184,185,1663032903079,1663032903096,swing
+4,185,186,1663032903096,1663032903112,swing
+4,186,187,1663032903112,1663032903129,swing
+4,187,188,1663032903129,1663032903146,swing
+4,188,189,1663032903146,1663032903163,swing
+4,189,190,1663032903163,1663032903179,swing
+4,190,191,1663032903179,1663032903196,swing
+4,191,192,1663032903196,1663032903212,swing
+4,192,193,1663032903212,1663032903229,swing
+4,193,194,1663032903229,1663032903246,swing
+4,194,195,1663032903246,1663032903263,swing
+4,195,196,1663032903263,1663032903279,swing
+4,196,197,1663032903279,1663032903296,swing
+4,197,198,1663032903296,1663032903313,swing
+4,198,199,1663032903313,1663032903330,swing
+4,199,200,1663032903330,1663032903346,swing
+4,200,201,1663032903346,1663032903363,swing
+4,201,202,1663032903363,1663032903380,swing
+4,202,203,1663032903380,1663032903397,swing
+4,203,204,1663032903397,1663032903413,swing
+4,204,205,1663032903413,1663032903430,swing
+4,205,206,1663032903430,1663032903447,swing
+4,206,207,1663032903447,1663032903464,swing
+4,207,208,1663032903464,1663032903480,swing
+4,208,209,1663032903480,1663032903497,swing
+4,209,210,1663032903497,1663032903513,swing
+4,210,211,1663032903513,1663032903530,swing
+4,211,212,1663032903530,1663032903547,swing
+4,212,213,1663032903547,1663032903564,swing
+4,213,214,1663032903564,1663032903580,swing
+4,214,215,1663032903580,1663032903597,swing
+4,215,216,1663032903597,1663032903613,swing
+4,216,217,1663032903613,1663032903630,swing
+4,217,218,1663032903630,1663032903647,swing
+4,218,219,1663032903647,1663032903664,swing
+4,219,220,1663032903664,1663032903681,swing
+4,220,221,1663032903681,1663032903697,swing
+4,221,222,1663032903697,1663032903714,swing
+4,222,223,1663032903714,1663032903732,swing
+4,223,224,1663032903732,1663032903748,swing
+4,224,225,1663032903748,1663032903765,swing
+4,225,226,1663032903765,1663032903781,swing
+4,226,227,1663032903781,1663032903798,swing
+4,227,228,1663032903798,1663032903815,swing
+4,228,229,1663032903815,1663032903831,swing
+4,229,230,1663032903831,1663032903848,swing
+4,230,231,1663032903848,1663032903869,swing
+4,231,232,1663032903869,1663032903884,swing
+4,232,233,1663032903884,1663032903898,swing
+4,233,234,1663032903898,1663032903914,swing
+4,234,235,1663032903914,1663032903931,swing
+4,235,236,1663032903931,1663032903948,swing
+4,236,237,1663032903948,1663032903965,swing
+4,237,238,1663032903965,1663032903981,swing
+4,238,239,1663032903981,1663032903998,swing
+5,0,1,1,1663032960007,swing
+5,1,2,1663032960007,1663032960023,swing
+5,2,3,1663032960023,1663032960040,swing
+5,3,4,1663032960040,1663032960057,swing
+5,4,5,1663032960057,1663032960074,swing
+5,5,6,1663032960074,1663032960090,swing
+5,6,7,1663032960090,1663032960107,swing
+5,7,8,1663032960107,1663032960124,swing
+5,8,9,1663032960124,1663032960141,swing
+5,9,10,1663032960141,1663032960157,swing
+5,10,11,1663032960157,1663032960174,swing
+5,11,12,1663032960174,1663032960191,swing
+5,12,13,1663032960191,1663032960208,swing
+5,13,14,1663032960208,1663032960224,swing
+5,14,15,1663032960224,1663032960241,swing
+5,15,16,1663032960241,1663032960258,swing
+5,16,17,1663032960258,1663032960274,swing
+5,17,18,1663032960274,1663032960291,swing
+5,18,19,1663032960291,1663032960308,swing
+5,19,20,1663032960308,1663032960324,swing
+5,20,21,1663032960324,1663032960341,swing
+5,21,22,1663032960341,1663032960358,swing
+5,22,23,1663032960358,1663032960375,swing
+5,23,24,1663032960375,1663032960391,swing
+5,24,25,1663032960391,1663032960408,swing
+5,25,26,1663032960408,1663032960424,swing
+5,26,27,1663032960424,1663032960441,swing
+5,27,28,1663032960441,1663032960458,swing
+5,28,29,1663032960458,1663032960474,swing
+5,29,30,1663032960474,1663032960491,swing
+5,30,31,1663032960491,1663032960508,swing
+5,31,32,1663032960508,1663032960525,swing
+5,32,33,1663032960525,1663032960541,swing
+5,33,34,1663032960541,1663032960558,swing
+5,34,35,1663032960558,1663032960575,swing
+5,35,36,1663032960575,1663032960592,swing
+5,36,37,1663032960592,1663032960608,swing
+5,37,38,1663032960608,1663032960625,swing
+5,38,39,1663032960625,1663032960641,swing
+5,39,40,1663032960641,1663032960659,swing
+5,40,41,1663032960659,1663032960675,swing
+5,41,42,1663032960675,1663032960692,swing
+5,42,43,1663032960692,1663032960708,swing
+5,43,44,1663032960708,1663032960725,swing
+5,44,45,1663032960725,1663032960742,swing
+5,45,46,1663032960742,1663032960758,swing
+5,46,47,1663032960758,1663032960775,swing
+5,47,48,1663032960775,1663032960792,swing
+5,48,49,1663032960792,1663032960808,swing
+5,49,50,1663032960808,1663032960825,swing
+5,50,51,1663032960825,1663032960842,swing
+5,51,52,1663032960842,1663032960859,swing
+5,52,53,1663032960859,1663032960875,swing
+5,53,54,1663032960875,1663032960892,swing
+5,54,55,1663032960892,1663032960909,swing
+5,55,56,1663032960909,1663032960926,swing
+5,56,57,1663032960926,1663032960942,swing
+5,57,58,1663032960942,1663032960959,swing
+5,58,59,1663032960959,1663032960975,swing
+5,59,60,1663032960975,1663032960992,swing
+5,60,61,1663032960992,1663032961009,swing
+5,61,62,1663032961009,1663032961026,swing
+5,62,63,1663032961026,1663032961042,swing
+5,63,64,1663032961042,1663032961059,swing
+5,64,65,1663032961059,1663032961076,swing
+5,65,66,1663032961076,1663032961092,swing
+5,66,67,1663032961092,1663032961109,swing
+5,67,68,1663032961109,1663032961126,swing
+5,68,69,1663032961126,1663032961142,swing
+5,69,70,1663032961142,1663032961159,swing
+5,70,71,1663032961159,1663032961176,swing
+5,71,72,1663032961176,1663032961193,swing
+5,72,73,1663032961193,1663032961209,swing
+5,73,74,1663032961209,1663032961226,swing
+5,74,75,1663032961226,1663032961243,swing
+5,75,76,1663032961243,1663032961260,swing
+5,76,77,1663032961260,1663032961276,swing
+5,77,78,1663032961276,1663032961293,swing
+5,78,79,1663032961293,1663032961309,swing
+5,79,80,1663032961309,1663032961326,swing
+5,80,81,1663032961326,1663032961343,swing
+5,81,82,1663032961343,1663032961359,swing
+5,82,83,1663032961359,1663032961376,swing
+5,83,84,1663032961376,1663032961393,swing
+5,84,85,1663032961393,1663032961410,swing
+5,85,86,1663032961410,1663032961426,swing
+5,86,87,1663032961426,1663032961443,swing
+5,87,88,1663032961443,1663032961460,swing
+5,88,89,1663032961460,1663032961476,swing
+5,89,90,1663032961476,1663032961493,swing
+5,90,91,1663032961493,1663032961510,swing
+5,91,92,1663032961510,1663032961527,swing
+5,92,93,1663032961527,1663032961543,swing
+5,93,94,1663032961543,1663032961560,swing
+5,94,95,1663032961560,1663032961577,swing
+5,95,96,1663032961577,1663032961594,swing
+5,96,97,1663032961594,1663032961610,swing
+5,97,98,1663032961610,1663032961627,swing
+5,98,99,1663032961627,1663032961643,swing
+5,99,100,1663032961643,1663032961661,swing
+5,100,101,1663032961661,1663032961677,swing
+5,101,102,1663032961677,1663032961693,swing
+5,102,103,1663032961693,1663032961710,swing
+5,103,104,1663032961710,1663032961728,swing
+5,104,105,1663032961728,1663032961744,swing
+5,105,106,1663032961744,1663032961760,swing
+5,106,107,1663032961760,1663032961777,swing
+5,107,108,1663032961777,1663032961794,swing
+5,108,109,1663032961794,1663032961811,swing
+5,109,110,1663032961811,1663032961827,swing
+5,110,111,1663032961827,1663032961843,swing
+5,111,112,1663032961843,1663032961860,swing
+5,112,113,1663032961860,1663032961877,swing
+5,113,114,1663032961877,1663032961894,swing
+5,114,115,1663032961894,1663032961911,swing
+5,115,116,1663032961911,1663032961928,swing
+5,116,117,1663032961928,1663032961944,swing
+5,117,118,1663032961944,1663032961961,swing
+5,118,119,1663032961961,1663032961977,swing
+5,119,120,1663032961977,1663032961994,swing
+5,120,121,1663032961994,1663032962011,swing
+5,121,122,1663032962011,1663032962028,swing
+5,122,123,1663032962028,1663032962044,swing
+5,123,124,1663032962044,1663032962061,swing
+5,124,125,1663032962061,1663032962078,swing
+5,125,126,1663032962078,1663032962095,swing
+5,126,127,1663032962095,1663032962111,swing
+5,127,128,1663032962111,1663032962128,swing
+5,128,129,1663032962128,1663032962144,swing
+5,129,130,1663032962144,1663032962161,swing
+5,130,131,1663032962161,1663032962178,swing
+5,131,132,1663032962178,1663032962195,swing
+5,132,133,1663032962195,1663032962211,swing
+5,133,134,1663032962211,1663032962228,swing
+5,134,135,1663032962228,1663032962245,swing
+5,135,136,1663032962245,1663032962262,swing
+5,136,137,1663032962262,1663032962278,swing
+5,137,138,1663032962278,1663032962295,swing
+5,138,139,1663032962295,1663032962311,swing
+5,139,140,1663032962311,1663032962328,swing
+5,140,141,1663032962328,1663032962345,swing
+5,141,142,1663032962345,1663032962361,swing
+5,142,143,1663032962361,1663032962378,swing
+5,143,144,1663032962378,1663032962395,swing
+5,144,145,1663032962395,1663032962411,swing
+5,145,146,1663032962411,1663032962428,swing
+5,146,147,1663032962428,1663032962445,swing
+5,147,148,1663032962445,1663032962462,swing
+5,148,149,1663032962462,1663032962478,swing
+5,149,150,1663032962478,1663032962495,swing
+5,150,151,1663032962495,1663032962511,swing
+5,151,152,1663032962511,1663032962528,swing
+5,152,153,1663032962528,1663032962545,swing
+5,153,154,1663032962545,1663032962562,swing
+5,154,155,1663032962562,1663032962578,swing
+5,155,156,1663032962578,1663032962595,swing
+5,156,157,1663032962595,1663032962612,swing
+5,157,158,1663032962612,1663032962628,swing
+5,158,159,1663032962628,1663032962645,swing
+5,159,160,1663032962645,1663032962662,swing
+5,160,161,1663032962662,1663032962679,swing
+5,161,162,1663032962679,1663032962695,swing
+5,162,163,1663032962695,1663032962712,swing
+5,163,164,1663032962712,1663032962728,swing
+5,164,165,1663032962728,1663032962745,swing
+5,165,166,1663032962745,1663032962762,swing
+5,166,167,1663032962762,1663032962779,swing
+5,167,168,1663032962779,1663032962795,swing
+5,168,169,1663032962795,1663032962812,swing
+5,169,170,1663032962812,1663032962829,swing
+5,170,171,1663032962829,1663032962845,swing
+5,171,172,1663032962845,1663032962862,swing
+5,172,173,1663032962862,1663032962879,swing
+5,173,174,1663032962879,1663032962896,swing
+5,174,175,1663032962896,1663032962912,swing
+5,175,176,1663032962912,1663032962929,swing
+5,176,177,1663032962929,1663032962946,swing
+5,177,178,1663032962946,1663032962962,swing
+5,178,179,1663032962962,1663032962979,swing
+5,179,180,1663032962979,1663032962996,swing
+5,180,181,1663032962996,1663032963012,swing
+5,181,182,1663032963012,1663032963029,swing
+5,182,183,1663032963029,1663032963046,swing
+5,183,184,1663032963046,1663032963063,swing
+5,184,185,1663032963063,1663032963079,swing
+5,185,186,1663032963079,1663032963096,swing
+5,186,187,1663032963096,1663032963113,swing
+5,187,188,1663032963113,1663032963130,swing
+5,188,189,1663032963130,1663032963146,swing
+5,189,190,1663032963146,1663032963163,swing
+5,190,191,1663032963163,1663032963180,swing
+5,191,192,1663032963180,1663032963197,swing
+5,192,193,1663032963197,1663032963212,swing
+5,193,194,1663032963212,1663032963230,swing
+5,194,195,1663032963230,1663032963246,swing
+5,195,196,1663032963246,1663032963263,swing
+5,196,197,1663032963263,1663032963280,swing
+5,197,198,1663032963280,1663032963297,swing
+5,198,199,1663032963297,1663032963313,swing
+5,199,200,1663032963313,1663032963330,swing
+5,200,201,1663032963330,1663032963347,swing
+5,201,202,1663032963347,1663032963364,swing
+5,202,203,1663032963364,1663032963380,swing
+5,203,204,1663032963380,1663032963397,swing
+5,204,205,1663032963397,1663032963413,swing
+5,205,206,1663032963413,1663032963430,swing
+5,206,207,1663032963430,1663032963447,swing
+5,207,208,1663032963447,1663032963464,swing
+5,208,209,1663032963464,1663032963480,swing
+5,209,210,1663032963480,1663032963497,swing
+5,210,211,1663032963497,1663032963514,swing
+5,211,212,1663032963514,1663032963530,swing
+5,212,213,1663032963530,1663032963547,swing
+5,213,214,1663032963547,1663032963564,swing
+5,214,215,1663032963564,1663032963580,swing
+5,215,216,1663032963580,1663032963597,swing
+5,216,217,1663032963597,1663032963614,swing
+5,217,218,1663032963614,1663032963631,swing
+5,218,219,1663032963631,1663032963647,swing
+5,219,220,1663032963647,1663032963664,swing
+5,220,221,1663032963664,1663032963681,swing
+5,221,222,1663032963681,1663032963698,swing
+5,222,223,1663032963698,1663032963714,swing
+5,223,224,1663032963714,1663032963731,swing
+5,224,225,1663032963731,1663032963747,swing
+5,225,226,1663032963747,1663032963764,swing
+5,226,227,1663032963764,1663032963781,swing
+5,227,228,1663032963781,1663032963797,swing
+5,228,229,1663032963797,1663032963813,swing
+5,229,230,1663032963813,1663032963831,swing
+5,230,231,1663032963831,1663032963847,swing
+5,231,232,1663032963847,1663032963865,swing
+5,232,233,1663032963865,1663032963881,swing
+5,233,234,1663032963881,1663032963898,swing
+5,234,235,1663032963898,1663032963914,swing
+5,235,236,1663032963914,1663032963931,swing
+5,236,237,1663032963931,1663032963948,swing
+5,237,238,1663032963948,1663032963965,swing
+5,238,239,1663032963965,1663032963981,swing
+5,239,240,1663032963981,1663032963998,swing
+6,0,1,1,1663033020007,swing
+6,1,2,1663033020007,1663033020024,swing
+6,2,3,1663033020024,1663033020041,swing
+6,3,4,1663033020041,1663033020058,swing
+6,4,5,1663033020058,1663033020074,swing
+6,5,6,1663033020074,1663033020091,swing
+6,6,7,1663033020091,1663033020108,swing
+6,7,8,1663033020108,1663033020124,swing
+6,8,9,1663033020124,1663033020141,swing
+6,9,10,1663033020141,1663033020157,swing
+6,10,11,1663033020157,1663033020174,swing
+6,11,12,1663033020174,1663033020191,swing
+6,12,13,1663033020191,1663033020208,swing
+6,13,14,1663033020208,1663033020225,swing
+6,14,15,1663033020225,1663033020241,swing
+6,15,16,1663033020241,1663033020258,swing
+6,16,17,1663033020258,1663033020275,swing
+6,17,18,1663033020275,1663033020292,swing
+6,18,19,1663033020292,1663033020308,swing
+6,19,20,1663033020308,1663033020325,swing
+6,20,21,1663033020325,1663033020341,swing
+6,21,22,1663033020341,1663033020358,swing
+6,22,23,1663033020358,1663033020375,swing
+6,23,24,1663033020375,1663033020391,swing
+6,24,25,1663033020391,1663033020409,swing
+6,25,26,1663033020409,1663033020425,swing
+6,26,27,1663033020425,1663033020442,swing
+6,27,28,1663033020442,1663033020459,swing
+6,28,29,1663033020459,1663033020475,swing
+6,29,30,1663033020475,1663033020492,swing
+6,30,31,1663033020492,1663033020509,swing
+6,31,32,1663033020509,1663033020525,swing
+6,32,33,1663033020525,1663033020542,swing
+6,33,34,1663033020542,1663033020559,swing
+6,34,35,1663033020559,1663033020576,swing
+6,35,36,1663033020576,1663033020593,swing
+6,36,37,1663033020593,1663033020609,swing
+6,37,38,1663033020609,1663033020626,swing
+6,38,39,1663033020626,1663033020643,swing
+6,39,40,1663033020643,1663033020660,swing
+6,40,41,1663033020660,1663033020676,swing
+6,41,42,1663033020676,1663033020693,swing
+6,42,43,1663033020693,1663033020709,swing
+6,43,44,1663033020709,1663033020726,swing
+6,44,45,1663033020726,1663033020743,swing
+6,45,46,1663033020743,1663033020760,swing
+6,46,47,1663033020760,1663033020776,swing
+6,47,48,1663033020776,1663033020793,swing
+6,48,49,1663033020793,1663033020809,swing
+6,49,50,1663033020809,1663033020827,swing
+6,50,51,1663033020827,1663033020843,swing
+6,51,52,1663033020843,1663033020860,swing
+6,52,53,1663033020860,1663033020877,swing
+6,53,54,1663033020877,1663033020893,swing
+6,54,55,1663033020893,1663033020910,swing
+6,55,56,1663033020910,1663033020927,swing
+6,56,57,1663033020927,1663033020944,swing
+6,57,58,1663033020944,1663033020960,swing
+6,58,59,1663033020960,1663033020977,swing
+6,59,60,1663033020977,1663033020994,swing
+6,60,61,1663033020994,1663033021010,swing
+6,61,62,1663033021010,1663033021027,swing
+6,62,63,1663033021027,1663033021043,swing
+6,63,64,1663033021043,1663033021060,swing
+6,64,65,1663033021060,1663033021077,swing
+6,65,66,1663033021077,1663033021094,swing
+6,66,67,1663033021094,1663033021111,swing
+6,67,68,1663033021111,1663033021127,swing
+6,68,69,1663033021127,1663033021144,swing
+6,69,70,1663033021144,1663033021160,swing
+6,70,71,1663033021160,1663033021177,swing
+6,71,72,1663033021177,1663033021194,swing
+6,72,73,1663033021194,1663033021210,swing
+6,73,74,1663033021210,1663033021227,swing
+6,74,75,1663033021227,1663033021244,swing
+6,75,76,1663033021244,1663033021261,swing
+6,76,77,1663033021261,1663033021277,swing
+6,77,78,1663033021277,1663033021294,swing
+6,78,79,1663033021294,1663033021310,swing
+6,79,80,1663033021310,1663033021327,swing
+6,80,81,1663033021327,1663033021344,swing
+6,81,82,1663033021344,1663033021361,swing
+6,82,83,1663033021361,1663033021377,swing
+6,83,84,1663033021377,1663033021394,swing
+6,84,85,1663033021394,1663033021410,swing
+6,85,86,1663033021410,1663033021427,swing
+6,86,87,1663033021427,1663033021444,swing
+6,87,88,1663033021444,1663033021461,swing
+6,88,89,1663033021461,1663033021477,swing
+6,89,90,1663033021477,1663033021494,swing
+6,90,91,1663033021494,1663033021511,swing
+6,91,92,1663033021511,1663033021527,swing
+6,92,93,1663033021527,1663033021544,swing
+6,93,94,1663033021544,1663033021561,swing
+6,94,95,1663033021561,1663033021578,swing
+6,95,96,1663033021578,1663033021595,swing
+6,96,97,1663033021595,1663033021611,swing
+6,97,98,1663033021611,1663033021628,swing
+6,98,99,1663033021628,1663033021644,swing
+6,99,100,1663033021644,1663033021661,swing
+6,100,101,1663033021661,1663033021678,swing
+6,101,102,1663033021678,1663033021695,swing
+6,102,103,1663033021695,1663033021711,swing
+6,103,104,1663033021711,1663033021728,swing
+6,104,105,1663033021728,1663033021745,swing
+6,105,106,1663033021745,1663033021763,swing
+6,106,107,1663033021763,1663033021778,swing
+6,107,108,1663033021778,1663033021795,swing
+6,108,109,1663033021795,1663033021812,swing
+6,109,110,1663033021812,1663033021828,swing
+6,110,111,1663033021828,1663033021844,swing
+6,111,112,1663033021844,1663033021862,swing
+6,112,113,1663033021862,1663033021878,swing
+6,113,114,1663033021878,1663033021895,swing
+6,114,115,1663033021895,1663033021911,swing
+6,115,116,1663033021911,1663033021928,swing
+6,116,117,1663033021928,1663033021945,swing
+6,117,118,1663033021945,1663033021962,swing
+6,118,119,1663033021962,1663033021978,swing
+6,119,120,1663033021978,1663033021995,swing
+6,120,121,1663033021995,1663033022011,swing
+6,121,122,1663033022011,1663033022028,swing
+6,122,123,1663033022028,1663033022045,swing
+6,123,124,1663033022045,1663033022062,swing
+6,124,125,1663033022062,1663033022079,swing
+6,125,126,1663033022079,1663033022095,swing
+6,126,127,1663033022095,1663033022112,swing
+6,127,128,1663033022112,1663033022128,swing
+6,128,129,1663033022128,1663033022145,swing
+6,129,130,1663033022145,1663033022162,swing
+6,130,131,1663033022162,1663033022178,swing
+6,131,132,1663033022178,1663033022195,swing
+6,132,133,1663033022195,1663033022212,swing
+6,133,134,1663033022212,1663033022229,swing
+6,134,135,1663033022229,1663033022245,swing
+6,135,136,1663033022245,1663033022262,swing
+6,136,137,1663033022262,1663033022279,swing
+6,137,138,1663033022279,1663033022295,swing
+6,138,139,1663033022295,1663033022312,swing
+6,139,140,1663033022312,1663033022329,swing
+6,140,141,1663033022329,1663033022346,swing
+6,141,142,1663033022346,1663033022362,swing
+6,142,143,1663033022362,1663033022379,swing
+6,143,144,1663033022379,1663033022396,swing
+6,144,145,1663033022396,1663033022412,swing
+6,145,146,1663033022412,1663033022429,swing
+6,146,147,1663033022429,1663033022446,swing
+6,147,148,1663033022446,1663033022463,swing
+6,148,149,1663033022463,1663033022479,swing
+6,149,150,1663033022479,1663033022496,swing
+6,150,151,1663033022496,1663033022513,swing
+6,151,152,1663033022513,1663033022529,swing
+6,152,153,1663033022529,1663033022546,swing
+6,153,154,1663033022546,1663033022563,swing
+6,154,155,1663033022563,1663033022579,swing
+6,155,156,1663033022579,1663033022596,swing
+6,156,157,1663033022596,1663033022613,swing
+6,157,158,1663033022613,1663033022629,swing
+6,158,159,1663033022629,1663033022646,swing
+6,159,160,1663033022646,1663033022663,swing
+6,160,161,1663033022663,1663033022680,swing
+6,161,162,1663033022680,1663033022696,swing
+6,162,163,1663033022696,1663033022713,swing
+6,163,164,1663033022713,1663033022729,swing
+6,164,165,1663033022729,1663033022746,swing
+6,165,166,1663033022746,1663033022763,swing
+6,166,167,1663033022763,1663033022780,swing
+6,167,168,1663033022780,1663033022796,swing
+6,168,169,1663033022796,1663033022813,swing
+6,169,170,1663033022813,1663033022829,swing
+6,170,171,1663033022829,1663033022846,swing
+6,171,172,1663033022846,1663033022863,swing
+6,172,173,1663033022863,1663033022880,swing
+6,173,174,1663033022880,1663033022896,swing
+6,174,175,1663033022896,1663033022913,swing
+6,175,176,1663033022913,1663033022930,swing
+6,176,177,1663033022930,1663033022947,swing
+6,177,178,1663033022947,1663033022963,swing
+6,178,179,1663033022963,1663033022980,swing
+6,179,180,1663033022980,1663033022997,swing
+6,180,181,1663033022997,1663033023013,swing
+6,181,182,1663033023013,1663033023030,swing
+6,182,183,1663033023030,1663033023047,swing
+6,183,184,1663033023047,1663033023063,swing
+6,184,185,1663033023063,1663033023080,swing
+6,185,186,1663033023080,1663033023097,swing
+6,186,187,1663033023097,1663033023114,swing
+6,187,188,1663033023114,1663033023130,swing
+6,188,189,1663033023130,1663033023147,swing
+6,189,190,1663033023147,1663033023163,swing
+6,190,191,1663033023163,1663033023180,swing
+6,191,192,1663033023180,1663033023197,swing
+6,192,193,1663033023197,1663033023214,swing
+6,193,194,1663033023214,1663033023230,swing
+6,194,195,1663033023230,1663033023247,swing
+6,195,196,1663033023247,1663033023264,swing
+6,196,197,1663033023264,1663033023280,swing
+6,197,198,1663033023280,1663033023297,swing
+6,198,199,1663033023297,1663033023314,swing
+6,199,200,1663033023314,1663033023331,swing
+6,200,201,1663033023331,1663033023347,swing
+6,201,202,1663033023347,1663033023364,swing
+6,202,203,1663033023364,1663033023380,swing
+6,203,204,1663033023380,1663033023397,swing
+6,204,205,1663033023397,1663033023414,swing
+6,205,206,1663033023414,1663033023430,swing
+6,206,207,1663033023430,1663033023447,swing
+6,207,208,1663033023447,1663033023464,swing
+6,208,209,1663033023464,1663033023481,swing
+6,209,210,1663033023481,1663033023497,swing
+6,210,211,1663033023497,1663033023515,swing
+6,211,212,1663033023515,1663033023531,swing
+6,212,213,1663033023531,1663033023548,swing
+6,213,214,1663033023548,1663033023564,swing
+6,214,215,1663033023564,1663033023581,swing
+6,215,216,1663033023581,1663033023598,swing
+6,216,217,1663033023598,1663033023615,swing
+6,217,218,1663033023615,1663033023631,swing
+6,218,219,1663033023631,1663033023648,swing
+6,219,220,1663033023648,1663033023664,swing
+6,220,221,1663033023664,1663033023681,swing
+6,221,222,1663033023681,1663033023698,swing
+6,222,223,1663033023698,1663033023715,swing
+6,223,224,1663033023715,1663033023731,swing
+6,224,225,1663033023731,1663033023748,swing
+6,225,226,1663033023748,1663033023764,swing
+6,226,227,1663033023764,1663033023782,swing
+6,227,228,1663033023782,1663033023798,swing
+6,228,229,1663033023798,1663033023815,swing
+6,229,230,1663033023815,1663033023831,swing
+6,230,231,1663033023831,1663033023848,swing
+6,231,232,1663033023848,1663033023865,swing
+6,232,233,1663033023865,1663033023882,swing
+6,233,234,1663033023882,1663033023898,swing
+6,234,235,1663033023898,1663033023915,swing
+6,235,236,1663033023915,1663033023932,swing
+6,236,237,1663033023932,1663033023949,swing
+6,237,238,1663033023949,1663033023965,swing
+6,238,239,1663033023965,1663033023982,swing
+6,239,240,1663033023982,1663033023998,swing
+7,0,1,1,1663032661072,swing
+7,1,2,1663032661072,1663032661094,swing
+7,2,3,1663032661094,1663032661116,swing
+7,3,4,1663032661116,1663032661157,swing
+7,4,5,1663032661157,1663032661175,swing
+7,5,6,1663032661175,1663032661197,swing
+7,6,7,1663032661197,1663032661219,swing
+7,7,8,1663032661219,1663032661240,swing
+7,8,9,1663032661240,1663032661258,swing
+7,9,10,1663032661258,1663032661274,swing
+7,10,11,1663032661274,1663032661291,swing
+7,11,12,1663032661291,1663032661308,swing
+7,12,13,1663032661308,1663032661323,swing
+7,13,14,1663032661323,1663032661341,swing
+7,14,15,1663032661341,1663032661357,swing
+7,15,16,1663032661357,1663032661375,swing
+7,16,17,1663032661375,1663032661391,swing
+7,17,18,1663032661391,1663032661409,swing
+7,18,19,1663032661409,1663032661426,swing
+7,19,20,1663032661426,1663032661441,swing
+7,20,21,1663032661441,1663032661458,swing
+7,21,22,1663032661458,1663032661474,swing
+7,22,23,1663032661474,1663032661490,swing
+7,23,24,1663032661490,1663032661507,swing
+7,24,25,1663032661507,1663032661524,swing
+7,25,26,1663032661524,1663032661541,swing
+7,26,27,1663032661541,1663032661557,swing
+7,27,28,1663032661557,1663032661574,swing
+7,28,29,1663032661574,1663032661591,swing
+7,29,30,1663032661591,1663032661607,swing
+7,30,31,1663032661607,1663032661624,swing
+7,31,32,1663032661624,1663032661641,swing
+7,32,33,1663032661641,1663032661658,swing
+7,33,34,1663032661658,1663032661674,swing
+7,34,35,1663032661674,1663032661691,swing
+7,35,36,1663032661691,1663032661709,swing
+7,36,37,1663032661709,1663032661724,swing
+7,37,38,1663032661724,1663032661742,swing
+7,38,39,1663032661742,1663032661758,swing
+7,39,40,1663032661758,1663032661776,swing
+7,40,41,1663032661776,1663032661791,swing
+7,41,42,1663032661791,1663032661808,swing
+7,42,43,1663032661808,1663032661825,swing
+7,43,44,1663032661825,1663032661842,swing
+7,44,45,1663032661842,1663032661858,swing
+7,45,46,1663032661858,1663032661875,swing
+7,46,47,1663032661875,1663032661891,swing
+7,47,48,1663032661891,1663032661909,swing
+7,48,49,1663032661909,1663032661925,swing
+7,49,50,1663032661925,1663032661942,swing
+7,50,51,1663032661942,1663032661959,swing
+7,51,52,1663032661959,1663032661975,swing
+7,52,53,1663032661975,1663032661992,swing
+7,53,54,1663032661992,1663032662008,swing
+7,54,55,1663032662008,1663032662026,swing
+7,55,56,1663032662026,1663032662042,swing
+7,56,57,1663032662042,1663032662058,swing
+7,57,58,1663032662058,1663032662076,swing
+7,58,59,1663032662076,1663032662093,swing
+7,59,60,1663032662093,1663032662109,swing
+7,60,61,1663032662109,1663032662126,swing
+7,61,62,1663032662126,1663032662142,swing
+7,62,63,1663032662142,1663032662159,swing
+7,63,64,1663032662159,1663032662175,swing
+7,64,65,1663032662175,1663032662192,swing
+7,65,66,1663032662192,1663032662209,swing
+7,66,67,1663032662209,1663032662226,swing
+7,67,68,1663032662226,1663032662242,swing
+7,68,69,1663032662242,1663032662259,swing
+7,69,70,1663032662259,1663032662275,swing
+7,70,71,1663032662275,1663032662292,swing
+7,71,72,1663032662292,1663032662309,swing
+7,72,73,1663032662309,1663032662325,swing
+7,73,74,1663032662325,1663032662342,swing
+7,74,75,1663032662342,1663032662359,swing
+7,75,76,1663032662359,1663032662376,swing
+7,76,77,1663032662376,1663032662392,swing
+7,77,78,1663032662392,1663032662409,swing
+7,78,79,1663032662409,1663032662426,swing
+7,79,80,1663032662426,1663032662443,swing
+7,80,81,1663032662443,1663032662459,swing
+7,81,82,1663032662459,1663032662476,swing
+7,82,83,1663032662476,1663032662492,swing
+7,83,84,1663032662492,1663032662510,swing
+7,84,85,1663032662510,1663032662526,swing
+7,85,86,1663032662526,1663032662543,swing
+7,86,87,1663032662543,1663032662559,swing
+7,87,88,1663032662559,1663032662576,swing
+7,88,89,1663032662576,1663032662593,swing
+7,89,90,1663032662593,1663032662609,swing
+7,90,91,1663032662609,1663032662626,swing
+7,91,92,1663032662626,1663032662642,swing
+7,92,93,1663032662642,1663032662659,swing
+7,93,94,1663032662659,1663032662677,swing
+7,94,95,1663032662677,1663032662693,swing
+7,95,96,1663032662693,1663032662710,swing
+7,96,97,1663032662710,1663032662726,swing
+7,97,98,1663032662726,1663032662743,swing
+7,98,99,1663032662743,1663032662760,swing
+7,99,100,1663032662760,1663032662777,swing
+7,100,101,1663032662777,1663032662793,swing
+7,101,102,1663032662793,1663032662810,swing
+7,102,103,1663032662810,1663032662826,swing
+7,103,104,1663032662826,1663032662843,swing
+7,104,105,1663032662843,1663032662860,swing
+7,105,106,1663032662860,1663032662877,swing
+7,106,107,1663032662877,1663032662893,swing
+7,107,108,1663032662893,1663032662910,swing
+7,108,109,1663032662910,1663032662927,swing
+7,109,110,1663032662927,1663032662944,swing
+7,110,111,1663032662944,1663032662960,swing
+7,111,112,1663032662960,1663032662977,swing
+7,112,113,1663032662977,1663032662993,swing
+7,113,114,1663032662993,1663032663010,swing
+7,114,115,1663032663010,1663032663027,swing
+7,115,116,1663032663027,1663032663044,swing
+7,116,117,1663032663044,1663032663060,swing
+7,117,118,1663032663060,1663032663077,swing
+7,118,119,1663032663077,1663032663093,swing
+7,119,120,1663032663093,1663032663111,swing
+7,120,121,1663032663111,1663032663127,swing
+7,121,122,1663032663127,1663032663144,swing
+7,122,123,1663032663144,1663032663160,swing
+7,123,124,1663032663160,1663032663177,swing
+7,124,125,1663032663177,1663032663193,swing
+7,125,126,1663032663193,1663032663211,swing
+7,126,127,1663032663211,1663032663228,swing
+7,127,128,1663032663228,1663032663245,swing
+7,128,129,1663032663245,1663032663260,swing
+7,129,130,1663032663260,1663032663278,swing
+7,130,131,1663032663278,1663032663294,swing
+7,131,132,1663032663294,1663032663311,swing
+7,132,133,1663032663311,1663032663327,swing
+7,133,134,1663032663327,1663032663344,swing
+7,134,135,1663032663344,1663032663361,swing
+7,135,136,1663032663361,1663032663378,swing
+7,136,137,1663032663378,1663032663394,swing
+7,137,138,1663032663394,1663032663411,swing
+7,138,139,1663032663411,1663032663427,swing
+7,139,140,1663032663427,1663032663444,swing
+7,140,141,1663032663444,1663032663461,swing
+7,141,142,1663032663461,1663032663478,swing
+7,142,143,1663032663478,1663032663494,swing
+7,143,144,1663032663494,1663032663511,swing
+7,144,145,1663032663511,1663032663528,swing
+7,145,146,1663032663528,1663032663544,swing
+7,146,147,1663032663544,1663032663561,swing
+7,147,148,1663032663561,1663032663578,swing
+7,148,149,1663032663578,1663032663594,swing
+7,149,150,1663032663594,1663032663611,swing
+7,150,151,1663032663611,1663032663627,swing
+7,151,152,1663032663627,1663032663645,swing
+7,152,153,1663032663645,1663032663661,swing
+7,153,154,1663032663661,1663032663678,swing
+7,154,155,1663032663678,1663032663695,swing
+7,155,156,1663032663695,1663032663712,swing
+7,156,157,1663032663712,1663032663728,swing
+7,157,158,1663032663728,1663032663745,swing
+7,158,159,1663032663745,1663032663761,swing
+7,159,160,1663032663761,1663032663778,swing
+7,160,161,1663032663778,1663032663795,swing
+7,161,162,1663032663795,1663032663812,swing
+7,162,163,1663032663812,1663032663828,swing
+7,163,164,1663032663828,1663032663845,swing
+7,164,165,1663032663845,1663032663862,swing
+7,165,166,1663032663862,1663032663878,swing
+7,166,167,1663032663878,1663032663895,swing
+7,167,168,1663032663895,1663032663912,swing
+7,168,169,1663032663912,1663032663928,swing
+7,169,170,1663032663928,1663032663945,swing
+7,170,171,1663032663945,1663032663962,swing
+7,171,172,1663032663962,1663032663979,swing
+7,172,173,1663032663979,1663032663995,swing
+8,0,1,1,1663032720005,swing
+8,1,2,1663032720005,1663032720021,swing
+8,2,3,1663032720021,1663032720038,swing
+8,3,4,1663032720038,1663032720054,swing
+8,4,5,1663032720054,1663032720072,swing
+8,5,6,1663032720072,1663032720088,swing
+8,6,7,1663032720088,1663032720105,swing
+8,7,8,1663032720105,1663032720121,swing
+8,8,9,1663032720121,1663032720138,swing
+8,9,10,1663032720138,1663032720155,swing
+8,10,11,1663032720155,1663032720172,swing
+8,11,12,1663032720172,1663032720188,swing
+8,12,13,1663032720188,1663032720205,swing
+8,13,14,1663032720205,1663032720222,swing
+8,14,15,1663032720222,1663032720238,swing
+8,15,16,1663032720238,1663032720255,swing
+8,16,17,1663032720255,1663032720272,swing
+8,17,18,1663032720272,1663032720289,swing
+8,18,19,1663032720289,1663032720305,swing
+8,19,20,1663032720305,1663032720322,swing
+8,20,21,1663032720322,1663032720339,swing
+8,21,22,1663032720339,1663032720355,swing
+8,22,23,1663032720355,1663032720372,swing
+8,23,24,1663032720372,1663032720388,swing
+8,24,25,1663032720388,1663032720406,swing
+8,25,26,1663032720406,1663032720422,swing
+8,26,27,1663032720422,1663032720439,swing
+8,27,28,1663032720439,1663032720455,swing
+8,28,29,1663032720455,1663032720473,swing
+8,29,30,1663032720473,1663032720489,swing
+8,30,31,1663032720489,1663032720506,swing
+8,31,32,1663032720506,1663032720522,swing
+8,32,33,1663032720522,1663032720539,swing
+8,33,34,1663032720539,1663032720556,swing
+8,34,35,1663032720556,1663032720572,swing
+8,35,36,1663032720572,1663032720589,swing
+8,36,37,1663032720589,1663032720606,swing
+8,37,38,1663032720606,1663032720623,swing
+8,38,39,1663032720623,1663032720639,swing
+8,39,40,1663032720639,1663032720656,swing
+8,40,41,1663032720656,1663032720673,swing
+8,41,42,1663032720673,1663032720689,swing
+8,42,43,1663032720689,1663032720706,swing
+8,43,44,1663032720706,1663032720722,swing
+8,44,45,1663032720722,1663032720740,swing
+8,45,46,1663032720740,1663032720756,swing
+8,46,47,1663032720756,1663032720773,swing
+8,47,48,1663032720773,1663032720789,swing
+8,48,49,1663032720789,1663032720806,swing
+8,49,50,1663032720806,1663032720823,swing
+8,50,51,1663032720823,1663032720840,swing
+8,51,52,1663032720840,1663032720856,swing
+8,52,53,1663032720856,1663032720873,swing
+8,53,54,1663032720873,1663032720889,swing
+8,54,55,1663032720889,1663032720907,swing
+8,55,56,1663032720907,1663032720923,swing
+8,56,57,1663032720923,1663032720940,swing
+8,57,58,1663032720940,1663032720957,swing
+8,58,59,1663032720957,1663032720973,swing
+8,59,60,1663032720973,1663032720990,swing
+8,60,61,1663032720990,1663032721007,swing
+8,61,62,1663032721007,1663032721023,swing
+8,62,63,1663032721023,1663032721040,swing
+8,63,64,1663032721040,1663032721056,swing
+8,64,65,1663032721056,1663032721073,swing
+8,65,66,1663032721073,1663032721090,swing
+8,66,67,1663032721090,1663032721107,swing
+8,67,68,1663032721107,1663032721123,swing
+8,68,69,1663032721123,1663032721140,swing
+8,69,70,1663032721140,1663032721157,swing
+8,70,71,1663032721157,1663032721174,swing
+8,71,72,1663032721174,1663032721190,swing
+8,72,73,1663032721190,1663032721207,swing
+8,73,74,1663032721207,1663032721224,swing
+8,74,75,1663032721224,1663032721240,swing
+8,75,76,1663032721240,1663032721257,swing
+8,76,77,1663032721257,1663032721274,swing
+8,77,78,1663032721274,1663032721290,swing
+8,78,79,1663032721290,1663032721307,swing
+8,79,80,1663032721307,1663032721324,swing
+8,80,81,1663032721324,1663032721341,swing
+8,81,82,1663032721341,1663032721357,swing
+8,82,83,1663032721357,1663032721374,swing
+8,83,84,1663032721374,1663032721390,swing
+8,84,85,1663032721390,1663032721407,swing
+8,85,86,1663032721407,1663032721424,swing
+8,86,87,1663032721424,1663032721441,swing
+8,87,88,1663032721441,1663032721457,swing
+8,88,89,1663032721457,1663032721474,swing
+8,89,90,1663032721474,1663032721490,swing
+8,90,91,1663032721490,1663032721507,swing
+8,91,92,1663032721507,1663032721524,swing
+8,92,93,1663032721524,1663032721541,swing
+8,93,94,1663032721541,1663032721557,swing
+8,94,95,1663032721557,1663032721575,swing
+8,95,96,1663032721575,1663032721591,swing
+8,96,97,1663032721591,1663032721608,swing
+8,97,98,1663032721608,1663032721624,swing
+8,98,99,1663032721624,1663032721641,swing
+8,99,100,1663032721641,1663032721658,swing
+8,100,101,1663032721658,1663032721674,swing
+8,101,102,1663032721674,1663032721691,swing
+8,102,103,1663032721691,1663032721708,swing
+8,103,104,1663032721708,1663032721724,swing
+8,104,105,1663032721724,1663032721741,swing
+8,105,106,1663032721741,1663032721758,swing
+8,106,107,1663032721758,1663032721775,swing
+8,107,108,1663032721775,1663032721791,swing
+8,108,109,1663032721791,1663032721809,swing
+8,109,110,1663032721809,1663032721825,swing
+8,110,111,1663032721825,1663032721842,swing
+8,111,112,1663032721842,1663032721858,swing
+8,112,113,1663032721858,1663032721875,swing
+8,113,114,1663032721875,1663032721891,swing
+8,114,115,1663032721891,1663032721909,swing
+8,115,116,1663032721909,1663032721925,swing
+8,116,117,1663032721925,1663032721942,swing
+8,117,118,1663032721942,1663032721958,swing
+8,118,119,1663032721958,1663032721975,swing
+8,119,120,1663032721975,1663032721992,swing
+8,120,121,1663032721992,1663032722009,swing
+8,121,122,1663032722009,1663032722025,swing
+8,122,123,1663032722025,1663032722042,swing
+8,123,124,1663032722042,1663032722059,swing
+8,124,125,1663032722059,1663032722075,swing
+8,125,126,1663032722075,1663032722092,swing
+8,126,127,1663032722092,1663032722109,swing
+8,127,128,1663032722109,1663032722125,swing
+8,128,129,1663032722125,1663032722143,swing
+8,129,130,1663032722143,1663032722159,swing
+8,130,131,1663032722159,1663032722176,swing
+8,131,132,1663032722176,1663032722192,swing
+8,132,133,1663032722192,1663032722209,swing
+8,133,134,1663032722209,1663032722225,swing
+8,134,135,1663032722225,1663032722243,swing
+8,135,136,1663032722243,1663032722259,swing
+8,136,137,1663032722259,1663032722276,swing
+8,137,138,1663032722276,1663032722293,swing
+8,138,139,1663032722293,1663032722310,swing
+8,139,140,1663032722310,1663032722326,swing
+8,140,141,1663032722326,1663032722343,swing
+8,141,142,1663032722343,1663032722359,swing
+8,142,143,1663032722359,1663032722376,swing
+8,143,144,1663032722376,1663032722393,swing
+8,144,145,1663032722393,1663032722410,swing
+8,145,146,1663032722410,1663032722426,swing
+8,146,147,1663032722426,1663032722443,swing
+8,147,148,1663032722443,1663032722460,swing
+8,148,149,1663032722460,1663032722477,swing
+8,149,150,1663032722477,1663032722493,swing
+8,150,151,1663032722493,1663032722510,swing
+8,151,152,1663032722510,1663032722526,swing
+8,152,153,1663032722526,1663032722543,swing
+8,153,154,1663032722543,1663032722560,swing
+8,154,155,1663032722560,1663032722577,swing
+8,155,156,1663032722577,1663032722593,swing
+8,156,157,1663032722593,1663032722610,swing
+8,157,158,1663032722610,1663032722627,swing
+8,158,159,1663032722627,1663032722644,swing
+8,159,160,1663032722644,1663032722660,swing
+8,160,161,1663032722660,1663032722677,swing
+8,161,162,1663032722677,1663032722693,swing
+8,162,163,1663032722693,1663032722710,swing
+8,163,164,1663032722710,1663032722727,swing
+8,164,165,1663032722727,1663032722744,swing
+8,165,166,1663032722744,1663032722760,swing
+8,166,167,1663032722760,1663032722777,swing
+8,167,168,1663032722777,1663032722794,swing
+8,168,169,1663032722794,1663032722811,swing
+8,169,170,1663032722811,1663032722827,swing
+8,170,171,1663032722827,1663032722844,swing
+8,171,172,1663032722844,1663032722860,swing
+8,172,173,1663032722860,1663032722877,swing
+8,173,174,1663032722877,1663032722894,swing
+8,174,175,1663032722894,1663032722911,swing
+8,175,176,1663032722911,1663032722927,swing
+8,176,177,1663032722927,1663032722944,swing
+8,177,178,1663032722944,1663032722960,swing
+8,178,179,1663032722960,1663032722977,swing
+8,179,180,1663032722977,1663032722994,swing
+8,180,181,1663032722994,1663032723011,swing
+8,181,182,1663032723011,1663032723027,swing
+8,182,183,1663032723027,1663032723044,swing
+8,183,184,1663032723044,1663032723061,swing
+8,184,185,1663032723061,1663032723077,swing
+8,185,186,1663032723077,1663032723094,swing
+8,186,187,1663032723094,1663032723111,swing
+8,187,188,1663032723111,1663032723127,swing
+8,188,189,1663032723127,1663032723144,swing
+8,189,190,1663032723144,1663032723161,swing
+8,190,191,1663032723161,1663032723178,swing
+8,191,192,1663032723178,1663032723194,swing
+8,192,193,1663032723194,1663032723211,swing
+8,193,194,1663032723211,1663032723228,swing
+8,194,195,1663032723228,1663032723245,swing
+8,195,196,1663032723245,1663032723261,swing
+8,196,197,1663032723261,1663032723278,swing
+8,197,198,1663032723278,1663032723294,swing
+8,198,199,1663032723294,1663032723311,swing
+8,199,200,1663032723311,1663032723328,swing
+8,200,201,1663032723328,1663032723344,swing
+8,201,202,1663032723344,1663032723361,swing
+8,202,203,1663032723361,1663032723378,swing
+8,203,204,1663032723378,1663032723394,swing
+8,204,205,1663032723394,1663032723411,swing
+8,205,206,1663032723411,1663032723428,swing
+8,206,207,1663032723428,1663032723445,swing
+8,207,208,1663032723445,1663032723461,swing
+8,208,209,1663032723461,1663032723478,swing
+8,209,210,1663032723478,1663032723495,swing
+8,210,211,1663032723495,1663032723512,swing
+8,211,212,1663032723512,1663032723528,swing
+8,212,213,1663032723528,1663032723545,swing
+8,213,214,1663032723545,1663032723561,swing
+8,214,215,1663032723561,1663032723578,swing
+8,215,216,1663032723578,1663032723595,swing
+8,216,217,1663032723595,1663032723612,swing
+8,217,218,1663032723612,1663032723628,swing
+8,218,219,1663032723628,1663032723645,swing
+8,219,220,1663032723645,1663032723661,swing
+8,220,221,1663032723661,1663032723678,swing
+8,221,222,1663032723678,1663032723695,swing
+8,222,223,1663032723695,1663032723712,swing
+8,223,224,1663032723712,1663032723728,swing
+8,224,225,1663032723728,1663032723745,swing
+8,225,226,1663032723745,1663032723762,swing
+8,226,227,1663032723762,1663032723779,swing
+8,227,228,1663032723779,1663032723795,swing
+8,228,229,1663032723795,1663032723812,swing
+8,229,230,1663032723812,1663032723829,swing
+8,230,231,1663032723829,1663032723846,swing
+8,231,232,1663032723846,1663032723862,swing
+8,232,233,1663032723862,1663032723879,swing
+8,233,234,1663032723879,1663032723896,swing
+8,234,235,1663032723896,1663032723913,swing
+8,235,236,1663032723913,1663032723929,swing
+8,236,237,1663032723929,1663032723946,swing
+8,237,238,1663032723946,1663032723962,swing
+8,238,239,1663032723962,1663032723980,swing
+8,239,240,1663032723980,1663032723996,swing
+9,0,1,1,1663032780005,swing
+9,1,2,1663032780005,1663032780022,swing
+9,2,3,1663032780022,1663032780038,swing
+9,3,4,1663032780038,1663032780055,swing
+9,4,5,1663032780055,1663032780072,swing
+9,5,6,1663032780072,1663032780089,swing
+9,6,7,1663032780089,1663032780105,swing
+9,7,8,1663032780105,1663032780122,swing
+9,8,9,1663032780122,1663032780139,swing
+9,9,10,1663032780139,1663032780155,swing
+9,10,11,1663032780155,1663032780172,swing
+9,11,12,1663032780172,1663032780189,swing
+9,12,13,1663032780189,1663032780206,swing
+9,13,14,1663032780206,1663032780222,swing
+9,14,15,1663032780222,1663032780239,swing
+9,15,16,1663032780239,1663032780256,swing
+9,16,17,1663032780256,1663032780272,swing
+9,17,18,1663032780272,1663032780289,swing
+9,18,19,1663032780289,1663032780306,swing
+9,19,20,1663032780306,1663032780322,swing
+9,20,21,1663032780322,1663032780339,swing
+9,21,22,1663032780339,1663032780356,swing
+9,22,23,1663032780356,1663032780372,swing
+9,23,24,1663032780372,1663032780389,swing
+9,24,25,1663032780389,1663032780406,swing
+9,25,26,1663032780406,1663032780422,swing
+9,26,27,1663032780422,1663032780439,swing
+9,27,28,1663032780439,1663032780456,swing
+9,28,29,1663032780456,1663032780473,swing
+9,29,30,1663032780473,1663032780489,swing
+9,30,31,1663032780489,1663032780506,swing
+9,31,32,1663032780506,1663032780523,swing
+9,32,33,1663032780523,1663032780540,swing
+9,33,34,1663032780540,1663032780556,swing
+9,34,35,1663032780556,1663032780573,swing
+9,35,36,1663032780573,1663032780589,swing
+9,36,37,1663032780589,1663032780606,swing
+9,37,38,1663032780606,1663032780623,swing
+9,38,39,1663032780623,1663032780640,swing
+9,39,40,1663032780640,1663032780656,swing
+9,40,41,1663032780656,1663032780673,swing
+9,41,42,1663032780673,1663032780690,swing
+9,42,43,1663032780690,1663032780706,swing
+9,43,44,1663032780706,1663032780723,swing
+9,44,45,1663032780723,1663032780740,swing
+9,45,46,1663032780740,1663032780756,swing
+9,46,47,1663032780756,1663032780773,swing
+9,47,48,1663032780773,1663032780790,swing
+9,48,49,1663032780790,1663032780807,swing
+9,49,50,1663032780807,1663032780823,swing
+9,50,51,1663032780823,1663032780840,swing
+9,51,52,1663032780840,1663032780857,swing
+9,52,53,1663032780857,1663032780874,swing
+9,53,54,1663032780874,1663032780890,swing
+9,54,55,1663032780890,1663032780907,swing
+9,55,56,1663032780907,1663032780923,swing
+9,56,57,1663032780923,1663032780940,swing
+9,57,58,1663032780940,1663032780957,swing
+9,58,59,1663032780957,1663032780973,swing
+9,59,60,1663032780973,1663032780990,swing
+9,60,61,1663032780990,1663032781007,swing
+9,61,62,1663032781007,1663032781023,swing
+9,62,63,1663032781023,1663032781040,swing
+9,63,64,1663032781040,1663032781057,swing
+9,64,65,1663032781057,1663032781074,swing
+9,65,66,1663032781074,1663032781090,swing
+9,66,67,1663032781090,1663032781107,swing
+9,67,68,1663032781107,1663032781124,swing
+9,68,69,1663032781124,1663032781141,swing
+9,69,70,1663032781141,1663032781157,swing
+9,70,71,1663032781157,1663032781174,swing
+9,71,72,1663032781174,1663032781190,swing
+9,72,73,1663032781190,1663032781207,swing
+9,73,74,1663032781207,1663032781224,swing
+9,74,75,1663032781224,1663032781241,swing
+9,75,76,1663032781241,1663032781257,swing
+9,76,77,1663032781257,1663032781274,swing
+9,77,78,1663032781274,1663032781291,swing
+9,78,79,1663032781291,1663032781308,swing
+9,79,80,1663032781308,1663032781324,swing
+9,80,81,1663032781324,1663032781341,swing
+9,81,82,1663032781341,1663032781357,swing
+9,82,83,1663032781357,1663032781374,swing
+9,83,84,1663032781374,1663032781391,swing
+9,84,85,1663032781391,1663032781408,swing
+9,85,86,1663032781408,1663032781424,swing
+9,86,87,1663032781424,1663032781441,swing
+9,87,88,1663032781441,1663032781457,swing
+9,88,89,1663032781457,1663032781474,swing
+9,89,90,1663032781474,1663032781491,swing
+9,90,91,1663032781491,1663032781508,swing
+9,91,92,1663032781508,1663032781524,swing
+9,92,93,1663032781524,1663032781541,swing
+9,93,94,1663032781541,1663032781558,swing
+9,94,95,1663032781558,1663032781575,swing
+9,95,96,1663032781575,1663032781591,swing
+9,96,97,1663032781591,1663032781608,swing
+9,97,98,1663032781608,1663032781625,swing
+9,98,99,1663032781625,1663032781641,swing
+9,99,100,1663032781641,1663032781658,swing
+9,100,101,1663032781658,1663032781675,swing
+9,101,102,1663032781675,1663032781691,swing
+9,102,103,1663032781691,1663032781708,swing
+9,103,104,1663032781708,1663032781725,swing
+9,104,105,1663032781725,1663032781742,swing
+9,105,106,1663032781742,1663032781758,swing
+9,106,107,1663032781758,1663032781775,swing
+9,107,108,1663032781775,1663032781792,swing
+9,108,109,1663032781792,1663032781809,swing
+9,109,110,1663032781809,1663032781825,swing
+9,110,111,1663032781825,1663032781842,swing
+9,111,112,1663032781842,1663032781859,swing
+9,112,113,1663032781859,1663032781876,swing
+9,113,114,1663032781876,1663032781892,swing
+9,114,115,1663032781892,1663032781909,swing
+9,115,116,1663032781909,1663032781925,swing
+9,116,117,1663032781925,1663032781942,swing
+9,117,118,1663032781942,1663032781959,swing
+9,118,119,1663032781959,1663032781975,swing
+9,119,120,1663032781975,1663032781992,swing
+9,120,121,1663032781992,1663032782009,swing
+9,121,122,1663032782009,1663032782026,swing
+9,122,123,1663032782026,1663032782042,swing
+9,123,124,1663032782042,1663032782059,swing
+9,124,125,1663032782059,1663032782076,swing
+9,125,126,1663032782076,1663032782092,swing
+9,126,127,1663032782092,1663032782109,swing
+9,127,128,1663032782109,1663032782126,swing
+9,128,129,1663032782126,1663032782143,swing
+9,129,130,1663032782143,1663032782159,swing
+9,130,131,1663032782159,1663032782176,swing
+9,131,132,1663032782176,1663032782193,swing
+9,132,133,1663032782193,1663032782210,swing
+9,133,134,1663032782210,1663032782226,swing
+9,134,135,1663032782226,1663032782243,swing
+9,135,136,1663032782243,1663032782259,swing
+9,136,137,1663032782259,1663032782276,swing
+9,137,138,1663032782276,1663032782293,swing
+9,138,139,1663032782293,1663032782310,swing
+9,139,140,1663032782310,1663032782326,swing
+9,140,141,1663032782326,1663032782343,swing
+9,141,142,1663032782343,1663032782359,swing
+9,142,143,1663032782359,1663032782376,swing
+9,143,144,1663032782376,1663032782393,swing
+9,144,145,1663032782393,1663032782410,swing
+9,145,146,1663032782410,1663032782426,swing
+9,146,147,1663032782426,1663032782443,swing
+9,147,148,1663032782443,1663032782460,swing
+9,148,149,1663032782460,1663032782476,swing
+9,149,150,1663032782476,1663032782493,swing
+9,150,151,1663032782493,1663032782510,swing
+9,151,152,1663032782510,1663032782527,swing
+9,152,153,1663032782527,1663032782543,swing
+9,153,154,1663032782543,1663032782560,swing
+9,154,155,1663032782560,1663032782577,swing
+9,155,156,1663032782577,1663032782593,swing
+9,156,157,1663032782593,1663032782610,swing
+9,157,158,1663032782610,1663032782627,swing
+9,158,159,1663032782627,1663032782644,swing
+9,159,160,1663032782644,1663032782660,swing
+9,160,161,1663032782660,1663032782677,swing
+9,161,162,1663032782677,1663032782693,swing
+9,162,163,1663032782693,1663032782711,swing
+9,163,164,1663032782711,1663032782727,swing
+9,164,165,1663032782727,1663032782744,swing
+9,165,166,1663032782744,1663032782760,swing
+9,166,167,1663032782760,1663032782777,swing
+9,167,168,1663032782777,1663032782794,swing
+9,168,169,1663032782794,1663032782810,swing
+9,169,170,1663032782810,1663032782827,swing
+9,170,171,1663032782827,1663032782844,swing
+9,171,172,1663032782844,1663032782860,swing
+9,172,173,1663032782860,1663032782877,swing
+9,173,174,1663032782877,1663032782894,swing
+9,174,175,1663032782894,1663032782911,swing
+9,175,176,1663032782911,1663032782928,swing
+9,176,177,1663032782928,1663032782950,swing
+9,177,178,1663032782950,1663032782965,swing
+9,178,179,1663032782965,1663032782977,swing
+9,179,180,1663032782977,1663032782994,swing
+9,180,181,1663032782994,1663032783011,swing
+9,181,182,1663032783011,1663032783027,swing
+9,182,183,1663032783027,1663032783044,swing
+9,183,184,1663032783044,1663032783061,swing
+9,184,185,1663032783061,1663032783078,swing
+9,185,186,1663032783078,1663032783094,swing
+9,186,187,1663032783094,1663032783113,swing
+9,187,188,1663032783113,1663032783127,swing
+9,188,189,1663032783127,1663032783144,swing
+9,189,190,1663032783144,1663032783161,swing
+9,190,191,1663032783161,1663032783178,swing
+9,191,192,1663032783178,1663032783194,swing
+9,192,193,1663032783194,1663032783211,swing
+9,193,194,1663032783211,1663032783227,swing
+9,194,195,1663032783227,1663032783244,swing
+9,195,196,1663032783244,1663032783261,swing
+9,196,197,1663032783261,1663032783278,swing
+9,197,198,1663032783278,1663032783294,swing
+9,198,199,1663032783294,1663032783311,swing
+9,199,200,1663032783311,1663032783328,swing
+9,200,201,1663032783328,1663032783345,swing
+9,201,202,1663032783345,1663032783361,swing
+9,202,203,1663032783361,1663032783378,swing
+9,203,204,1663032783378,1663032783395,swing
+9,204,205,1663032783395,1663032783412,swing
+9,205,206,1663032783412,1663032783428,swing
+9,206,207,1663032783428,1663032783445,swing
+9,207,208,1663032783445,1663032783462,swing
+9,208,209,1663032783462,1663032783478,swing
+9,209,210,1663032783478,1663032783495,swing
+9,210,211,1663032783495,1663032783512,swing
+9,211,212,1663032783512,1663032783528,swing
+9,212,213,1663032783528,1663032783545,swing
+9,213,214,1663032783545,1663032783562,swing
+9,214,215,1663032783562,1663032783578,swing
+9,215,216,1663032783578,1663032783595,swing
+9,216,217,1663032783595,1663032783612,swing
+9,217,218,1663032783612,1663032783628,swing
+9,218,219,1663032783628,1663032783645,swing
+9,219,220,1663032783645,1663032783662,swing
+9,220,221,1663032783662,1663032783679,swing
+9,221,222,1663032783679,1663032783695,swing
+9,222,223,1663032783695,1663032783712,swing
+9,223,224,1663032783712,1663032783729,swing
+9,224,225,1663032783729,1663032783746,swing
+9,225,226,1663032783746,1663032783762,swing
+9,226,227,1663032783762,1663032783779,swing
+9,227,228,1663032783779,1663032783796,swing
+9,228,229,1663032783796,1663032783812,swing
+9,229,230,1663032783812,1663032783829,swing
+9,230,231,1663032783829,1663032783846,swing
+9,231,232,1663032783846,1663032783863,swing
+9,232,233,1663032783863,1663032783879,swing
+9,233,234,1663032783879,1663032783896,swing
+9,234,235,1663032783896,1663032783913,swing
+9,235,236,1663032783913,1663032783929,swing
+9,236,237,1663032783929,1663032783946,swing
+9,237,238,1663032783946,1663032783963,swing
+9,238,239,1663032783963,1663032783979,swing
+9,239,240,1663032783979,1663032783996,swing
+10,0,1,1,1663032840006,swing
+10,1,2,1663032840006,1663032840022,swing
+10,2,3,1663032840022,1663032840039,swing
+10,3,4,1663032840039,1663032840055,swing
+10,4,5,1663032840055,1663032840072,swing
+10,5,6,1663032840072,1663032840089,swing
+10,6,7,1663032840089,1663032840106,swing
+10,7,8,1663032840106,1663032840122,swing
+10,8,9,1663032840122,1663032840139,swing
+10,9,10,1663032840139,1663032840156,swing
+10,10,11,1663032840156,1663032840173,swing
+10,11,12,1663032840173,1663032840189,swing
+10,12,13,1663032840189,1663032840206,swing
+10,13,14,1663032840206,1663032840223,swing
+10,14,15,1663032840223,1663032840240,swing
+10,15,16,1663032840240,1663032840256,swing
+10,16,17,1663032840256,1663032840273,swing
+10,17,18,1663032840273,1663032840290,swing
+10,18,19,1663032840290,1663032840306,swing
+10,19,20,1663032840306,1663032840323,swing
+10,20,21,1663032840323,1663032840340,swing
+10,21,22,1663032840340,1663032840356,swing
+10,22,23,1663032840356,1663032840373,swing
+10,23,24,1663032840373,1663032840390,swing
+10,24,25,1663032840390,1663032840407,swing
+10,25,26,1663032840407,1663032840423,swing
+10,26,27,1663032840423,1663032840440,swing
+10,27,28,1663032840440,1663032840457,swing
+10,28,29,1663032840457,1663032840474,swing
+10,29,30,1663032840474,1663032840490,swing
+10,30,31,1663032840490,1663032840507,swing
+10,31,32,1663032840507,1663032840523,swing
+10,32,33,1663032840523,1663032840540,swing
+10,33,34,1663032840540,1663032840557,swing
+10,34,35,1663032840557,1663032840574,swing
+10,35,36,1663032840574,1663032840590,swing
+10,36,37,1663032840590,1663032840607,swing
+10,37,38,1663032840607,1663032840623,swing
+10,38,39,1663032840623,1663032840640,swing
+10,39,40,1663032840640,1663032840657,swing
+10,40,41,1663032840657,1663032840674,swing
+10,41,42,1663032840674,1663032840690,swing
+10,42,43,1663032840690,1663032840707,swing
+10,43,44,1663032840707,1663032840724,swing
+10,44,45,1663032840724,1663032840740,swing
+10,45,46,1663032840740,1663032840757,swing
+10,46,47,1663032840757,1663032840774,swing
+10,47,48,1663032840774,1663032840790,swing
+10,48,49,1663032840790,1663032840807,swing
+10,49,50,1663032840807,1663032840824,swing
+10,50,51,1663032840824,1663032840841,swing
+10,51,52,1663032840841,1663032840857,swing
+10,52,53,1663032840857,1663032840874,swing
+10,53,54,1663032840874,1663032840891,swing
+10,54,55,1663032840891,1663032840908,swing
+10,55,56,1663032840908,1663032840924,swing
+10,56,57,1663032840924,1663032840941,swing
+10,57,58,1663032840941,1663032840957,swing
+10,58,59,1663032840957,1663032840973,swing
+10,59,60,1663032840973,1663032840991,swing
+10,60,61,1663032840991,1663032841008,swing
+10,61,62,1663032841008,1663032841024,swing
+10,62,63,1663032841024,1663032841041,swing
+10,63,64,1663032841041,1663032841058,swing
+10,64,65,1663032841058,1663032841075,swing
+10,65,66,1663032841075,1663032841091,swing
+10,66,67,1663032841091,1663032841108,swing
+10,67,68,1663032841108,1663032841125,swing
+10,68,69,1663032841125,1663032841142,swing
+10,69,70,1663032841142,1663032841158,swing
+10,70,71,1663032841158,1663032841175,swing
+10,71,72,1663032841175,1663032841192,swing
+10,72,73,1663032841192,1663032841208,swing
+10,73,74,1663032841208,1663032841225,swing
+10,74,75,1663032841225,1663032841242,swing
+10,75,76,1663032841242,1663032841258,swing
+10,76,77,1663032841258,1663032841275,swing
+10,77,78,1663032841275,1663032841292,swing
+10,78,79,1663032841292,1663032841309,swing
+10,79,80,1663032841309,1663032841325,swing
+10,80,81,1663032841325,1663032841342,swing
+10,81,82,1663032841342,1663032841359,swing
+10,82,83,1663032841359,1663032841376,swing
+10,83,84,1663032841376,1663032841392,swing
+10,84,85,1663032841392,1663032841409,swing
+10,85,86,1663032841409,1663032841426,swing
+10,86,87,1663032841426,1663032841442,swing
+10,87,88,1663032841442,1663032841458,swing
+10,88,89,1663032841458,1663032841476,swing
+10,89,90,1663032841476,1663032841492,swing
+10,90,91,1663032841492,1663032841510,swing
+10,91,92,1663032841510,1663032841526,swing
+10,92,93,1663032841526,1663032841542,swing
+10,93,94,1663032841542,1663032841559,swing
+10,94,95,1663032841559,1663032841574,swing
+10,95,96,1663032841574,1663032841592,swing
+10,96,97,1663032841592,1663032841610,swing
+10,97,98,1663032841610,1663032841626,swing
+10,98,99,1663032841626,1663032841642,swing
+10,99,100,1663032841642,1663032841659,swing
+10,100,101,1663032841659,1663032841676,swing
+10,101,102,1663032841676,1663032841693,swing
+10,102,103,1663032841693,1663032841709,swing
+10,103,104,1663032841709,1663032841726,swing
+10,104,105,1663032841726,1663032841743,swing
+10,105,106,1663032841743,1663032841759,swing
+10,106,107,1663032841759,1663032841776,swing
+10,107,108,1663032841776,1663032841793,swing
+10,108,109,1663032841793,1663032841809,swing
+10,109,110,1663032841809,1663032841826,swing
+10,110,111,1663032841826,1663032841843,swing
+10,111,112,1663032841843,1663032841859,swing
+10,112,113,1663032841859,1663032841876,swing
+10,113,114,1663032841876,1663032841892,swing
+10,114,115,1663032841892,1663032841909,swing
+10,115,116,1663032841909,1663032841926,swing
+10,116,117,1663032841926,1663032841942,swing
+10,117,118,1663032841942,1663032841959,swing
+10,118,119,1663032841959,1663032841976,swing
+10,119,120,1663032841976,1663032841992,swing
+10,120,121,1663032841992,1663032842010,swing
+10,121,122,1663032842010,1663032842026,swing
+10,122,123,1663032842026,1663032842043,swing
+10,123,124,1663032842043,1663032842059,swing
+10,124,125,1663032842059,1663032842077,swing
+10,125,126,1663032842077,1663032842093,swing
+10,126,127,1663032842093,1663032842110,swing
+10,127,128,1663032842110,1663032842126,swing
+10,128,129,1663032842126,1663032842143,swing
+10,129,130,1663032842143,1663032842160,swing
+10,130,131,1663032842160,1663032842177,swing
+10,131,132,1663032842177,1663032842193,swing
+10,132,133,1663032842193,1663032842210,swing
+10,133,134,1663032842210,1663032842227,swing
+10,134,135,1663032842227,1663032842243,swing
+10,135,136,1663032842243,1663032842260,swing
+10,136,137,1663032842260,1663032842277,swing
+10,137,138,1663032842277,1663032842294,swing
+10,138,139,1663032842294,1663032842310,swing
+10,139,140,1663032842310,1663032842327,swing
+10,140,141,1663032842327,1663032842344,swing
+10,141,142,1663032842344,1663032842360,swing
+10,142,143,1663032842360,1663032842377,swing
+10,143,144,1663032842377,1663032842393,swing
+10,144,145,1663032842393,1663032842411,swing
+10,145,146,1663032842411,1663032842427,swing
+10,146,147,1663032842427,1663032842444,swing
+10,147,148,1663032842444,1663032842460,swing
+10,148,149,1663032842460,1663032842477,swing
+10,149,150,1663032842477,1663032842494,swing
+10,150,151,1663032842494,1663032842511,swing
+10,151,152,1663032842511,1663032842527,swing
+10,152,153,1663032842527,1663032842544,swing
+10,153,154,1663032842544,1663032842561,swing
+10,154,155,1663032842561,1663032842578,swing
+10,155,156,1663032842578,1663032842594,swing
+10,156,157,1663032842594,1663032842611,swing
+10,157,158,1663032842611,1663032842628,swing
+10,158,159,1663032842628,1663032842644,swing
+10,159,160,1663032842644,1663032842661,swing
+10,160,161,1663032842661,1663032842678,swing
+10,161,162,1663032842678,1663032842694,swing
+10,162,163,1663032842694,1663032842711,swing
+10,163,164,1663032842711,1663032842728,swing
+10,164,165,1663032842728,1663032842744,swing
+10,165,166,1663032842744,1663032842761,swing
+10,166,167,1663032842761,1663032842778,swing
+10,167,168,1663032842778,1663032842794,swing
+10,168,169,1663032842794,1663032842811,swing
+10,169,170,1663032842811,1663032842828,swing
+10,170,171,1663032842828,1663032842845,swing
+10,171,172,1663032842845,1663032842862,swing
+10,172,173,1663032842862,1663032842878,swing
+10,173,174,1663032842878,1663032842895,swing
+10,174,175,1663032842895,1663032842911,swing
+10,175,176,1663032842911,1663032842928,swing
+10,176,177,1663032842928,1663032842945,swing
+10,177,178,1663032842945,1663032842962,swing
+10,178,179,1663032842962,1663032842978,swing
+10,179,180,1663032842978,1663032842995,swing
+10,180,181,1663032842995,1663032843012,swing
+10,181,182,1663032843012,1663032843028,swing
+10,182,183,1663032843028,1663032843045,swing
+10,183,184,1663032843045,1663032843062,swing
+10,184,185,1663032843062,1663032843078,swing
+10,185,186,1663032843078,1663032843095,swing
+10,186,187,1663032843095,1663032843112,swing
+10,187,188,1663032843112,1663032843128,swing
+10,188,189,1663032843128,1663032843145,swing
+10,189,190,1663032843145,1663032843162,swing
+10,190,191,1663032843162,1663032843179,swing
+10,191,192,1663032843179,1663032843195,swing
+10,192,193,1663032843195,1663032843212,swing
+10,193,194,1663032843212,1663032843228,swing
+10,194,195,1663032843228,1663032843245,swing
+10,195,196,1663032843245,1663032843262,swing
+10,196,197,1663032843262,1663032843279,swing
+10,197,198,1663032843279,1663032843296,swing
+10,198,199,1663032843296,1663032843312,swing
+10,199,200,1663032843312,1663032843329,swing
+10,200,201,1663032843329,1663032843345,swing
+10,201,202,1663032843345,1663032843362,swing
+10,202,203,1663032843362,1663032843379,swing
+10,203,204,1663032843379,1663032843396,swing
+10,204,205,1663032843396,1663032843412,swing
+10,205,206,1663032843412,1663032843429,swing
+10,206,207,1663032843429,1663032843446,swing
+10,207,208,1663032843446,1663032843462,swing
+10,208,209,1663032843462,1663032843479,swing
+10,209,210,1663032843479,1663032843496,swing
+10,210,211,1663032843496,1663032843512,swing
+10,211,212,1663032843512,1663032843529,swing
+10,212,213,1663032843529,1663032843546,swing
+10,213,214,1663032843546,1663032843563,swing
+10,214,215,1663032843563,1663032843579,swing
+10,215,216,1663032843579,1663032843596,swing
+10,216,217,1663032843596,1663032843613,swing
+10,217,218,1663032843613,1663032843630,swing
+10,218,219,1663032843630,1663032843646,swing
+10,219,220,1663032843646,1663032843663,swing
+10,220,221,1663032843663,1663032843679,swing
+10,221,222,1663032843679,1663032843696,swing
+10,222,223,1663032843696,1663032843713,swing
+10,223,224,1663032843713,1663032843729,swing
+10,224,225,1663032843729,1663032843746,swing
+10,225,226,1663032843746,1663032843763,swing
+10,226,227,1663032843763,1663032843779,swing
+10,227,228,1663032843779,1663032843796,swing
+10,228,229,1663032843796,1663032843813,swing
+10,229,230,1663032843813,1663032843830,swing
+10,230,231,1663032843830,1663032843846,swing
+10,231,232,1663032843846,1663032843863,swing
+10,232,233,1663032843863,1663032843880,swing
+10,233,234,1663032843880,1663032843897,swing
+10,234,235,1663032843897,1663032843913,swing
+10,235,236,1663032843913,1663032843930,swing
+10,236,237,1663032843930,1663032843946,swing
+10,237,238,1663032843946,1663032843963,swing
+10,238,239,1663032843963,1663032843980,swing
+10,239,240,1663032843980,1663032843996,swing
+11,0,1,1,1663032900006,swing
+11,1,2,1663032900006,1663032900023,swing
+11,2,3,1663032900023,1663032900039,swing
+11,3,4,1663032900039,1663032900056,swing
+11,4,5,1663032900056,1663032900073,swing
+11,5,6,1663032900073,1663032900090,swing
+11,6,7,1663032900090,1663032900106,swing
+11,7,8,1663032900106,1663032900123,swing
+11,8,9,1663032900123,1663032900140,swing
+11,9,10,1663032900140,1663032900156,swing
+11,10,11,1663032900156,1663032900173,swing
+11,11,12,1663032900173,1663032900190,swing
+11,12,13,1663032900190,1663032900206,swing
+11,13,14,1663032900206,1663032900223,swing
+11,14,15,1663032900223,1663032900240,swing
+11,15,16,1663032900240,1663032900256,swing
+11,16,17,1663032900256,1663032900274,swing
+11,17,18,1663032900274,1663032900290,swing
+11,18,19,1663032900290,1663032900306,swing
+11,19,20,1663032900306,1663032900323,swing
+11,20,21,1663032900323,1663032900340,swing
+11,21,22,1663032900340,1663032900357,swing
+11,22,23,1663032900357,1663032900374,swing
+11,23,24,1663032900374,1663032900390,swing
+11,24,25,1663032900390,1663032900407,swing
+11,25,26,1663032900407,1663032900423,swing
+11,26,27,1663032900423,1663032900440,swing
+11,27,28,1663032900440,1663032900457,swing
+11,28,29,1663032900457,1663032900474,swing
+11,29,30,1663032900474,1663032900491,swing
+11,30,31,1663032900491,1663032900507,swing
+11,31,32,1663032900507,1663032900524,swing
+11,32,33,1663032900524,1663032900541,swing
+11,33,34,1663032900541,1663032900557,swing
+11,34,35,1663032900557,1663032900574,swing
+11,35,36,1663032900574,1663032900591,swing
+11,36,37,1663032900591,1663032900607,swing
+11,37,38,1663032900607,1663032900624,swing
+11,38,39,1663032900624,1663032900640,swing
+11,39,40,1663032900640,1663032900657,swing
+11,40,41,1663032900657,1663032900674,swing
+11,41,42,1663032900674,1663032900691,swing
+11,42,43,1663032900691,1663032900707,swing
+11,43,44,1663032900707,1663032900724,swing
+11,44,45,1663032900724,1663032900741,swing
+11,45,46,1663032900741,1663032900758,swing
+11,46,47,1663032900758,1663032900774,swing
+11,47,48,1663032900774,1663032900791,swing
+11,48,49,1663032900791,1663032900808,swing
+11,49,50,1663032900808,1663032900825,swing
+11,50,51,1663032900825,1663032900841,swing
+11,51,52,1663032900841,1663032900858,swing
+11,52,53,1663032900858,1663032900874,swing
+11,53,54,1663032900874,1663032900891,swing
+11,54,55,1663032900891,1663032900908,swing
+11,55,56,1663032900908,1663032900925,swing
+11,56,57,1663032900925,1663032900941,swing
+11,57,58,1663032900941,1663032900958,swing
+11,58,59,1663032900958,1663032900975,swing
+11,59,60,1663032900975,1663032900991,swing
+11,60,61,1663032900991,1663032901008,swing
+11,61,62,1663032901008,1663032901025,swing
+11,62,63,1663032901025,1663032901042,swing
+11,63,64,1663032901042,1663032901058,swing
+11,64,65,1663032901058,1663032901075,swing
+11,65,66,1663032901075,1663032901092,swing
+11,66,67,1663032901092,1663032901109,swing
+11,67,68,1663032901109,1663032901125,swing
+11,68,69,1663032901125,1663032901142,swing
+11,69,70,1663032901142,1663032901160,swing
+11,70,71,1663032901160,1663032901175,swing
+11,71,72,1663032901175,1663032901192,swing
+11,72,73,1663032901192,1663032901209,swing
+11,73,74,1663032901209,1663032901225,swing
+11,74,75,1663032901225,1663032901242,swing
+11,75,76,1663032901242,1663032901259,swing
+11,76,77,1663032901259,1663032901275,swing
+11,77,78,1663032901275,1663032901292,swing
+11,78,79,1663032901292,1663032901309,swing
+11,79,80,1663032901309,1663032901326,swing
+11,80,81,1663032901326,1663032901342,swing
+11,81,82,1663032901342,1663032901359,swing
+11,82,83,1663032901359,1663032901376,swing
+11,83,84,1663032901376,1663032901392,swing
+11,84,85,1663032901392,1663032901409,swing
+11,85,86,1663032901409,1663032901425,swing
+11,86,87,1663032901425,1663032901442,swing
+11,87,88,1663032901442,1663032901459,swing
+11,88,89,1663032901459,1663032901476,swing
+11,89,90,1663032901476,1663032901492,swing
+11,90,91,1663032901492,1663032901509,swing
+11,91,92,1663032901509,1663032901526,swing
+11,92,93,1663032901526,1663032901542,swing
+11,93,94,1663032901542,1663032901559,swing
+11,94,95,1663032901559,1663032901576,swing
+11,95,96,1663032901576,1663032901592,swing
+11,96,97,1663032901592,1663032901609,swing
+11,97,98,1663032901609,1663032901626,swing
+11,98,99,1663032901626,1663032901643,swing
+11,99,100,1663032901643,1663032901659,swing
+11,100,101,1663032901659,1663032901676,swing
+11,101,102,1663032901676,1663032901693,swing
+11,102,103,1663032901693,1663032901709,swing
+11,103,104,1663032901709,1663032901726,swing
+11,104,105,1663032901726,1663032901743,swing
+11,105,106,1663032901743,1663032901760,swing
+11,106,107,1663032901760,1663032901776,swing
+11,107,108,1663032901776,1663032901793,swing
+11,108,109,1663032901793,1663032901809,swing
+11,109,110,1663032901809,1663032901827,swing
+11,110,111,1663032901827,1663032901843,swing
+11,111,112,1663032901843,1663032901860,swing
+11,112,113,1663032901860,1663032901876,swing
+11,113,114,1663032901876,1663032901893,swing
+11,114,115,1663032901893,1663032901910,swing
+11,115,116,1663032901910,1663032901927,swing
+11,116,117,1663032901927,1663032901943,swing
+11,117,118,1663032901943,1663032901961,swing
+11,118,119,1663032901961,1663032901989,swing
+11,119,120,1663032901989,1663032902010,swing
+11,120,121,1663032902010,1663032902027,swing
+11,121,122,1663032902027,1663032902043,swing
+11,122,123,1663032902043,1663032902060,swing
+11,123,124,1663032902060,1663032902077,swing
+11,124,125,1663032902077,1663032902094,swing
+11,125,126,1663032902094,1663032902110,swing
+11,126,127,1663032902110,1663032902127,swing
+11,127,128,1663032902127,1663032902143,swing
+11,128,129,1663032902143,1663032902160,swing
+11,129,130,1663032902160,1663032902177,swing
+11,130,131,1663032902177,1663032902194,swing
+11,131,132,1663032902194,1663032902210,swing
+11,132,133,1663032902210,1663032902227,swing
+11,133,134,1663032902227,1663032902244,swing
+11,134,135,1663032902244,1663032902261,swing
+11,135,136,1663032902261,1663032902277,swing
+11,136,137,1663032902277,1663032902294,swing
+11,137,138,1663032902294,1663032902310,swing
+11,138,139,1663032902310,1663032902327,swing
+11,139,140,1663032902327,1663032902344,swing
+11,140,141,1663032902344,1663032902361,swing
+11,141,142,1663032902361,1663032902377,swing
+11,142,143,1663032902377,1663032902394,swing
+11,143,144,1663032902394,1663032902411,swing
+11,144,145,1663032902411,1663032902428,swing
+11,145,146,1663032902428,1663032902444,swing
+11,146,147,1663032902444,1663032902461,swing
+11,147,148,1663032902461,1663032902478,swing
+11,148,149,1663032902478,1663032902494,swing
+11,149,150,1663032902494,1663032902511,swing
+11,150,151,1663032902511,1663032902528,swing
+11,151,152,1663032902528,1663032902545,swing
+11,152,153,1663032902545,1663032902562,swing
+11,153,154,1663032902562,1663032902578,swing
+11,154,155,1663032902578,1663032902595,swing
+11,155,156,1663032902595,1663032902611,swing
+11,156,157,1663032902611,1663032902628,swing
+11,157,158,1663032902628,1663032902645,swing
+11,158,159,1663032902645,1663032902662,swing
+11,159,160,1663032902662,1663032902678,swing
+11,160,161,1663032902678,1663032902695,swing
+11,161,162,1663032902695,1663032902712,swing
+11,162,163,1663032902712,1663032902729,swing
+11,163,164,1663032902729,1663032902745,swing
+11,164,165,1663032902745,1663032902762,swing
+11,165,166,1663032902762,1663032902778,swing
+11,166,167,1663032902778,1663032902795,swing
+11,167,168,1663032902795,1663032902812,swing
+11,168,169,1663032902812,1663032902829,swing
+11,169,170,1663032902829,1663032902845,swing
+11,170,171,1663032902845,1663032902862,swing
+11,171,172,1663032902862,1663032902879,swing
+11,172,173,1663032902879,1663032902895,swing
+11,173,174,1663032902895,1663032902912,swing
+11,174,175,1663032902912,1663032902929,swing
+11,175,176,1663032902929,1663032902945,swing
+11,176,177,1663032902945,1663032902962,swing
+11,177,178,1663032902962,1663032902979,swing
+11,178,179,1663032902979,1663032902996,swing
+11,179,180,1663032902996,1663032903012,swing
+11,180,181,1663032903012,1663032903029,swing
+11,181,182,1663032903029,1663032903045,swing
+11,182,183,1663032903045,1663032903062,swing
+11,183,184,1663032903062,1663032903079,swing
+11,184,185,1663032903079,1663032903096,swing
+11,185,186,1663032903096,1663032903112,swing
+11,186,187,1663032903112,1663032903129,swing
+11,187,188,1663032903129,1663032903146,swing
+11,188,189,1663032903146,1663032903163,swing
+11,189,190,1663032903163,1663032903179,swing
+11,190,191,1663032903179,1663032903196,swing
+11,191,192,1663032903196,1663032903212,swing
+11,192,193,1663032903212,1663032903229,swing
+11,193,194,1663032903229,1663032903246,swing
+11,194,195,1663032903246,1663032903263,swing
+11,195,196,1663032903263,1663032903279,swing
+11,196,197,1663032903279,1663032903296,swing
+11,197,198,1663032903296,1663032903313,swing
+11,198,199,1663032903313,1663032903330,swing
+11,199,200,1663032903330,1663032903346,swing
+11,200,201,1663032903346,1663032903363,swing
+11,201,202,1663032903363,1663032903380,swing
+11,202,203,1663032903380,1663032903397,swing
+11,203,204,1663032903397,1663032903413,swing
+11,204,205,1663032903413,1663032903430,swing
+11,205,206,1663032903430,1663032903447,swing
+11,206,207,1663032903447,1663032903464,swing
+11,207,208,1663032903464,1663032903480,swing
+11,208,209,1663032903480,1663032903497,swing
+11,209,210,1663032903497,1663032903513,swing
+11,210,211,1663032903513,1663032903530,swing
+11,211,212,1663032903530,1663032903547,swing
+11,212,213,1663032903547,1663032903564,swing
+11,213,214,1663032903564,1663032903580,swing
+11,214,215,1663032903580,1663032903597,swing
+11,215,216,1663032903597,1663032903613,swing
+11,216,217,1663032903613,1663032903630,swing
+11,217,218,1663032903630,1663032903647,swing
+11,218,219,1663032903647,1663032903664,swing
+11,219,220,1663032903664,1663032903681,swing
+11,220,221,1663032903681,1663032903697,swing
+11,221,222,1663032903697,1663032903714,swing
+11,222,223,1663032903714,1663032903732,swing
+11,223,224,1663032903732,1663032903748,swing
+11,224,225,1663032903748,1663032903765,swing
+11,225,226,1663032903765,1663032903781,swing
+11,226,227,1663032903781,1663032903798,swing
+11,227,228,1663032903798,1663032903815,swing
+11,228,229,1663032903815,1663032903831,swing
+11,229,230,1663032903831,1663032903848,swing
+11,230,231,1663032903848,1663032903869,swing
+11,231,232,1663032903869,1663032903884,swing
+11,232,233,1663032903884,1663032903898,swing
+11,233,234,1663032903898,1663032903914,swing
+11,234,235,1663032903914,1663032903931,swing
+11,235,236,1663032903931,1663032903948,swing
+11,236,237,1663032903948,1663032903965,swing
+11,237,238,1663032903965,1663032903981,swing
+11,238,239,1663032903981,1663032903998,swing
+12,0,1,1,1663032960007,swing
+12,1,2,1663032960007,1663032960023,swing
+12,2,3,1663032960023,1663032960040,swing
+12,3,4,1663032960040,1663032960057,swing
+12,4,5,1663032960057,1663032960074,swing
+12,5,6,1663032960074,1663032960090,swing
+12,6,7,1663032960090,1663032960107,swing
+12,7,8,1663032960107,1663032960124,swing
+12,8,9,1663032960124,1663032960141,swing
+12,9,10,1663032960141,1663032960157,swing
+12,10,11,1663032960157,1663032960174,swing
+12,11,12,1663032960174,1663032960191,swing
+12,12,13,1663032960191,1663032960208,swing
+12,13,14,1663032960208,1663032960224,swing
+12,14,15,1663032960224,1663032960241,swing
+12,15,16,1663032960241,1663032960258,swing
+12,16,17,1663032960258,1663032960274,swing
+12,17,18,1663032960274,1663032960291,swing
+12,18,19,1663032960291,1663032960308,swing
+12,19,20,1663032960308,1663032960324,swing
+12,20,21,1663032960324,1663032960341,swing
+12,21,22,1663032960341,1663032960358,swing
+12,22,23,1663032960358,1663032960375,swing
+12,23,24,1663032960375,1663032960391,swing
+12,24,25,1663032960391,1663032960408,swing
+12,25,26,1663032960408,1663032960424,swing
+12,26,27,1663032960424,1663032960441,swing
+12,27,28,1663032960441,1663032960458,swing
+12,28,29,1663032960458,1663032960474,swing
+12,29,30,1663032960474,1663032960491,swing
+12,30,31,1663032960491,1663032960508,swing
+12,31,32,1663032960508,1663032960525,swing
+12,32,33,1663032960525,1663032960541,swing
+12,33,34,1663032960541,1663032960558,swing
+12,34,35,1663032960558,1663032960575,swing
+12,35,36,1663032960575,1663032960592,swing
+12,36,37,1663032960592,1663032960608,swing
+12,37,38,1663032960608,1663032960625,swing
+12,38,39,1663032960625,1663032960641,swing
+12,39,40,1663032960641,1663032960659,swing
+12,40,41,1663032960659,1663032960675,swing
+12,41,42,1663032960675,1663032960692,swing
+12,42,43,1663032960692,1663032960708,swing
+12,43,44,1663032960708,1663032960725,swing
+12,44,45,1663032960725,1663032960742,swing
+12,45,46,1663032960742,1663032960758,swing
+12,46,47,1663032960758,1663032960775,swing
+12,47,48,1663032960775,1663032960792,swing
+12,48,49,1663032960792,1663032960808,swing
+12,49,50,1663032960808,1663032960825,swing
+12,50,51,1663032960825,1663032960842,swing
+12,51,52,1663032960842,1663032960859,swing
+12,52,53,1663032960859,1663032960875,swing
+12,53,54,1663032960875,1663032960892,swing
+12,54,55,1663032960892,1663032960909,swing
+12,55,56,1663032960909,1663032960926,swing
+12,56,57,1663032960926,1663032960942,swing
+12,57,58,1663032960942,1663032960959,swing
+12,58,59,1663032960959,1663032960975,swing
+12,59,60,1663032960975,1663032960992,swing
+12,60,61,1663032960992,1663032961009,swing
+12,61,62,1663032961009,1663032961026,swing
+12,62,63,1663032961026,1663032961042,swing
+12,63,64,1663032961042,1663032961059,swing
+12,64,65,1663032961059,1663032961076,swing
+12,65,66,1663032961076,1663032961092,swing
+12,66,67,1663032961092,1663032961109,swing
+12,67,68,1663032961109,1663032961126,swing
+12,68,69,1663032961126,1663032961142,swing
+12,69,70,1663032961142,1663032961159,swing
+12,70,71,1663032961159,1663032961176,swing
+12,71,72,1663032961176,1663032961193,swing
+12,72,73,1663032961193,1663032961209,swing
+12,73,74,1663032961209,1663032961226,swing
+12,74,75,1663032961226,1663032961243,swing
+12,75,76,1663032961243,1663032961260,swing
+12,76,77,1663032961260,1663032961276,swing
+12,77,78,1663032961276,1663032961293,swing
+12,78,79,1663032961293,1663032961309,swing
+12,79,80,1663032961309,1663032961326,swing
+12,80,81,1663032961326,1663032961343,swing
+12,81,82,1663032961343,1663032961359,swing
+12,82,83,1663032961359,1663032961376,swing
+12,83,84,1663032961376,1663032961393,swing
+12,84,85,1663032961393,1663032961410,swing
+12,85,86,1663032961410,1663032961426,swing
+12,86,87,1663032961426,1663032961443,swing
+12,87,88,1663032961443,1663032961460,swing
+12,88,89,1663032961460,1663032961476,swing
+12,89,90,1663032961476,1663032961493,swing
+12,90,91,1663032961493,1663032961510,swing
+12,91,92,1663032961510,1663032961527,swing
+12,92,93,1663032961527,1663032961543,swing
+12,93,94,1663032961543,1663032961560,swing
+12,94,95,1663032961560,1663032961577,swing
+12,95,96,1663032961577,1663032961594,swing
+12,96,97,1663032961594,1663032961610,swing
+12,97,98,1663032961610,1663032961627,swing
+12,98,99,1663032961627,1663032961643,swing
+12,99,100,1663032961643,1663032961661,swing
+12,100,101,1663032961661,1663032961677,swing
+12,101,102,1663032961677,1663032961693,swing
+12,102,103,1663032961693,1663032961710,swing
+12,103,104,1663032961710,1663032961728,swing
+12,104,105,1663032961728,1663032961744,swing
+12,105,106,1663032961744,1663032961760,swing
+12,106,107,1663032961760,1663032961777,swing
+12,107,108,1663032961777,1663032961794,swing
+12,108,109,1663032961794,1663032961811,swing
+12,109,110,1663032961811,1663032961827,swing
+12,110,111,1663032961827,1663032961843,swing
+12,111,112,1663032961843,1663032961860,swing
+12,112,113,1663032961860,1663032961877,swing
+12,113,114,1663032961877,1663032961894,swing
+12,114,115,1663032961894,1663032961911,swing
+12,115,116,1663032961911,1663032961928,swing
+12,116,117,1663032961928,1663032961944,swing
+12,117,118,1663032961944,1663032961961,swing
+12,118,119,1663032961961,1663032961977,swing
+12,119,120,1663032961977,1663032961994,swing
+12,120,121,1663032961994,1663032962011,swing
+12,121,122,1663032962011,1663032962028,swing
+12,122,123,1663032962028,1663032962044,swing
+12,123,124,1663032962044,1663032962061,swing
+12,124,125,1663032962061,1663032962078,swing
+12,125,126,1663032962078,1663032962095,swing
+12,126,127,1663032962095,1663032962111,swing
+12,127,128,1663032962111,1663032962128,swing
+12,128,129,1663032962128,1663032962144,swing
+12,129,130,1663032962144,1663032962161,swing
+12,130,131,1663032962161,1663032962178,swing
+12,131,132,1663032962178,1663032962195,swing
+12,132,133,1663032962195,1663032962211,swing
+12,133,134,1663032962211,1663032962228,swing
+12,134,135,1663032962228,1663032962245,swing
+12,135,136,1663032962245,1663032962262,swing
+12,136,137,1663032962262,1663032962278,swing
+12,137,138,1663032962278,1663032962295,swing
+12,138,139,1663032962295,1663032962311,swing
+12,139,140,1663032962311,1663032962328,swing
+12,140,141,1663032962328,1663032962345,swing
+12,141,142,1663032962345,1663032962361,swing
+12,142,143,1663032962361,1663032962378,swing
+12,143,144,1663032962378,1663032962395,swing
+12,144,145,1663032962395,1663032962411,swing
+12,145,146,1663032962411,1663032962428,swing
+12,146,147,1663032962428,1663032962445,swing
+12,147,148,1663032962445,1663032962462,swing
+12,148,149,1663032962462,1663032962478,swing
+12,149,150,1663032962478,1663032962495,swing
+12,150,151,1663032962495,1663032962511,swing
+12,151,152,1663032962511,1663032962528,swing
+12,152,153,1663032962528,1663032962545,swing
+12,153,154,1663032962545,1663032962562,swing
+12,154,155,1663032962562,1663032962578,swing
+12,155,156,1663032962578,1663032962595,swing
+12,156,157,1663032962595,1663032962612,swing
+12,157,158,1663032962612,1663032962628,swing
+12,158,159,1663032962628,1663032962645,swing
+12,159,160,1663032962645,1663032962662,swing
+12,160,161,1663032962662,1663032962679,swing
+12,161,162,1663032962679,1663032962695,swing
+12,162,163,1663032962695,1663032962712,swing
+12,163,164,1663032962712,1663032962728,swing
+12,164,165,1663032962728,1663032962745,swing
+12,165,166,1663032962745,1663032962762,swing
+12,166,167,1663032962762,1663032962779,swing
+12,167,168,1663032962779,1663032962795,swing
+12,168,169,1663032962795,1663032962812,swing
+12,169,170,1663032962812,1663032962829,swing
+12,170,171,1663032962829,1663032962845,swing
+12,171,172,1663032962845,1663032962862,swing
+12,172,173,1663032962862,1663032962879,swing
+12,173,174,1663032962879,1663032962896,swing
+12,174,175,1663032962896,1663032962912,swing
+12,175,176,1663032962912,1663032962929,swing
+12,176,177,1663032962929,1663032962946,swing
+12,177,178,1663032962946,1663032962962,swing
+12,178,179,1663032962962,1663032962979,swing
+12,179,180,1663032962979,1663032962996,swing
+12,180,181,1663032962996,1663032963012,swing
+12,181,182,1663032963012,1663032963029,swing
+12,182,183,1663032963029,1663032963046,swing
+12,183,184,1663032963046,1663032963063,swing
+12,184,185,1663032963063,1663032963079,swing
+12,185,186,1663032963079,1663032963096,swing
+12,186,187,1663032963096,1663032963113,swing
+12,187,188,1663032963113,1663032963130,swing
+12,188,189,1663032963130,1663032963146,swing
+12,189,190,1663032963146,1663032963163,swing
+12,190,191,1663032963163,1663032963180,swing
+12,191,192,1663032963180,1663032963197,swing
+12,192,193,1663032963197,1663032963212,swing
+12,193,194,1663032963212,1663032963230,swing
+12,194,195,1663032963230,1663032963246,swing
+12,195,196,1663032963246,1663032963263,swing
+12,196,197,1663032963263,1663032963280,swing
+12,197,198,1663032963280,1663032963297,swing
+12,198,199,1663032963297,1663032963313,swing
+12,199,200,1663032963313,1663032963330,swing
+12,200,201,1663032963330,1663032963347,swing
+12,201,202,1663032963347,1663032963364,swing
+12,202,203,1663032963364,1663032963380,swing
+12,203,204,1663032963380,1663032963397,swing
+12,204,205,1663032963397,1663032963413,swing
+12,205,206,1663032963413,1663032963430,swing
+12,206,207,1663032963430,1663032963447,swing
+12,207,208,1663032963447,1663032963464,swing
+12,208,209,1663032963464,1663032963480,swing
+12,209,210,1663032963480,1663032963497,swing
+12,210,211,1663032963497,1663032963514,swing
+12,211,212,1663032963514,1663032963530,swing
+12,212,213,1663032963530,1663032963547,swing
+12,213,214,1663032963547,1663032963564,swing
+12,214,215,1663032963564,1663032963580,swing
+12,215,216,1663032963580,1663032963597,swing
+12,216,217,1663032963597,1663032963614,swing
+12,217,218,1663032963614,1663032963631,swing
+12,218,219,1663032963631,1663032963647,swing
+12,219,220,1663032963647,1663032963664,swing
+12,220,221,1663032963664,1663032963681,swing
+12,221,222,1663032963681,1663032963698,swing
+12,222,223,1663032963698,1663032963714,swing
+12,223,224,1663032963714,1663032963731,swing
+12,224,225,1663032963731,1663032963747,swing
+12,225,226,1663032963747,1663032963764,swing
+12,226,227,1663032963764,1663032963781,swing
+12,227,228,1663032963781,1663032963797,swing
+12,228,229,1663032963797,1663032963813,swing
+12,229,230,1663032963813,1663032963831,swing
+12,230,231,1663032963831,1663032963847,swing
+12,231,232,1663032963847,1663032963865,swing
+12,232,233,1663032963865,1663032963881,swing
+12,233,234,1663032963881,1663032963898,swing
+12,234,235,1663032963898,1663032963914,swing
+12,235,236,1663032963914,1663032963931,swing
+12,236,237,1663032963931,1663032963948,swing
+12,237,238,1663032963948,1663032963965,swing
+12,238,239,1663032963965,1663032963981,swing
+12,239,240,1663032963981,1663032963998,swing
+13,0,1,1,1663033020007,swing
+13,1,2,1663033020007,1663033020024,swing
+13,2,3,1663033020024,1663033020041,swing
+13,3,4,1663033020041,1663033020058,swing
+13,4,5,1663033020058,1663033020074,swing
+13,5,6,1663033020074,1663033020091,swing
+13,6,7,1663033020091,1663033020108,swing
+13,7,8,1663033020108,1663033020124,swing
+13,8,9,1663033020124,1663033020141,swing
+13,9,10,1663033020141,1663033020157,swing
+13,10,11,1663033020157,1663033020174,swing
+13,11,12,1663033020174,1663033020191,swing
+13,12,13,1663033020191,1663033020208,swing
+13,13,14,1663033020208,1663033020225,swing
+13,14,15,1663033020225,1663033020241,swing
+13,15,16,1663033020241,1663033020258,swing
+13,16,17,1663033020258,1663033020275,swing
+13,17,18,1663033020275,1663033020292,swing
+13,18,19,1663033020292,1663033020308,swing
+13,19,20,1663033020308,1663033020325,swing
+13,20,21,1663033020325,1663033020341,swing
+13,21,22,1663033020341,1663033020358,swing
+13,22,23,1663033020358,1663033020375,swing
+13,23,24,1663033020375,1663033020391,swing
+13,24,25,1663033020391,1663033020409,swing
+13,25,26,1663033020409,1663033020425,swing
+13,26,27,1663033020425,1663033020442,swing
+13,27,28,1663033020442,1663033020459,swing
+13,28,29,1663033020459,1663033020475,swing
+13,29,30,1663033020475,1663033020492,swing
+13,30,31,1663033020492,1663033020509,swing
+13,31,32,1663033020509,1663033020525,swing
+13,32,33,1663033020525,1663033020542,swing
+13,33,34,1663033020542,1663033020559,swing
+13,34,35,1663033020559,1663033020576,swing
+13,35,36,1663033020576,1663033020593,swing
+13,36,37,1663033020593,1663033020609,swing
+13,37,38,1663033020609,1663033020626,swing
+13,38,39,1663033020626,1663033020643,swing
+13,39,40,1663033020643,1663033020660,swing
+13,40,41,1663033020660,1663033020676,swing
+13,41,42,1663033020676,1663033020693,swing
+13,42,43,1663033020693,1663033020709,swing
+13,43,44,1663033020709,1663033020726,swing
+13,44,45,1663033020726,1663033020743,swing
+13,45,46,1663033020743,1663033020760,swing
+13,46,47,1663033020760,1663033020776,swing
+13,47,48,1663033020776,1663033020793,swing
+13,48,49,1663033020793,1663033020809,swing
+13,49,50,1663033020809,1663033020827,swing
+13,50,51,1663033020827,1663033020843,swing
+13,51,52,1663033020843,1663033020860,swing
+13,52,53,1663033020860,1663033020877,swing
+13,53,54,1663033020877,1663033020893,swing
+13,54,55,1663033020893,1663033020910,swing
+13,55,56,1663033020910,1663033020927,swing
+13,56,57,1663033020927,1663033020944,swing
+13,57,58,1663033020944,1663033020960,swing
+13,58,59,1663033020960,1663033020977,swing
+13,59,60,1663033020977,1663033020994,swing
+13,60,61,1663033020994,1663033021010,swing
+13,61,62,1663033021010,1663033021027,swing
+13,62,63,1663033021027,1663033021043,swing
+13,63,64,1663033021043,1663033021060,swing
+13,64,65,1663033021060,1663033021077,swing
+13,65,66,1663033021077,1663033021094,swing
+13,66,67,1663033021094,1663033021111,swing
+13,67,68,1663033021111,1663033021127,swing
+13,68,69,1663033021127,1663033021144,swing
+13,69,70,1663033021144,1663033021160,swing
+13,70,71,1663033021160,1663033021177,swing
+13,71,72,1663033021177,1663033021194,swing
+13,72,73,1663033021194,1663033021210,swing
+13,73,74,1663033021210,1663033021227,swing
+13,74,75,1663033021227,1663033021244,swing
+13,75,76,1663033021244,1663033021261,swing
+13,76,77,1663033021261,1663033021277,swing
+13,77,78,1663033021277,1663033021294,swing
+13,78,79,1663033021294,1663033021310,swing
+13,79,80,1663033021310,1663033021327,swing
+13,80,81,1663033021327,1663033021344,swing
+13,81,82,1663033021344,1663033021361,swing
+13,82,83,1663033021361,1663033021377,swing
+13,83,84,1663033021377,1663033021394,swing
+13,84,85,1663033021394,1663033021410,swing
+13,85,86,1663033021410,1663033021427,swing
+13,86,87,1663033021427,1663033021444,swing
+13,87,88,1663033021444,1663033021461,swing
+13,88,89,1663033021461,1663033021477,swing
+13,89,90,1663033021477,1663033021494,swing
+13,90,91,1663033021494,1663033021511,swing
+13,91,92,1663033021511,1663033021527,swing
+13,92,93,1663033021527,1663033021544,swing
+13,93,94,1663033021544,1663033021561,swing
+13,94,95,1663033021561,1663033021578,swing
+13,95,96,1663033021578,1663033021595,swing
+13,96,97,1663033021595,1663033021611,swing
+13,97,98,1663033021611,1663033021628,swing
+13,98,99,1663033021628,1663033021644,swing
+13,99,100,1663033021644,1663033021661,swing
+13,100,101,1663033021661,1663033021678,swing
+13,101,102,1663033021678,1663033021695,swing
+13,102,103,1663033021695,1663033021711,swing
+13,103,104,1663033021711,1663033021728,swing
+13,104,105,1663033021728,1663033021745,swing
+13,105,106,1663033021745,1663033021763,swing
+13,106,107,1663033021763,1663033021778,swing
+13,107,108,1663033021778,1663033021795,swing
+13,108,109,1663033021795,1663033021812,swing
+13,109,110,1663033021812,1663033021828,swing
+13,110,111,1663033021828,1663033021844,swing
+13,111,112,1663033021844,1663033021862,swing
+13,112,113,1663033021862,1663033021878,swing
+13,113,114,1663033021878,1663033021895,swing
+13,114,115,1663033021895,1663033021911,swing
+13,115,116,1663033021911,1663033021928,swing
+13,116,117,1663033021928,1663033021945,swing
+13,117,118,1663033021945,1663033021962,swing
+13,118,119,1663033021962,1663033021978,swing
+13,119,120,1663033021978,1663033021995,swing
+13,120,121,1663033021995,1663033022011,swing
+13,121,122,1663033022011,1663033022028,swing
+13,122,123,1663033022028,1663033022045,swing
+13,123,124,1663033022045,1663033022062,swing
+13,124,125,1663033022062,1663033022079,swing
+13,125,126,1663033022079,1663033022095,swing
+13,126,127,1663033022095,1663033022112,swing
+13,127,128,1663033022112,1663033022128,swing
+13,128,129,1663033022128,1663033022145,swing
+13,129,130,1663033022145,1663033022162,swing
+13,130,131,1663033022162,1663033022178,swing
+13,131,132,1663033022178,1663033022195,swing
+13,132,133,1663033022195,1663033022212,swing
+13,133,134,1663033022212,1663033022229,swing
+13,134,135,1663033022229,1663033022245,swing
+13,135,136,1663033022245,1663033022262,swing
+13,136,137,1663033022262,1663033022279,swing
+13,137,138,1663033022279,1663033022295,swing
+13,138,139,1663033022295,1663033022312,swing
+13,139,140,1663033022312,1663033022329,swing
+13,140,141,1663033022329,1663033022346,swing
+13,141,142,1663033022346,1663033022362,swing
+13,142,143,1663033022362,1663033022379,swing
+13,143,144,1663033022379,1663033022396,swing
+13,144,145,1663033022396,1663033022412,swing
+13,145,146,1663033022412,1663033022429,swing
+13,146,147,1663033022429,1663033022446,swing
+13,147,148,1663033022446,1663033022463,swing
+13,148,149,1663033022463,1663033022479,swing
+13,149,150,1663033022479,1663033022496,swing
+13,150,151,1663033022496,1663033022513,swing
+13,151,152,1663033022513,1663033022529,swing
+13,152,153,1663033022529,1663033022546,swing
+13,153,154,1663033022546,1663033022563,swing
+13,154,155,1663033022563,1663033022579,swing
+13,155,156,1663033022579,1663033022596,swing
+13,156,157,1663033022596,1663033022613,swing
+13,157,158,1663033022613,1663033022629,swing
+13,158,159,1663033022629,1663033022646,swing
+13,159,160,1663033022646,1663033022663,swing
+13,160,161,1663033022663,1663033022680,swing
+13,161,162,1663033022680,1663033022696,swing
+13,162,163,1663033022696,1663033022713,swing
+13,163,164,1663033022713,1663033022729,swing
+13,164,165,1663033022729,1663033022746,swing
+13,165,166,1663033022746,1663033022763,swing
+13,166,167,1663033022763,1663033022780,swing
+13,167,168,1663033022780,1663033022796,swing
+13,168,169,1663033022796,1663033022813,swing
+13,169,170,1663033022813,1663033022829,swing
+13,170,171,1663033022829,1663033022846,swing
+13,171,172,1663033022846,1663033022863,swing
+13,172,173,1663033022863,1663033022880,swing
+13,173,174,1663033022880,1663033022896,swing
+13,174,175,1663033022896,1663033022913,swing
+13,175,176,1663033022913,1663033022930,swing
+13,176,177,1663033022930,1663033022947,swing
+13,177,178,1663033022947,1663033022963,swing
+13,178,179,1663033022963,1663033022980,swing
+13,179,180,1663033022980,1663033022997,swing
+13,180,181,1663033022997,1663033023013,swing
+13,181,182,1663033023013,1663033023030,swing
+13,182,183,1663033023030,1663033023047,swing
+13,183,184,1663033023047,1663033023063,swing
+13,184,185,1663033023063,1663033023080,swing
+13,185,186,1663033023080,1663033023097,swing
+13,186,187,1663033023097,1663033023114,swing
+13,187,188,1663033023114,1663033023130,swing
+13,188,189,1663033023130,1663033023147,swing
+13,189,190,1663033023147,1663033023163,swing
+13,190,191,1663033023163,1663033023180,swing
+13,191,192,1663033023180,1663033023197,swing
+13,192,193,1663033023197,1663033023214,swing
+13,193,194,1663033023214,1663033023230,swing
+13,194,195,1663033023230,1663033023247,swing
+13,195,196,1663033023247,1663033023264,swing
+13,196,197,1663033023264,1663033023280,swing
+13,197,198,1663033023280,1663033023297,swing
+13,198,199,1663033023297,1663033023314,swing
+13,199,200,1663033023314,1663033023331,swing
+13,200,201,1663033023331,1663033023347,swing
+13,201,202,1663033023347,1663033023364,swing
+13,202,203,1663033023364,1663033023380,swing
+13,203,204,1663033023380,1663033023397,swing
+13,204,205,1663033023397,1663033023414,swing
+13,205,206,1663033023414,1663033023430,swing
+13,206,207,1663033023430,1663033023447,swing
+13,207,208,1663033023447,1663033023464,swing
+13,208,209,1663033023464,1663033023481,swing
+13,209,210,1663033023481,1663033023497,swing
+13,210,211,1663033023497,1663033023515,swing
+13,211,212,1663033023515,1663033023531,swing
+13,212,213,1663033023531,1663033023548,swing
+13,213,214,1663033023548,1663033023564,swing
+13,214,215,1663033023564,1663033023581,swing
+13,215,216,1663033023581,1663033023598,swing
+13,216,217,1663033023598,1663033023615,swing
+13,217,218,1663033023615,1663033023631,swing
+13,218,219,1663033023631,1663033023648,swing
+13,219,220,1663033023648,1663033023664,swing
+13,220,221,1663033023664,1663033023681,swing
+13,221,222,1663033023681,1663033023698,swing
+13,222,223,1663033023698,1663033023715,swing
+13,223,224,1663033023715,1663033023731,swing
+13,224,225,1663033023731,1663033023748,swing
+13,225,226,1663033023748,1663033023764,swing
+13,226,227,1663033023764,1663033023782,swing
+13,227,228,1663033023782,1663033023798,swing
+13,228,229,1663033023798,1663033023815,swing
+13,229,230,1663033023815,1663033023831,swing
+13,230,231,1663033023831,1663033023848,swing
+13,231,232,1663033023848,1663033023865,swing
+13,232,233,1663033023865,1663033023882,swing
+13,233,234,1663033023882,1663033023898,swing
+13,234,235,1663033023898,1663033023915,swing
+13,235,236,1663033023915,1663033023932,swing
+13,236,237,1663033023932,1663033023949,swing
+13,237,238,1663033023949,1663033023965,swing
+13,238,239,1663033023965,1663033023982,swing
+13,239,240,1663033023982,1663033023998,swing
