@@ -12,11 +12,12 @@ Original file is located at
 #!pip install umap-learn
 #!pip install plotly
 import pandas as pd
-import numpy
+import numpy as np
+import cv2
 import os
 import sys
 import random
-numpy.set_printoptions(threshold=sys.maxsize)
+np.set_printoptions(threshold=sys.maxsize)
 pd.options.display.max_columns = None
 from BorutaShap import BorutaShap
 import dgl
@@ -31,11 +32,12 @@ from dgl.dataloading import GraphDataLoader
 from torch.utils.data.sampler import SubsetRandomSampler
 from umap import UMAP
 import plotly.express as px
-
+from scipy.special import softmax
 
 """## Load graph data from CSV"""
-epochs_graph=100
-epochs_node=100
+epochs_graph = 10
+epochs_node = 50
+batch_size = 1
 
 """#Graph Classification"""
 
@@ -47,9 +49,9 @@ class MyDataset(DGLDataset):
         self.num_classes=2
         self.graphs = []
         self.labels = []
-        #node_features = torch.from_numpy(nodes_data[['X5','Y5']].to_numpy()).float()
-        node_features = torch.from_numpy(nodes_data.to_numpy()).float()
-        node_labels = torch.from_numpy(nodes_data['label'].to_numpy()).long()
+        node_features = torch.from_numpy(nodes_data.drop(columns=['label']).to_numpy()).float()
+        node_labels = torch.from_numpy(nodes_data['label'].to_numpy()).int()
+        node_graphs = torch.from_numpy(nodes_data['graph_id'].to_numpy()).int()
         #edge_features = torch.from_numpy(edges_data['Weight'].to_numpy())
         edges_src = torch.from_numpy(edges_data['src'].to_numpy())
         edges_dst = torch.from_numpy(edges_data['dst'].to_numpy())
@@ -58,6 +60,7 @@ class MyDataset(DGLDataset):
         self.graph.ndata['feat'] = node_features
         self.graph.ndata['label'] = node_labels
         #self.graph.edata['weight'] = edge_features
+        self.graph.ndata['graph_id'] = node_graphs
 
         # If your dataset is a node classification dataset, you will need to assign
         # masks indicating whether a node belongs to training, validation, and test set.
@@ -100,10 +103,12 @@ class MyDataset(DGLDataset):
             g = dgl.graph((src, dst), num_nodes=num_nodes)
             #g = dgl.graph((src, dst))
             nodes_of_id = nodes_group.get_group(graph_id)
-            node_features = torch.from_numpy(nodes_of_id.drop(columns=['label']).to_numpy()).float()
-            node_labels = torch.from_numpy(nodes_of_id['label'].to_numpy()).long()
+            node_features = torch.from_numpy(nodes_of_id.drop(columns=['label']).to_numpy()).int()
+            node_labels = torch.from_numpy(nodes_of_id['label'].to_numpy()).int()
+            node_graphs = torch.from_numpy(nodes_of_id['graph_id'].to_numpy()).int()
             g.ndata['feat'] = node_features
             g.ndata['label'] = node_labels
+            g.ndata['graph_id'] = node_graphs
             n_nodes = num_nodes
             n_train = int(n_nodes * 0.4)
             n_val = int(n_nodes * 0.1)
@@ -119,7 +124,7 @@ class MyDataset(DGLDataset):
             g = dgl.add_self_loop(g)
             self.graphs.append(g)
             self.labels.append(label)
-            )
+
 
         # Convert the label list to tensor for saving.
         self.labels = torch.LongTensor(self.labels)
@@ -161,7 +166,7 @@ def getListOfFiles(dirName):
 
 # Get the list of all files in directory tree at given path
 list_of_files = getListOfFiles(directory)
-random.shuffle(list_of_files)
+#random.shuffle(list_of_files)
 
 #Train data
 graphID = 0
@@ -184,8 +189,8 @@ for entry in list_of_files:
         temp_data['name'] = entry
         #if temp_data.label[0] != -1:
         nodes_data = pd.concat([nodes_data, temp_data], axis="rows", ignore_index=True)
-        #temp_properties_data = temp_data[:1][['graph_id','Target']]
-        temp_properties_data = temp_data[:1][['graph_id','label','name']]
+        temp_properties_data = temp_data[:1][['graph_id','name']]
+        temp_properties_data['label'] = int(subdirname)
         temp_properties_data['num_nodes']=temp_data.shape[0]
         properties_data = pd.concat([properties_data, temp_properties_data], axis="rows", ignore_index=True)
         #properties_data=properties_data[:1]
@@ -225,8 +230,8 @@ for entry in list_of_files:
         temp_data['name'] = entry
         #if temp_data.label[0] != -1:
         nodes_data = pd.concat([nodes_data, temp_data], axis="rows", ignore_index=True)
-        #temp_properties_data = temp_data[:1][['graph_id','Target']]
-        temp_properties_data = temp_data[:1][['graph_id','label','name']]
+        temp_properties_data = temp_data[:1][['graph_id','name']]
+        temp_properties_data['label'] = int(subdirname)
         temp_properties_data['num_nodes']=temp_data.shape[0]
         properties_data = pd.concat([properties_data, temp_properties_data], axis="rows", ignore_index=True)
         #properties_data=properties_data[:1]
@@ -242,6 +247,7 @@ for entry in list_of_files:
 nodes_data = nodes_data.select_dtypes(['number'])
 
 test_dataset = MyDataset()
+
 g, label = test_dataset[:]
 print(g, label)
 
@@ -249,17 +255,17 @@ print(properties_data)
 
 num_examples = len(train_dataset)
 num_train = int(num_examples * 1)
+num_test = len(test_dataset)
 
 #train_sampler = SubsetRandomSampler(torch.arange(num_train))
 #test_sampler = SubsetRandomSampler(torch.arange(num_train, num_examples))
 
 train_dataloader = GraphDataLoader(
-    #train_dataset, sampler=train_sampler, batch_size=1, drop_last=False, shuffle=True)
-    train_dataset, batch_size=1, drop_last=False, shuffle=True)
+    #train_dataset, sampler=train_sampler, batch_size=1, drop_last=False)
+    train_dataset, batch_size=batch_size, drop_last=False, shuffle=True)
 test_dataloader = GraphDataLoader(
-    test_dataset, batch_size=1, drop_last=False, shuffle=False)
-    #test_dataset, sampler=test_sampler, batch_size=1, drop_last=False, shuffle=False)
-
+    test_dataset, batch_size=batch_size, drop_last=False, shuffle=True)
+    ##test_dataset, sampler=test_sampler, batch_size=1, drop_last=False, shuffle=False)
 '''
 # If no model is selected default is the Random Forest
 # If classification is True it is a classification problem
@@ -300,7 +306,6 @@ fig_3d.update_traces(marker_size=5)
 fig_2d.show()
 fig_3d.show()
 '''
-
 #it = iter(train_dataloader)
 #batch = next(it)
 #print(batch)
@@ -317,13 +322,11 @@ fig_3d.show()
 from dgl.nn import GraphConv
 
 class GCN(nn.Module):
-    #def __init__(self, in_feats, h_feats, num_classes):
     def __init__(self, feat, h_feats, num_classes):
         super(GCN, self).__init__()
         self.conv1 = GraphConv(feat, h_feats)
         self.conv2 = GraphConv(h_feats, num_classes)
-    
-    #def forward(self, g, in_feat):
+   
     def forward(self, graph, feat, eweight=None):
         h = self.conv1(graph, feat)
         h = F.relu(h)
@@ -340,30 +343,44 @@ model = GCN(g.ndata['feat'].shape[1], g.num_nodes(), dataset.num_classes)
 optimizer = torch.optim.Adam(model.parameters(), lr=0.01)
 
 for epoch in range(epochs_graph):
-    #print("Epoch: ", epoch)
     for batched_graph, labels in train_dataloader:
         pred = model(batched_graph, batched_graph.ndata['feat'].float())
         loss = F.cross_entropy(pred, labels)
+
         optimizer.zero_grad()
         loss.backward()
         optimizer.step()
+    if epoch % 5 == 0:
+     print('Epoch %d | Loss: %.4f' % (epoch, loss.item()))
 
 num_correct = 0
 num_tests = 0
 for batched_graph, labels in test_dataloader:
     pred = model(batched_graph, batched_graph.ndata['feat'].float())
     #print(batched_graph)
+    
     print("Label: ", labels)
+    print("Probability: ", torch.nn.functional.softmax(pred))
     print("Prediction: ", pred.argmax(1), "\n")
+    #Classification
     num_correct += (pred.argmax(1) == labels).sum().item()
     num_tests += len(labels)
+    
+    #regression
+    #from sklearn.metrics import r2_score, mean_squared_error
+    #r2 = r2_score(pred.argmax(1).float(), labels)
+    #print("R2 Score:", r2)
+    #mse = mean_squared_error(pred.argmax(1).float(), labels)
+    #print("Mean Squared Error Score:", mse)
 
-print("num_examples:",  num_examples)
-print("num_train:",  num_train)
+#classification
+print("num_correct:",  num_correct)
+print("num_tests:",  num_tests)
 print('Test accuracy:', num_correct / num_tests)
 
 explainer = GNNExplainer(model, num_hops=50, lr=0.001, num_epochs=200, alpha1=0.01, alpha2=2.0, beta1=2.0, beta2=0.5, log=True)
 dataset = MyDataset()
+
 g, _ = dataset[0]
 features = g.ndata['feat']
 feat_mask, edge_mask = explainer.explain_graph(g, features)
@@ -378,19 +395,94 @@ print(g)
 print(feat_mask)
 print(edge_mask)
 
-"""#Node Classification"""
+def generate_video(graph_name):
+ # Create a VideoCapture object and read from input file
+ cap = cv2.VideoCapture(
+     graph_name, cv2.CAP_FFMPEG)
+ fps = cap.get(cv2.CAP_PROP_FPS)
+ print("Frame rate: ", int(fps), "FPS") 
 
+ # Check if file opened successfully
+ if (cap.isOpened()== False):
+     print("Error opening video file")
+ frame_number=1
+ counter=0
+ # We need to set resolutions.
+ # so, convert them from float to integer.
+ frame_width = int(cap.get(3))
+ frame_height = int(cap.get(4))
+   
+ size = (frame_width, frame_height)
+   
+ # Below VideoWriter object will create
+ # a frame of above defined The output 
+ # is stored in 'filename.avi' file.
+ result = cv2.VideoWriter(graph_name+'.avi', 
+                         cv2.VideoWriter_fourcc(*'MJPG'),
+                         10, size)
+ # Read until video is completed
+ while(cap.isOpened()):
+  # Capture frame-by-frame
+     ret, frame = cap.read()
+     if ret == True:
+     # Display the resulting frame
+        if(frame_number % 3 == 0):
+         if pred.argmax(1)[counter]!=0: 
+         #if batched_graph.ndata['label'][counter]==1:
+          result.write(frame)
+          cv2.imshow('Frame', frame)
+         counter+=1
+         
+     # Press Q on keyboard to exit
+        #if cv2.waitKey(25) & 0xFF == ord('q'):
+        if cv2.waitKey(25) & 0xFF ==27:
+          break
+ 
+ # Break the loop
+     else:
+         break
+     frame_number+=1     
+ # When everything done, release
+ # the video capture object
+ # When everything done, release 
+ # the video capture and video 
+ # write objects
+ cap.release()
+ result.release()
+ 
+ # Closes all the frames
+ cv2.destroyAllWindows()
+
+"""#Node Classification and Regression"""
+
+#Classification
 class GCN(nn.Module):
     def __init__(self, in_feats, h_feats, num_classes):
         super(GCN, self).__init__()
         self.conv1 = GraphConv(in_feats, h_feats)
         self.conv2 = GraphConv(h_feats, num_classes)
-
     def forward(self, g, in_feat):
         h = self.conv1(g, in_feat)
         h = F.relu(h)
         h = self.conv2(g, h)
         return h
+
+#Regression
+'''
+class GCN(nn.Module):
+    def __init__(self, in_feats, h_feats, num_classes):
+        super(GCN, self).__init__()
+        self.conv1 = GraphConv(in_feats, h_feats)
+        self.conv2 = GraphConv(h_feats, num_classes)
+        self.linear1 = torch.nn.Linear(in_feats,h_feats)
+    def forward(self, g, in_feat):
+        h = self.conv1(g, in_feat)
+        h = F.relu(h)
+        #h = F.dropout(h, p=0.5, training=self.training)
+        h = self.conv2(g, h)
+        h = self.linear1(h)
+        return h
+'''
     
 # Create the model with given dimensions
 
@@ -412,19 +504,27 @@ optimizer = torch.optim.Adam(model.parameters(), lr=0.01)
 #train_mask = g.ndata['train_mask']
 #val_mask = g.ndata['val_mask']
 #test_mask = g.ndata['test_mask']
-for e in range(epochs_node):
+for epoch in range(epochs_node):
  for batched_graph, labels in train_dataloader:
+    #classification
     # Forward
     logits = model(batched_graph, batched_graph.ndata['feat'])
-    #logits = model(g, features)
+    ##logits = model(g, features)
 
     # Compute prediction
-    pred = logits.argmax(1)
+    #pred = logits.argmax(1)
 
     # Compute loss
     # Note that you should only compute the losses of the nodes in the training set.
-    loss = F.cross_entropy(logits, batched_graph.ndata['label'])
-    #loss = F.cross_entropy(logits[train_mask], labels[train_mask])
+    #classification
+    loss = F.cross_entropy(logits, batched_graph.ndata['label'].type(torch.LongTensor))
+    #print(loss)
+    #loss = F.cross_entropy(logits, labels)
+    ##loss = F.cross_entropy(logits[train_mask], labels[train_mask])
+
+    #regression
+    #outputs = model(batched_graph, batched_graph.ndata['feat']).argmax(1)
+    #loss = F.mse_loss(outputs, batched_graph.ndata['label'])
 
     # Compute accuracy on training/validation/test
     #train_acc = (pred[train_mask] == labels[train_mask]).float().mean()
@@ -439,85 +539,58 @@ for e in range(epochs_node):
 
     # Backward
     optimizer.zero_grad()
+    #loss.requires_grad = True
     loss.backward()
     optimizer.step()
 
-    #if e % 5 == 0:
-    #    print('In epoch {}, loss: {:.3f}, val acc: {:.3f} (best {:.3f}), test acc: {:.3f} (best {:.3f})'.format(
-    #        e, loss, val_acc, best_val_acc, test_acc, best_test_acc))
-
-
+ if epoch % 5 == 0:
+  print('Epoch %d | Loss: %.4f' % (epoch, loss.item()))
+  #if e % 5 == 0:
+  #    print('In epoch {}, loss: {:.3f}, val acc: {:.3f} (best {:.3f}), test acc: {:.3f} (best {:.3f})'.format(
+  #        e, loss, val_acc, best_val_acc, test_acc, best_test_acc))
+'''
+#regression
 num_correct = 0
 num_tests = 0
 for batched_graph, labels in test_dataloader:
-    print(batched_graph)
+    graph_name = properties_data['name'].iloc[batched_graph.ndata['graph_id'][0].numpy()]
+    print(graph_name[:-4])
     pred = model(batched_graph, batched_graph.ndata['feat'].float())
     print("Label: ", batched_graph.ndata['label'])
     print("Prediction: ", pred.argmax(1), "\n")
-    #num_correct += (pred.argmax(1) == labels).sum().item()
+    generate_video(graph_name[:-4])
+    ##num_correct += (pred.argmax(1) == labels).sum().item()
+    #num_correct += (pred.argmax(1) == batched_graph.ndata['label']).sum().item()
+    ##num_tests += len(labels)
+    #num_tests += len(batched_graph.ndata['label'])
+    #print('Number Correct:', num_correct)
+    #print('Number Tests:', num_tests)
+    #print('Test accuracy:', num_correct / num_tests)
+
+    from sklearn.metrics import r2_score, mean_squared_error
+    r2 = r2_score(pred.argmax(1).float(), batched_graph.ndata['label'].int())
+    print("R2 Score:", r2)
+    mse = mean_squared_error(pred.argmax(1).float(), batched_graph.ndata['label'].int())
+    print("Mean Squared Error Score:", mse)
+    
+    #tot = ((labels - labels.mean()) ** 2).sum()
+    #res = ((labels - pred) ** 2).sum()
+    #r2 = 1 - res / tot
+    #print("Score: ", r2)
+'''
+#classification
+num_correct = 0
+num_tests = 0
+for batched_graph, labels in test_dataloader:
+    graph_name = properties_data['name'].iloc[batched_graph.ndata['graph_id'][0].numpy()]
+    print(graph_name[:-4])
+    pred = model(batched_graph, batched_graph.ndata['feat'].float())
+    print("Label: ", batched_graph.ndata['label'])
+    print("Probability: ", torch.nn.functional.softmax(pred), "\n")
+    print("Prediction: ", pred.argmax(1), "\n")
+    generate_video(graph_name[:-4])
     num_correct += (pred.argmax(1) == batched_graph.ndata['label']).sum().item()
-    #num_tests += len(labels)
     num_tests += len(batched_graph.ndata['label'])
 print('Number Correct:', num_correct)
 print('Number Tests:', num_tests)
 print('Test accuracy:', num_correct / num_tests)
-
-# importing libraries
-import cv2
-import numpy as np
- 
-# Create a VideoCapture object and read from input file
-cap = cv2.VideoCapture(
-    './Tim/test/0/IMG_0569.MOV', cv2.CAP_FFMPEG)
-fps = cap.get(cv2.CAP_PROP_FPS)
-print("Frame rate: ", int(fps), "FPS")
-
-# Check if file opened successfully
-if (cap.isOpened()== False):
-    print("Error opening video file")
-frame_number=0
-counter=0
-# We need to set resolutions.
-# so, convert them from float to integer.
-frame_width = int(cap.get(3))
-frame_height = int(cap.get(4))
-   
-size = (frame_width, frame_height)
-   
-# Below VideoWriter object will create
-# a frame of above defined The output 
-# is stored in 'filename.avi' file.
-result = cv2.VideoWriter('./Tim/test/0/PREDICTED_GOOD_IMG_0569.avi', 
-                         cv2.VideoWriter_fourcc(*'MJPG'),
-                         10, size)
-# Read until video is completed
-while(cap.isOpened()):
- # Capture frame-by-frame
-    ret, frame = cap.read()
-    if ret == True:
-    # Display the resulting frame
-       if(frame_number % 3 == 0):
-        if pred.argmax(1)[counter]==1: 
-        #if batched_graph.ndata['label'][counter]==1:
-         result.write(frame)
-         cv2.imshow('Frame', frame)
-        counter+=1
-         
-    # Press Q on keyboard to exit
-       if cv2.waitKey(25) & 0xFF == ord('q'):
-         break
- 
-# Break the loop
-    else:
-        break
-    frame_number+=1     
-# When everything done, release
-# the video capture object
-# When everything done, release 
-# the video capture and video 
-# write objects
-cap.release()
-result.release()
- 
-# Closes all the frames
-cv2.destroyAllWindows()
