@@ -11,8 +11,10 @@ Original file is located at
 #!pip install BorutaShap
 #!pip install umap-learn
 #!pip install plotly
+#!pip install lightgbm
 import pandas as pd
 import numpy as np
+import dtale
 import cv2
 import os
 import sys
@@ -20,6 +22,7 @@ import random
 np.set_printoptions(threshold=sys.maxsize)
 pd.options.display.max_columns = None
 from BorutaShap import BorutaShap
+import lightgbm as lgb
 import dgl
 from dgl.data import DGLDataset
 import torch
@@ -32,11 +35,135 @@ from dgl.dataloading import GraphDataLoader
 from torch.utils.data.sampler import SubsetRandomSampler
 from umap import UMAP
 import plotly.express as px
+import matplotlib.pyplot as plt
 from scipy.special import softmax
 
+pose_tubuh = ['NOSE_X',
+              'NOSE_Y',
+              'NOSE_Z',
+              'LEFT_EYE_INNER_X', 
+              'LEFT_EYE_INNER_Y', 
+              'LEFT_EYE_INNER_Z', 
+              'LEFT_EYE_X', 
+              'LEFT_EYE_Y', 
+              'LEFT_EYE_Z', 
+              'LEFT_EYE_OUTER_X', 
+              'LEFT_EYE_OUTER_Y', 
+              'LEFT_EYE_OUTER_Z', 
+              'RIGHT_EYE_INNER_X', 
+              'RIGHT_EYE_INNER_Y', 
+              'RIGHT_EYE_INNER_Z', 
+              'RIGHT_EYE_X', 
+              'RIGHT_EYE_Y', 
+              'RIGHT_EYE_Z', 
+              'RIGHT_EYE_OUTER_X', 
+              'RIGHT_EYE_OUTER_Y', 
+              'RIGHT_EYE_OUTER_Z', 
+              'LEFT_EAR_X', 
+              'LEFT_EAR_Y', 
+              'LEFT_EAR_Z', 
+              'RIGHT_EAR_X', 
+              'RIGHT_EAR_Y', 
+              'RIGHT_EAR_Z', 
+              'MOUTH_LEFT_X', 
+              'MOUTH_LEFT_Y', 
+              'MOUTH_LEFT_Z', 
+              'MOUTH_RIGHT_X',
+              'MOUTH_RIGHT_Y',
+              'MOUTH_RIGHT_Z',
+              'LEFT_SHOULDER_X',
+              'LEFT_SHOULDER_Y',
+              'LEFT_SHOULDER_Z',
+              'RIGHT_SHOULDER_X', 
+              'RIGHT_SHOULDER_Y', 
+              'RIGHT_SHOULDER_Z', 
+              'LEFT_ELBOW_X', 
+              'LEFT_ELBOW_Y', 
+              'LEFT_ELBOW_Z', 
+              'RIGHT_ELBOW_X', 
+              'RIGHT_ELBOW_Y', 
+              'RIGHT_ELBOW_Z', 
+              'LEFT_WRIST_X', 
+              'LEFT_WRIST_Y', 
+              'LEFT_WRIST_Z', 
+              'RIGHT_WRIST_X', 
+              'RIGHT_WRIST_Y', 
+              'RIGHT_WRIST_Z', 
+              'LEFT_PINKY_X', 
+              'LEFT_PINKY_Y', 
+              'LEFT_PINKY_Z', 
+              'RIGHT_PINKY_X', 
+              'RIGHT_PINKY_Y', 
+              'RIGHT_PINKY_Z', 
+              'LEFT_INDEX_X', 
+              'LEFT_INDEX_Y', 
+              'LEFT_INDEX_Z', 
+              'RIGHT_INDEX_X', 
+              'RIGHT_INDEX_Y', 
+              'RIGHT_INDEX_Z', 
+              'LEFT_THUMB_X',
+              'LEFT_THUMB_Y',
+              'LEFT_THUMB_Z',
+              'RIGHT_THUMB_X', 
+              'RIGHT_THUMB_Y', 
+              'RIGHT_THUMB_Z', 
+              'LEFT_HIP_X', 
+              'LEFT_HIP_Y', 
+              'LEFT_HIP_Z', 
+              'RIGHT_HIP_X', 
+              'RIGHT_HIP_Y', 
+              'RIGHT_HIP_Z', 
+              'LEFT_KNEE_X', 
+              'LEFT_KNEE_Y', 
+              'LEFT_KNEE_Z_Z', 
+              'RIGHT_KNEE_X', 
+              'RIGHT_KNEE_Y', 
+              'RIGHT_KNEE_Z', 
+              'LEFT_ANKLE_X', 
+              'LEFT_ANKLE_Y', 
+              'LEFT_ANKLE_Z', 
+              'RIGHT_ANKLE_X', 
+              'RIGHT_ANKLE_Y', 
+              'RIGHT_ANKLE_Z', 
+              'LEFT_HEEL_X', 
+              'LEFT_HEEL_Y', 
+              'LEFT_HEEL_Z', 
+              'RIGHT_HEEL_X', 
+              'RIGHT_HEEL_Y', 
+              'RIGHT_HEEL_Z', 
+              'LEFT_FOOT_INDEX_X', 
+              'LEFT_FOOT_INDEX_Y', 
+              'LEFT_FOOT_INDEX_Z', 
+              'RIGHT_FOOT_INDEX_X',
+              'RIGHT_FOOT_INDEX_Y',
+              'RIGHT_FOOT_INDEX_Z',
+              'ball1',
+              'ball2',
+              'ball3',
+              'ball4',
+              'ball5',
+              'flight1',
+              'flight2',
+              'flight3',
+              'flight4',
+              'flight5',
+              'flight6',
+              'flight7',
+              'club1',
+              'club2',
+              'adjustment1',
+              'adjustment2',
+              'adjustment3',
+              'adjustment4',
+              'adjustment5',
+              'label',
+              'graph_id'
+              ,'name']
+
+
 """## Load graph data from CSV"""
-epochs_graph = 10
-epochs_node = 50
+epochs_graph = 100
+epochs_node = 100
 batch_size = 1
 
 """#Graph Classification"""
@@ -103,7 +230,7 @@ class MyDataset(DGLDataset):
             g = dgl.graph((src, dst), num_nodes=num_nodes)
             #g = dgl.graph((src, dst))
             nodes_of_id = nodes_group.get_group(graph_id)
-            node_features = torch.from_numpy(nodes_of_id.drop(columns=['label']).to_numpy()).int()
+            node_features = torch.from_numpy(nodes_of_id.drop(columns=['label']).to_numpy()).float()
             node_labels = torch.from_numpy(nodes_of_id['label'].to_numpy()).int()
             node_graphs = torch.from_numpy(nodes_of_id['graph_id'].to_numpy()).int()
             g.ndata['feat'] = node_features
@@ -203,6 +330,7 @@ for entry in list_of_files:
          temp_edges_data.iloc[index,2]=index+1
         temp_edges_data.drop(temp_edges_data.tail(1).index,inplace=True)
         edges_data = pd.concat([edges_data, temp_edges_data], axis="rows", ignore_index=True)
+df = nodes_data
 nodes_data = nodes_data.select_dtypes(['number'])
 
 train_dataset = MyDataset()
@@ -244,7 +372,17 @@ for entry in list_of_files:
          temp_edges_data.iloc[index,2]=index+1
         temp_edges_data.drop(temp_edges_data.tail(1).index,inplace=True)
         edges_data = pd.concat([edges_data, temp_edges_data], axis="rows", ignore_index=True)
+
+df = pd.concat([df, nodes_data])
+df.columns = pose_tubuh
+#df=df.dropna()
+        
 nodes_data = nodes_data.select_dtypes(['number'])
+
+
+#d = dtale.show(df)
+#d.open_browser()
+
 
 test_dataset = MyDataset()
 
@@ -262,30 +400,83 @@ num_test = len(test_dataset)
 
 train_dataloader = GraphDataLoader(
     #train_dataset, sampler=train_sampler, batch_size=1, drop_last=False)
-    train_dataset, batch_size=batch_size, drop_last=False, shuffle=True)
+    train_dataset, batch_size=batch_size, drop_last=False, shuffle=False)
 test_dataloader = GraphDataLoader(
-    test_dataset, batch_size=batch_size, drop_last=False, shuffle=True)
+    test_dataset, batch_size=batch_size, drop_last=False, shuffle=False)
     ##test_dataset, sampler=test_sampler, batch_size=1, drop_last=False, shuffle=False)
-'''
+
+
+#Feature_Selector_Binary_Classification = BorutaShap(model = lgb.LGBMClassifier(num_iterations=300, learning_rate=.01, verbose=1), importance_measure='shap', classification=True)
+#Feature_Selector_Binary_Classification.fit(X=df.drop(columns=['label']), y=df['label'], n_trials=50, sample=True, train_or_test='test', normalize=True, verbose=True, random_state=42)
+#Feature_Selector_Binary_Classification.plot(which_features='accepted', figsize=(16,12))
+new_df = df
+#new_df = df[df['label'] != 0]
+new_df = new_df.drop(columns=[
+              'graph_id',
+              'name',
+              #'ball1',
+              #'ball2',
+              #'ball3',
+              #'ball4',
+              #'ball5',
+              #'flight3',
+              #'flight4',
+              #'flight5',
+              #'flight6',
+              #'flight7',
+              #'club1',
+              #'club2'
+         ])
+Feature_Selector_Carry_Regression = BorutaShap(model = lgb.LGBMRegressor(num_iterations=10, learning_rate=.01, verbose=1), importance_measure='shap', classification=False)
+Feature_Selector_Carry_Regression.fit(X=new_df[new_df['flight2'] > 0].drop(columns=['flight2','label']), y=new_df[new_df['flight2'] > 0]['flight2'], n_trials=50, sample=False, train_or_test='train', normalize=True, verbose=True, random_state=42)
+#Feature_Selector_Carry_Regression.plot(which_features='accepted', figsize=(16,12))
+Feature_Selector_Carry_Regression.plot(which_features='all', figsize=(16,12))
+Feature_Selector_Offline_Regression = BorutaShap(model = lgb.LGBMRegressor(num_iterations=10, learning_rate=.01, verbose=1), importance_measure='shap', classification=False)
+Feature_Selector_Offline_Regression.fit(X=new_df[new_df['flight1'] > 0].drop(columns=['flight1','label']), y=new_df[new_df['flight1'] > 0]['flight1'], n_trials=50, sample=False, train_or_test='train', normalize=True, verbose=True, random_state=42)
+#Feature_Selector_Offline_Regression.plot(which_features='accepted', figsize=(16,12))
+Feature_Selector_Offline_Regression.plot(which_features='all', figsize=(16,12))
+Feature_Selector_Swing_Speed_Regression = BorutaShap(model = lgb.LGBMRegressor(num_iterations=10, learning_rate=.01, verbose=1), importance_measure='shap', classification=False)
+Feature_Selector_Swing_Speed_Regression.fit(X=new_df[new_df['club1'] >= 60].drop(columns=['label','club1']), y=new_df[new_df['club1'] >= 60]['club1'], n_trials=50, sample=False, train_or_test='train', normalize=True, verbose=True, random_state=42)
+#Feature_Selector_Offline_Regression.plot(which_features='accepted', figsize=(16,12))
+Feature_Selector_Swing_Speed_Regression.plot(which_features='all', figsize=(16,12))
+
 # If no model is selected default is the Random Forest
 # If classification is True it is a classification problem
-Feature_Selector = BorutaShap(importance_measure='shap', classification=True)
+#clf = lgb.LGBMClassifier(num_iterations=1, learning_rate=.01, verbose=1)
+#clf.fit(df.drop(columns=['label','graph_id']), df['label'])
+#y_clf_pred=clf.predict(df.drop(columns=['label','graph_id']))
 
-temp_nodes_data = nodes_data.sample(frac = 0.1)
-Feature_Selector.fit(X=temp_nodes_data.drop(columns=['label','graph_id']), y=temp_nodes_data['label'], n_trials=100, random_state=0)
-##Feature_Selector.fit(X=nodes_data.drop(columns=['label','Timestamp','Sample','graph_id']), y=nodes_data['label'], n_trials=50, random_state=0)
+new_df1 = new_df.drop(columns=Feature_Selector_Carry_Regression.rejected)
+reg = lgb.LGBMRegressor(num_iterations=300, learning_rate=.01, verbose=0)
+reg.fit(new_df1.drop(columns=['flight2','label']), new_df1['flight2'])
+y_reg_pred=reg.predict(new_df1.drop(columns=['flight2','label']))
+temp_df = df
+temp_df['flight2_prediction']=y_reg_pred
 
-Feature_Selector.plot(which_features='accepted', figsize=(16,12))
+new_df2 = new_df.drop(columns=Feature_Selector_Offline_Regression.rejected)
+reg = lgb.LGBMRegressor(num_iterations=300, learning_rate=.01, verbose=0)
+reg.fit(new_df2.drop(columns=['flight1','label']), new_df2['flight1'])
+y_reg_pred=reg.predict(new_df2.drop(columns=['flight1','label']))
+temp_df['flight1_prediction']=y_reg_pred
 
-nodes_data = nodes_data.drop(columns=Feature_Selector.rejected)
+new_df3 = new_df.drop(columns=Feature_Selector_Swing_Speed_Regression.rejected)
+reg = lgb.LGBMRegressor(num_iterations=300, learning_rate=.01, verbose=0)
+reg.fit(new_df3.drop(columns=['label','club1']), new_df3['club1'])
+y_reg_pred=reg.predict(new_df3.drop(columns=['label','club1']))
+temp_df['club1_prediction']=y_reg_pred
 
-#df = px.data.iris()
-df = nodes_data
+temp_df['carry-offline+clubhead_speed_actual']=temp_df['flight2']-temp_df['flight1'].abs()+temp_df['club1']
+temp_df['carry-offline+clubhead_speed_prediction']=temp_df['flight2_prediction']-temp_df['flight1_prediction'].abs()+temp_df['club1_prediction']
+temp_df.to_csv('swing_predictions.csv', index = False)
 
-#features = df.loc[:, :'petal_width']
-labels = nodes_data['label']
-features = nodes_data.drop(columns=['label'])
-#features = nodes_data[new_nodes_data]
+#ax = lgb.plot_importance(clf, max_num_features=20, figsize=(15,15))
+#ax = lgb.plot_importance(reg, max_num_features=20, figsize=(15,15))
+#plt.show()
+#plt.save
+
+'''
+labels = df['label']
+features = df.drop(columns=['label'])
 
 umap_2d = UMAP(n_components=2, init='spectral', random_state=0, n_neighbors=50, n_epochs=100, densmap=False, set_op_mix_ratio=0.25, metric='euclidean')
 umap_3d = UMAP(n_components=3, init='spectral', random_state=0, n_neighbors=50, n_epochs=100, densmap=False, set_op_mix_ratio=0.25, metric='euclidean')
@@ -306,6 +497,9 @@ fig_3d.update_traces(marker_size=5)
 fig_2d.show()
 fig_3d.show()
 '''
+
+
+
 #it = iter(train_dataloader)
 #batch = next(it)
 #print(batch)
@@ -340,8 +534,10 @@ print(g, label)
 
 model = GCN(g.ndata['feat'].shape[1], g.num_nodes(), dataset.num_classes)
 
-optimizer = torch.optim.Adam(model.parameters(), lr=0.01)
+optimizer = torch.optim.Adam(model.parameters(), lr=0.0001)
 
+temp_graph_class_pred = pd.DataFrame()
+graph_class_pred = pd.DataFrame()
 for epoch in range(epochs_graph):
     for batched_graph, labels in train_dataloader:
         pred = model(batched_graph, batched_graph.ndata['feat'].float())
@@ -357,11 +553,23 @@ num_correct = 0
 num_tests = 0
 for batched_graph, labels in test_dataloader:
     pred = model(batched_graph, batched_graph.ndata['feat'].float())
+
     #print(batched_graph)
     
     print("Label: ", labels)
     print("Probability: ", torch.nn.functional.softmax(pred))
     print("Prediction: ", pred.argmax(1), "\n")
+
+    graph_name = properties_data['name'].iloc[batched_graph.ndata['graph_id'][0].numpy()]
+    temp_graph_class_pred['graph_label'] = labels.detach().numpy()
+    temp_graph_class_pred['graph_pred'] = pd.DataFrame(pred.argmax(1).detach().numpy())
+    temp_graph_class_pred['graph_probability_0'] = pd.Series(torch.nn.functional.softmax(pred).detach().numpy()[:,0])
+    temp_graph_class_pred['graph_probability_1'] = pd.Series(torch.nn.functional.softmax(pred).detach().numpy()[:,1])
+    temp_graph_class_pred['graph_name'] = graph_name
+    #temp_graph_class_pred['club'] = graph_name[:-4]
+    graph_class_pred = pd.concat([graph_class_pred, temp_graph_class_pred])
+
+    
     #Classification
     num_correct += (pred.argmax(1) == labels).sum().item()
     num_tests += len(labels)
@@ -378,7 +586,7 @@ print("num_correct:",  num_correct)
 print("num_tests:",  num_tests)
 print('Test accuracy:', num_correct / num_tests)
 
-explainer = GNNExplainer(model, num_hops=50, lr=0.001, num_epochs=200, alpha1=0.01, alpha2=2.0, beta1=2.0, beta2=0.5, log=True)
+explainer = GNNExplainer(model, num_hops=1)
 dataset = MyDataset()
 
 g, _ = dataset[0]
@@ -388,11 +596,32 @@ print(g)
 print(feat_mask)
 print(edge_mask)
 
-g, _ = dataset[1]
-features = g.ndata['feat']
-feat_mask, edge_mask = explainer.explain_graph(g, features)
-print(g)
-print(feat_mask)
+#g, _ = dataset[1]
+#features = g.ndata['feat']
+#feat_mask, edge_mask = explainer.explain_graph(g, features)
+#print(g)
+#print(feat_mask)
+#print(edge_mask)
+
+new_center, sg, feat_mask, edge_mask = explainer.explain_node(30, g, features)
+print(edge_mask)
+new_center, sg, feat_mask, edge_mask = explainer.explain_node(31, g, features)
+print(edge_mask)
+new_center, sg, feat_mask, edge_mask = explainer.explain_node(32, g, features)
+print(edge_mask)
+new_center, sg, feat_mask, edge_mask = explainer.explain_node(33, g, features)
+print(edge_mask)
+new_center, sg, feat_mask, edge_mask = explainer.explain_node(34, g, features)
+print(edge_mask)
+new_center, sg, feat_mask, edge_mask = explainer.explain_node(35, g, features)
+print(edge_mask)
+new_center, sg, feat_mask, edge_mask = explainer.explain_node(36, g, features)
+print(edge_mask)
+new_center, sg, feat_mask, edge_mask = explainer.explain_node(37, g, features)
+print(edge_mask)
+new_center, sg, feat_mask, edge_mask = explainer.explain_node(38, g, features)
+print(edge_mask)
+new_center, sg, feat_mask, edge_mask = explainer.explain_node(39, g, features)
 print(edge_mask)
 
 def generate_video(graph_name):
@@ -400,7 +629,10 @@ def generate_video(graph_name):
  cap = cv2.VideoCapture(
      graph_name, cv2.CAP_FFMPEG)
  fps = cap.get(cv2.CAP_PROP_FPS)
- print("Frame rate: ", int(fps), "FPS") 
+ print("Frame rate: ", int(fps), "FPS")
+ skip_frames = round(fps/30)-1
+ print("Skipping every : ", skip_frames, "frames")
+
 
  # Check if file opened successfully
  if (cap.isOpened()== False):
@@ -425,13 +657,15 @@ def generate_video(graph_name):
   # Capture frame-by-frame
      ret, frame = cap.read()
      if ret == True:
-     # Display the resulting frame
-        if(frame_number % 3 == 0):
-         if pred.argmax(1)[counter]!=0: 
-         #if batched_graph.ndata['label'][counter]==1:
-          result.write(frame)
-          cv2.imshow('Frame', frame)
-         counter+=1
+        # Display the resulting frame
+        if(frame_number % skip_frames == 0):
+         #if pred.argmax(1)[counter]!=0: 
+         if counter < temp_node_class_pred['node_probability_1'].shape[0]:
+          if temp_node_class_pred['node_probability_1'][counter] >= .50:
+           #if batched_graph.ndata['label'][counter]==1:
+           result.write(frame)
+           cv2.imshow('Frame', frame)
+        counter+=1
          
      # Press Q on keyboard to exit
         #if cv2.waitKey(25) & 0xFF == ord('q'):
@@ -495,7 +729,7 @@ g, label = dataset[0]
 
 model = GCN(g.ndata['feat'].shape[1], g.num_nodes(), dataset.num_classes)
 
-optimizer = torch.optim.Adam(model.parameters(), lr=0.01)
+optimizer = torch.optim.Adam(model.parameters(), lr=0.0001)
 #best_val_acc = 0
 #best_test_acc = 0
 
@@ -581,16 +815,35 @@ for batched_graph, labels in test_dataloader:
 #classification
 num_correct = 0
 num_tests = 0
+temp_node_class_pred = pd.DataFrame()
+node_class_pred = pd.DataFrame()
 for batched_graph, labels in test_dataloader:
     graph_name = properties_data['name'].iloc[batched_graph.ndata['graph_id'][0].numpy()]
-    print(graph_name[:-4])
     pred = model(batched_graph, batched_graph.ndata['feat'].float())
     print("Label: ", batched_graph.ndata['label'])
     print("Probability: ", torch.nn.functional.softmax(pred), "\n")
     print("Prediction: ", pred.argmax(1), "\n")
-    generate_video(graph_name[:-4])
+    temp_node_class_pred = pd.DataFrame(batched_graph.ndata['feat'].detach().numpy())
+    temp_node_class_pred['node_label'] = batched_graph.ndata['label'].detach().numpy()
+    temp_node_class_pred['node_pred'] = pred.argmax(1).detach().numpy()
+    temp_node_class_pred['node_probability_0'] = pd.Series(torch.nn.functional.softmax(pred).detach().numpy()[:,0])
+    temp_node_class_pred['node_probability_1'] = pd.Series(torch.nn.functional.softmax(pred).detach().numpy()[:,1])
+    temp_node_class_pred['graph_name'] = graph_name
+    node_class_pred = pd.concat([node_class_pred, temp_node_class_pred])
+    #generate_video(graph_name[:-4])
     num_correct += (pred.argmax(1) == batched_graph.ndata['label']).sum().item()
     num_tests += len(batched_graph.ndata['label'])
 print('Number Correct:', num_correct)
 print('Number Tests:', num_tests)
 print('Test accuracy:', num_correct / num_tests)
+
+# write the predictions data to csv files
+graph_class_pred.to_csv('graph_classification_predictions.csv', index = False)
+node_class_pred.to_csv('node_classification_predictions.csv', index = False)
+print('save complete')
+
+#d = dtale.show(graph_class_pred)
+#d.open_browser()
+
+#d = dtale.show(node_class_pred)
+#d.open_browser()

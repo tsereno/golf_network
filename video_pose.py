@@ -38,9 +38,15 @@ def getListOfFiles(dirName):
 
 # Get the list of all files in directory tree at given path
 list_of_files = getListOfFiles(directory)
+list_of_files.sort()
 
 #list_of_files = sorted( filter( lambda x: os.path.isfile(os.path.join(directory, x)),
 #                        os.listdir(directory) ) )
+adjustment1 = input("Enter Driver Tee'd High (0 = False, 1 = True): ")
+adjustment2 = input("Enter Duck Feet Position (0 = False, 1 = True): ")
+adjustment3 = input("Enter Driver Hovered (0 = False, 1 = True): ")
+adjustment4 = input("Enter Used Standard Ball Placement (0 = False, 1 = True): ")
+adjustment5 = input("Enter Pushed Off with Left Arm (0 = False, 1 = True): ")
 
 for entry in list_of_files:
  if (entry.endswith('.MTS') or entry.endswith('.MOV') or entry.endswith('.m4v')) and not os.path.exists(entry+'.csv'):
@@ -50,14 +56,24 @@ for entry in list_of_files:
     alldata = []
     fps_time = 0
 
-    distance = 0.0
-    off_target = 0.0
-    ball_speed = 0.0
-    swing_speed = 0.0
+    ball1 = input("Enter BALL BALL MPH: ")
+    ball2 = input("Enter BALL LAUNCH DEG: ")
+    ball3 = input("Enter BALL BACK RPM: ")
+    ball4 = input("Enter BALL SIDE RPM: ")
+    ball5 = input("Enter BALL SIDE DEG: ")
+    flight1 = input("Enter FLIGHT OFFLINE MPH: ")
+    flight2 = input("Enter FLIGHT CARRY YD: ")
+    flight3 = input("Enter FLIGHT ROLL YD: ")
+    flight4 = input("Enter FLIGHT TOTAL YD: ")
+    flight5 = input("Enter FLIGHT FLIGHT SEC: ")
+    flight6 = input("Enter FLIGHT DSCNT DEG: ")
+    flight7 = input("Enter FLIGHT HEIGHT YD: ")
+    club1 = input("Enter CLUB CLUB MPH: ")
+    club2 = input("Enter CLUB PTI SCORE: ")
     
     subdirname = os.path.basename(os.path.dirname(entry))
     #label = int(subdirname)
-    label = 0
+    label = 1
     pose_tubuh = ['NOSE', 'LEFT_EYE_INNER', 'LEFT_EYE', 'LEFT_EYE_OUTER', 'RIGHT_EYE_INNER', 'RIGHT_EYE', 'RIGHT_EYE_OUTER', 'LEFT_EAR', 'RIGHT_EAR', 'MOUTH_LEFT', 'MOUTH_RIGHT',
                   'LEFT_SHOULDER', 'RIGHT_SHOULDER', 'LEFT_ELBOW', 'RIGHT_ELBOW', 'LEFT_WRIST', 'RIGHT_WRIST', 'LEFT_PINKY', 'RIGHT_PINKY', 'LEFT_INDEX', 'RIGHT_INDEX', 'LEFT_THUMB',
                   'RIGHT_THUMB', 'LEFT_HIP', 'RIGHT_HIP', 'LEFT_KNEE', 'RIGHT_KNEE', 'LEFT_ANKLE', 'RIGHT_ANKLE', 'LEFT_HEEL', 'RIGHT_HEEL', 'LEFT_FOOT_INDEX', 'RIGHT_FOOT_INDEX']
@@ -96,6 +112,8 @@ for entry in list_of_files:
     cap = cv2.VideoCapture(entry, cv2.CAP_FFMPEG)
     fps = cap.get(cv2.CAP_PROP_FPS)
     print("Frame rate: ", int(fps), "FPS")
+    skip_frames = round(fps/30)-1
+    print("Skipping every : ", skip_frames, "frames")
     prev_results = None
 
     with mp_holistic.Holistic(
@@ -112,10 +130,11 @@ for entry in list_of_files:
           break
           #continue
         frame_number+=1
-        if 0 ==0:
-        #if(frame_number % 3 == 0):
+        #if 0 ==0:
+        if(frame_number % skip_frames == 0):
          #if int(subdirname)>0:
-         # time.sleep(.05)
+         if skip_frames!=0:
+          time.sleep(.05/skip_frames)
 
          # To improve performance, optionally mark the image as not writeable to
          # pass by reference.
@@ -156,7 +175,8 @@ for entry in list_of_files:
          #pose_landmarks *= np.array([frame_width, frame_height, frame_width])
           # Write pose sample to CSV.
          pose_landmarks = np.around(pose_landmarks, 5).flatten().astype(str).tolist()
-         pose_landmarks = pose_landmarks + [distance] + [off_target] + [ball_speed] + [swing_speed] + [label]
+         pose_landmarks = pose_landmarks + [ball1] + [ball2] + [ball3] + [ball4] + [ball5] + [flight1] + [flight2] + [flight3] + [flight4] + [flight5] + [flight6] + [flight7] + [club1] + [club2]
+         pose_landmarks = pose_landmarks + [adjustment1] + [adjustment2] + [adjustment3] + [adjustment4] + [adjustment5] + [label]
          alldata.append(pose_landmarks)
          # use this break statement to check your data before processing the whole video
         #if frame_number == 600: break
@@ -164,44 +184,44 @@ for entry in list_of_files:
          # Flip the image horizontally for a selfie-view display.
         #cv2.imshow('MediaPipe Pose', cv2.flip(image, 1))
          #Only label good frames of good swings
-         if int(subdirname)>0:
-          cv2.imshow('MediaPipe Pose', image)
+         #if int(subdirname)>0:
+         cv2.imshow('MediaPipe Pose', image)
          #if cv2.waitKey(5) & 0xFF == ord('0'):
          #  label = 0
          key = cv2.waitKey(1)
-         #print(key)
          if key == 27:
             cap.release()
             cv2.destroyAllWindows()
             break
+         #Key 1 Pressed (Impact)
          if key == 49:
-           if label == 0:
-            label = 1
-            distance = input("Enter distance: ")
-            off_target = input("Enter off target: ")
-            ball_speed = input("Enter ball speed: ")
-            swing_speed = input("Enter swing speed: ")
-           else:
+           if label == 1:
             label = 0
-            distance = 0.0
-            off_target = 0.0
-            ball_speed = 0.0
-            swing_speed = 0.0
-         if key == 32:
-           distance = input("Enter distance: ")
-           off_target = input("Enter off target: ")
-           ball_speed = input("Enter ball speed: ")
-           swing_speed = input("Enter swing speed: ")
-         #if cv2.waitKey(5) & 0xFF == 27:
-         #  break
+            ball1 = 0.0
+            ball2 = 0.0
+            ball3 = 0.0
+            ball4 = 0.0
+            ball5 = 0.0
+            flight1 = 0.0
+            flight2 = 0.0
+            flight3 = 0.0
+            flight4 = 0.0
+            flight5 = 0.0
+            flight6 = 0.0
+            flight7 = 0.0
+            club1 = 0.0
+            club2 = 0.0
     cap.release()
     cv2.destroyAllWindows()
 
     # write the data to a .csv file
     outfile_path = entry+'.csv'
     df = pd.DataFrame(alldata)
-    #df = df.rename(columns={99: "label"})
-    df = df.rename(columns={99: "distance", 100: "off_target", 101: "ball_speed", 102: "swing_speed", 103: "label"})
+    df = df.rename(columns={99: "ball1", 100: "ball2", 101: "ball3", 102: "ball4", 103: "ball5"})
+    df = df.rename(columns={104: "flight1",105: "flight2",106: "flight3",107: "flight4",108: "flight5",109: "flight6",110: "flight7"})
+    df = df.rename(columns={111: "club1",112: "club2"})
+    df = df.rename(columns={113: "adjustment1", 114: "adjustment2", 115: "adjustment3", 116: "adjustment4", 117: "adjustment5"})
+    df = df.rename(columns={118: "label"})
     df.to_csv(outfile_path, index = False)
     print('save complete')
     
