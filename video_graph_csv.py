@@ -12,8 +12,14 @@ Original file is located at
 #!pip install umap-learn
 #!pip install plotly
 #!pip install lightgbm
+#!pip install python-igraph
+#!pip install pygam
+#!pip install factor_analyzer
+#!pip install lingam
 import pandas as pd
 import numpy as np
+import graphviz
+import lingam
 import dtale
 import cv2
 import os
@@ -414,6 +420,7 @@ new_df = df
 new_df = new_df.drop(columns=[
               'graph_id',
               'name',
+              'label'
               #'ball1',
               #'ball2',
               #'ball3',
@@ -428,16 +435,16 @@ new_df = new_df.drop(columns=[
               #'club2'
          ])
 Feature_Selector_Carry_Regression = BorutaShap(model = lgb.LGBMRegressor(num_iterations=10, learning_rate=.01, verbose=1), importance_measure='shap', classification=False)
-Feature_Selector_Carry_Regression.fit(X=new_df[new_df['flight2'] > 0].drop(columns=['flight2','label']), y=new_df[new_df['flight2'] > 0]['flight2'], n_trials=50, sample=False, train_or_test='train', normalize=True, verbose=True, random_state=42)
+Feature_Selector_Carry_Regression.fit(X=new_df[new_df['flight2'] > 0].drop(columns=['flight2']), y=new_df[new_df['flight2'] > 0]['flight2'], n_trials=50, sample=False, train_or_test='train', normalize=True, verbose=True, random_state=42)
 #Feature_Selector_Carry_Regression.plot(which_features='accepted', figsize=(16,12))
 Feature_Selector_Carry_Regression.plot(which_features='all', figsize=(16,12))
 Feature_Selector_Offline_Regression = BorutaShap(model = lgb.LGBMRegressor(num_iterations=10, learning_rate=.01, verbose=1), importance_measure='shap', classification=False)
-Feature_Selector_Offline_Regression.fit(X=new_df[new_df['flight1'] > 0].drop(columns=['flight1','label']), y=new_df[new_df['flight1'] > 0]['flight1'], n_trials=50, sample=False, train_or_test='train', normalize=True, verbose=True, random_state=42)
+Feature_Selector_Offline_Regression.fit(X=new_df[new_df['flight1'] > 0].drop(columns=['flight1']), y=new_df[new_df['flight1'] > 0]['flight1'], n_trials=50, sample=False, train_or_test='train', normalize=True, verbose=True, random_state=42)
 #Feature_Selector_Offline_Regression.plot(which_features='accepted', figsize=(16,12))
 Feature_Selector_Offline_Regression.plot(which_features='all', figsize=(16,12))
 Feature_Selector_Swing_Speed_Regression = BorutaShap(model = lgb.LGBMRegressor(num_iterations=10, learning_rate=.01, verbose=1), importance_measure='shap', classification=False)
-Feature_Selector_Swing_Speed_Regression.fit(X=new_df[new_df['club1'] >= 60].drop(columns=['label','club1']), y=new_df[new_df['club1'] >= 60]['club1'], n_trials=50, sample=False, train_or_test='train', normalize=True, verbose=True, random_state=42)
-#Feature_Selector_Offline_Regression.plot(which_features='accepted', figsize=(16,12))
+Feature_Selector_Swing_Speed_Regression.fit(X=new_df[new_df['club1'] >= 60].drop(columns=['club1']), y=new_df[new_df['club1'] >= 60]['club1'], n_trials=50, sample=False, train_or_test='train', normalize=True, verbose=True, random_state=42)
+#Feature_Selector_Swing_Speed_Regression.plot(which_features='accepted', figsize=(16,12))
 Feature_Selector_Swing_Speed_Regression.plot(which_features='all', figsize=(16,12))
 
 # If no model is selected default is the Random Forest
@@ -445,6 +452,59 @@ Feature_Selector_Swing_Speed_Regression.plot(which_features='all', figsize=(16,1
 #clf = lgb.LGBMClassifier(num_iterations=1, learning_rate=.01, verbose=1)
 #clf.fit(df.drop(columns=['label','graph_id']), df['label'])
 #y_clf_pred=clf.predict(df.drop(columns=['label','graph_id']))
+
+new_df = new_df[new_df['flight2'] > 0]
+new_df = new_df[new_df['flight1'] > 0]
+new_df = new_df[new_df['club1'] >= 60]
+
+reg = lgb.LGBMRegressor(num_iterations=300, learning_rate=.01, verbose=0)
+reg.fit(new_df.drop(columns=['flight2']), new_df['flight2'])
+model = lingam.DirectLiNGAM()
+model.fit(new_df)
+#labels = [f'{i}. {col}' for i, col in enumerate(new_df.columns)]
+#make_graph(model.adjacency_matrix_, labels)
+ce = lingam.CausalEffect(model)
+effects = ce.estimate_effects_on_prediction(new_df, 105, reg)
+df_effects = pd.DataFrame()
+df_effects['feature'] = new_df.columns
+df_effects['effect_plus'] = effects[:, 0]
+df_effects['effect_minus'] = effects[:, 1]
+df_effects.to_csv('Carry_Feature_Causal_Importance.csv', index = False)
+max_index = np.unravel_index(np.argmax(effects), effects.shape)
+print("Greatest Cause: ", new_df.columns[max_index[0]])
+
+reg = lgb.LGBMRegressor(num_iterations=300, learning_rate=.01, verbose=0)
+reg.fit(new_df.drop(columns=['flight1']), new_df['flight1'])
+model = lingam.DirectLiNGAM()
+model.fit(new_df)
+#labels = [f'{i}. {col}' for i, col in enumerate(new_df.columns)]
+#make_graph(model.adjacency_matrix_, labels)
+ce = lingam.CausalEffect(model)
+effects = ce.estimate_effects_on_prediction(new_df, 104, reg)
+df_effects = pd.DataFrame()
+df_effects['feature'] = new_df.columns
+df_effects['effect_plus'] = effects[:, 0]
+df_effects['effect_minus'] = effects[:, 1]
+df_effects.to_csv('Offline_Feature_Causal_Importance.csv', index = False)
+max_index = np.unravel_index(np.argmax(effects), effects.shape)
+print("Greatest Cause: ", new_df.columns[max_index[0]])
+
+reg = lgb.LGBMRegressor(num_iterations=300, learning_rate=.01, verbose=0)
+reg.fit(new_df.drop(columns=['club1']), new_df['club1'])
+model = lingam.DirectLiNGAM()
+model.fit(new_df)
+#labels = [f'{i}. {col}' for i, col in enumerate(new_df.columns)]
+#make_graph(model.adjacency_matrix_, labels)
+ce = lingam.CausalEffect(model)
+effects = ce.estimate_effects_on_prediction(new_df, 111, reg)
+df_effects = pd.DataFrame()
+df_effects['feature'] = new_df.columns
+df_effects['effect_plus'] = effects[:, 0]
+df_effects['effect_minus'] = effects[:, 1]
+df_effects.to_csv('Speed_Feature_Causal_Importance.csv', index = False)
+max_index = np.unravel_index(np.argmax(effects), effects.shape)
+print("Greatest Cause: ", new_df.columns[max_index[0]])
+
 
 new_df1 = new_df.drop(columns=Feature_Selector_Carry_Regression.rejected)
 reg = lgb.LGBMRegressor(num_iterations=300, learning_rate=.01, verbose=0)
