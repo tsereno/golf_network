@@ -13,6 +13,7 @@ Original file is located at
 #!pip install plotly
 #!pip install lightgbm
 #!pip install python-igraph
+#!sudo apt install graphviz
 #!pip install pygam
 #!pip install factor_analyzer
 #!pip install lingam
@@ -382,6 +383,7 @@ for entry in list_of_files:
 df = pd.concat([df, nodes_data])
 df.columns = pose_tubuh
 #df=df.dropna()
+df.to_csv('golfswings.csv', index = False)
         
 nodes_data = nodes_data.select_dtypes(['number'])
 
@@ -434,18 +436,19 @@ new_df = new_df.drop(columns=[
               #'club1',
               #'club2'
          ])
+
 Feature_Selector_Carry_Regression = BorutaShap(model = lgb.LGBMRegressor(num_iterations=10, learning_rate=.01, verbose=1), importance_measure='shap', classification=False)
 Feature_Selector_Carry_Regression.fit(X=new_df[new_df['flight2'] > 0].drop(columns=['flight2']), y=new_df[new_df['flight2'] > 0]['flight2'], n_trials=50, sample=False, train_or_test='train', normalize=True, verbose=True, random_state=42)
-#Feature_Selector_Carry_Regression.plot(which_features='accepted', figsize=(16,12))
-Feature_Selector_Carry_Regression.plot(which_features='all', figsize=(16,12))
+Feature_Selector_Carry_Regression.plot(which_features='accepted', figsize=(16,12))
+#Feature_Selector_Carry_Regression.plot(which_features='all', figsize=(16,12))
 Feature_Selector_Offline_Regression = BorutaShap(model = lgb.LGBMRegressor(num_iterations=10, learning_rate=.01, verbose=1), importance_measure='shap', classification=False)
-Feature_Selector_Offline_Regression.fit(X=new_df[new_df['flight1'] > 0].drop(columns=['flight1']), y=new_df[new_df['flight1'] > 0]['flight1'], n_trials=50, sample=False, train_or_test='train', normalize=True, verbose=True, random_state=42)
-#Feature_Selector_Offline_Regression.plot(which_features='accepted', figsize=(16,12))
-Feature_Selector_Offline_Regression.plot(which_features='all', figsize=(16,12))
+Feature_Selector_Offline_Regression.fit(X=new_df[new_df['flight1'] != 0].drop(columns=['flight1']), y=new_df[new_df['flight1'] != 0]['flight1'], n_trials=50, sample=False, train_or_test='train', normalize=True, verbose=True, random_state=42)
+Feature_Selector_Offline_Regression.plot(which_features='accepted', figsize=(16,12))
+#Feature_Selector_Offline_Regression.plot(which_features='all', figsize=(16,12))
 Feature_Selector_Swing_Speed_Regression = BorutaShap(model = lgb.LGBMRegressor(num_iterations=10, learning_rate=.01, verbose=1), importance_measure='shap', classification=False)
 Feature_Selector_Swing_Speed_Regression.fit(X=new_df[new_df['club1'] >= 60].drop(columns=['club1']), y=new_df[new_df['club1'] >= 60]['club1'], n_trials=50, sample=False, train_or_test='train', normalize=True, verbose=True, random_state=42)
-#Feature_Selector_Swing_Speed_Regression.plot(which_features='accepted', figsize=(16,12))
-Feature_Selector_Swing_Speed_Regression.plot(which_features='all', figsize=(16,12))
+Feature_Selector_Swing_Speed_Regression.plot(which_features='accepted', figsize=(16,12))
+#Feature_Selector_Swing_Speed_Regression.plot(which_features='all', figsize=(16,12))
 
 # If no model is selected default is the Random Forest
 # If classification is True it is a classification problem
@@ -453,16 +456,32 @@ Feature_Selector_Swing_Speed_Regression.plot(which_features='all', figsize=(16,1
 #clf.fit(df.drop(columns=['label','graph_id']), df['label'])
 #y_clf_pred=clf.predict(df.drop(columns=['label','graph_id']))
 
+def make_graph(adjacency_matrix, labels=None):
+    idx = np.abs(adjacency_matrix) > 0.01
+    dirs = np.where(idx)
+    d = graphviz.Digraph(engine='dot', name='GolfSwing', directory='./')
+    names = labels if labels else [f'x{i}' for i in range(len(adjacency_matrix))]
+    for to, from_, coef in zip(dirs[0], dirs[1], adjacency_matrix[idx]):
+        d.edge(names[from_], names[to], label=f'{coef:.2f}')
+    return d
+
 new_df = new_df[new_df['flight2'] > 0]
-new_df = new_df[new_df['flight1'] > 0]
+new_df = new_df[new_df['flight1'] != 0]
 new_df = new_df[new_df['club1'] >= 60]
 
 reg = lgb.LGBMRegressor(num_iterations=300, learning_rate=.01, verbose=0)
 reg.fit(new_df.drop(columns=['flight2']), new_df['flight2'])
 model = lingam.DirectLiNGAM()
 model.fit(new_df)
-#labels = [f'{i}. {col}' for i, col in enumerate(new_df.columns)]
-#make_graph(model.adjacency_matrix_, labels)
+labels = [f'{i}. {col}' for i, col in enumerate(new_df.columns)]
+golfGraph = make_graph(model.adjacency_matrix_, labels)
+#golfGraph.render(format='png')
+# Using the causal_order_ properties, 
+# we can see the causal ordering as a result of the causal discovery.
+#print(model.causal_order_)
+# Also, using the adjacency_matrix_ properties, 
+# we can see the adjacency matrix as a result of the causal discovery.
+#print(model.adjacency_matrix_)
 ce = lingam.CausalEffect(model)
 effects = ce.estimate_effects_on_prediction(new_df, 105, reg)
 df_effects = pd.DataFrame()
@@ -477,8 +496,15 @@ reg = lgb.LGBMRegressor(num_iterations=300, learning_rate=.01, verbose=0)
 reg.fit(new_df.drop(columns=['flight1']), new_df['flight1'])
 model = lingam.DirectLiNGAM()
 model.fit(new_df)
-#labels = [f'{i}. {col}' for i, col in enumerate(new_df.columns)]
-#make_graph(model.adjacency_matrix_, labels)
+labels = [f'{i}. {col}' for i, col in enumerate(new_df.columns)]
+golfGraph = make_graph(model.adjacency_matrix_, labels)
+#golfGraph.render(format='png')
+# Using the causal_order_ properties, 
+# we can see the causal ordering as a result of the causal discovery.
+#print(model.causal_order_)
+# Also, using the adjacency_matrix_ properties, 
+# we can see the adjacency matrix as a result of the causal discovery.
+#print(model.adjacency_matrix_)
 ce = lingam.CausalEffect(model)
 effects = ce.estimate_effects_on_prediction(new_df, 104, reg)
 df_effects = pd.DataFrame()
@@ -493,8 +519,15 @@ reg = lgb.LGBMRegressor(num_iterations=300, learning_rate=.01, verbose=0)
 reg.fit(new_df.drop(columns=['club1']), new_df['club1'])
 model = lingam.DirectLiNGAM()
 model.fit(new_df)
-#labels = [f'{i}. {col}' for i, col in enumerate(new_df.columns)]
-#make_graph(model.adjacency_matrix_, labels)
+labels = [f'{i}. {col}' for i, col in enumerate(new_df.columns)]
+golfGraph = make_graph(model.adjacency_matrix_, labels)
+#golfGraph.render(format='png')
+# Using the causal_order_ properties, 
+# we can see the causal ordering as a result of the causal discovery.
+#print(model.causal_order_)
+# Also, using the adjacency_matrix_ properties, 
+# we can see the adjacency matrix as a result of the causal discovery.
+#print(model.adjacency_matrix_)
 ce = lingam.CausalEffect(model)
 effects = ce.estimate_effects_on_prediction(new_df, 111, reg)
 df_effects = pd.DataFrame()
