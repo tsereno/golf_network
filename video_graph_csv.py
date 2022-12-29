@@ -298,6 +298,12 @@ def getListOfFiles(dirName):
                 
     return allFiles
 
+def get_num_lines(fname):
+    with open(fname) as f:
+        for i, _ in enumerate(f):
+            pass
+    return i + 1
+
 # Get the list of all files in directory tree at given path
 list_of_files = getListOfFiles(directory)
 #random.shuffle(list_of_files)
@@ -318,6 +324,9 @@ for entry in list_of_files:
         #print(subdirname)
         
         temp_data = pd.read_csv(entry)
+        temp_data = temp_data[temp_data['label'] == 1]
+        #temp_data = temp_data.head(1)
+        temp_data = temp_data.tail(1)
         temp_data['graph_id'] = graphID
         #temp_data['label'] = int(subdirname)
         temp_data['name'] = entry
@@ -332,9 +341,9 @@ for entry in list_of_files:
         temp_edges_data = temp_data[['graph_id']]
         temp_edges_data.insert(1, "src", 0)
         temp_edges_data.insert(1, "dst", 1)
-        for index, row in temp_data.iterrows():
-         temp_edges_data.iloc[index,1]=index
-         temp_edges_data.iloc[index,2]=index+1
+        ##for index, row in temp_data.iterrows():
+         ##temp_edges_data.iloc[index,1]=index
+         ##temp_edges_data.iloc[index,2]=index+1
         temp_edges_data.drop(temp_edges_data.tail(1).index,inplace=True)
         edges_data = pd.concat([edges_data, temp_edges_data], axis="rows", ignore_index=True)
 df = nodes_data
@@ -360,6 +369,9 @@ for entry in list_of_files:
         #print(subdirname)
         
         temp_data = pd.read_csv(entry)
+        temp_data = temp_data[temp_data['label'] == 1]
+        #temp_data = temp_data.head(1)
+        temp_data = temp_data.tail(1)
         temp_data['graph_id'] = graphID
         #temp_data['label'] = int(subdirname)
         temp_data['name'] = entry
@@ -374,9 +386,9 @@ for entry in list_of_files:
         temp_edges_data = temp_data[['graph_id']]
         temp_edges_data.insert(1, "src", 0)
         temp_edges_data.insert(1, "dst", 1)
-        for index, row in temp_data.iterrows():
-         temp_edges_data.iloc[index,1]=index
-         temp_edges_data.iloc[index,2]=index+1
+        ##for index, row in temp_data.iterrows():
+         ##temp_edges_data.iloc[index,1]=index
+         ##temp_edges_data.iloc[index,2]=index+1
         temp_edges_data.drop(temp_edges_data.tail(1).index,inplace=True)
         edges_data = pd.concat([edges_data, temp_edges_data], axis="rows", ignore_index=True)
 
@@ -438,7 +450,7 @@ new_df = new_df.drop(columns=[
          ])
 
 Feature_Selector_Carry_Regression = BorutaShap(model = lgb.LGBMRegressor(num_iterations=10, learning_rate=.01, verbose=1), importance_measure='shap', classification=False)
-Feature_Selector_Carry_Regression.fit(X=new_df[new_df['flight2'] > 0].drop(columns=['flight2']), y=new_df[new_df['flight2'] > 0]['flight2'], n_trials=50, sample=False, train_or_test='train', normalize=True, verbose=True, random_state=42)
+Feature_Selector_Carry_Regression.fit(X=new_df[new_df['flight2'] > 140].drop(columns=['flight2']), y=new_df[new_df['flight2'] > 140]['flight2'], n_trials=50, sample=False, train_or_test='train', normalize=True, verbose=True, random_state=42)
 Feature_Selector_Carry_Regression.plot(which_features='accepted', figsize=(16,12))
 #Feature_Selector_Carry_Regression.plot(which_features='all', figsize=(16,12))
 Feature_Selector_Offline_Regression = BorutaShap(model = lgb.LGBMRegressor(num_iterations=10, learning_rate=.01, verbose=1), importance_measure='shap', classification=False)
@@ -465,10 +477,11 @@ def make_graph(adjacency_matrix, labels=None):
         d.edge(names[from_], names[to], label=f'{coef:.2f}')
     return d
 
-new_df = new_df[new_df['flight2'] > 0]
+new_df = new_df[new_df['flight2'] > 140]
 new_df = new_df[new_df['flight1'] != 0]
 new_df = new_df[new_df['club1'] >= 60]
 
+'''
 reg = lgb.LGBMRegressor(num_iterations=300, learning_rate=.01, verbose=0)
 reg.fit(new_df.drop(columns=['flight2']), new_df['flight2'])
 model = lingam.DirectLiNGAM()
@@ -566,7 +579,7 @@ temp_df.to_csv('swing_predictions.csv', index = False)
 #ax = lgb.plot_importance(reg, max_num_features=20, figsize=(15,15))
 #plt.show()
 #plt.save
-
+'''
 '''
 labels = df['label']
 features = df.drop(columns=['label'])

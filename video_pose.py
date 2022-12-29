@@ -42,11 +42,12 @@ list_of_files.sort()
 
 #list_of_files = sorted( filter( lambda x: os.path.isfile(os.path.join(directory, x)),
 #                        os.listdir(directory) ) )
-adjustment1 = input("Enter Driver Tee'd High (0 = False, 1 = True): ")
-adjustment2 = input("Enter Duck Feet Position (0 = False, 1 = True): ")
-adjustment3 = input("Enter Driver Hovered (0 = False, 1 = True): ")
-adjustment4 = input("Enter Used Standard Ball Placement (0 = False, 1 = True): ")
-adjustment5 = input("Enter Pushed Off with Left Arm (0 = False, 1 = True): ")
+
+#adjustment1 = input("Enter Driver Tee'd High (0 = False, 1 = True): ")
+#adjustment2 = input("Enter Duck Feet Position (0 = False, 1 = True): ")
+#adjustment3 = input("Enter Driver Hovered (0 = False, 1 = True): ")
+#adjustment4 = input("Enter Used Standard Ball Placement (0 = False, 1 = True): ")
+#adjustment5 = input("Enter Pushed Off with Left Arm (0 = False, 1 = True): ")
 
 for entry in list_of_files:
  if (entry.endswith('.MTS') or entry.endswith('.MOV') or entry.endswith('.m4v')) and not os.path.exists(entry+'.csv'):
@@ -117,9 +118,9 @@ for entry in list_of_files:
     prev_results = None
 
     with mp_holistic.Holistic(
-    #with mp_pose.Pose(
         #model complexity 0=low, 1=medium, 2=heavy
-        #min_tracking_confidence=0.7, model_complexity=0,static_image_mode=False,smooth_landmarks=True) as pose:
+        #min_tracking_confidence=0
+    #with mp_pose.Pose(.7, model_complexity=0,static_image_mode=False,smooth_landmarks=True) as pose:
         #min_detection_confidence=0.5,min_tracking_confidence=0.5, model_complexity=0,static_image_mode=False,smooth_landmarks=True) as holistic:
         min_detection_confidence=0.7,min_tracking_confidence=0.0, model_complexity=2,static_image_mode=False,smooth_landmarks=True) as holistic:
       while cap.isOpened():
@@ -143,58 +144,53 @@ for entry in list_of_files:
          #results = pose.process(image)
          results = holistic.process(image)
 
-         if results.pose_landmarks is None:
-          # Check the number of landmarks and take pose landmarks.
-          #    assert len(results.pose_landmarks.landmark) == 33, 'Unexpected number of predicted pose landmarks: {}'.format(len(results.pose_landmarks.landmark))
-          continue
-        
-         # Draw the pose annotation on the image.
-         image.flags.writeable = True
-         #image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
-         #mp_drawing.draw_landmarks(
-         #    image,
-         #    results.face_landmarks,
-         #    mp_holistic.FACEMESH_CONTOURS,
-         #    landmark_drawing_spec=None,
-         #    connection_drawing_spec=mp_drawing_styles
-         #    .get_default_face_mesh_contours_style())
-         mp_drawing.draw_landmarks(
+         if results.pose_landmarks is not None:
+          # Draw the pose annotation on the image.
+          image.flags.writeable = True
+          #image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
+          #mp_drawing.draw_landmarks(
+          #    image,
+          #    results.face_landmarks,
+          #    mp_holistic.FACEMESH_CONTOURS,
+          #    landmark_drawing_spec=None,
+          #    connection_drawing_spec=mp_drawing_styles
+          #    .get_default_face_mesh_contours_style())
+          mp_drawing.draw_landmarks(
              image,
              results.pose_landmarks,
              mp_holistic.POSE_CONNECTIONS,
              landmark_drawing_spec=mp_drawing_styles
             .get_default_pose_landmarks_style())
           # Save landmarks.
-         #pose_landmarks = [[lmk.x, lmk.y, lmk.z, lmk.visibility] for lmk in results.pose_landmarks.landmark]
-         pose_landmarks = [[lmk.x, lmk.y, lmk.z] for lmk in results.pose_landmarks.landmark]
-         #print(results.left_hand_landmarks)
-         #print(results.right_hand_landmarks)
-         # Map pose landmarks from [0, 1] range to absolute coordinates to get
-         # correct aspect ratio.
-         #frame_height, frame_width = image.shape[:2]
-         #pose_landmarks *= np.array([frame_width, frame_height, frame_width])
-          # Write pose sample to CSV.
-         pose_landmarks = np.around(pose_landmarks, 5).flatten().astype(str).tolist()
-         pose_landmarks = pose_landmarks + [ball1] + [ball2] + [ball3] + [ball4] + [ball5] + [flight1] + [flight2] + [flight3] + [flight4] + [flight5] + [flight6] + [flight7] + [club1] + [club2]
-         pose_landmarks = pose_landmarks + [adjustment1] + [adjustment2] + [adjustment3] + [adjustment4] + [adjustment5] + [label]
-         alldata.append(pose_landmarks)
-         # use this break statement to check your data before processing the whole video
-        #if frame_number == 600: break
-        #print(frame_number)
-         # Flip the image horizontally for a selfie-view display.
-        #cv2.imshow('MediaPipe Pose', cv2.flip(image, 1))
-         #Only label good frames of good swings
-         #if int(subdirname)>0:
-         cv2.imshow('MediaPipe Pose', image)
-         #if cv2.waitKey(5) & 0xFF == ord('0'):
-         #  label = 0
-         key = cv2.waitKey(1)
-         if key == 27:
+          #pose_landmarks = [[lmk.x, lmk.y, lmk.z, lmk.visibility] for lmk in results.pose_landmarks.landmark]
+          #pose_landmarks = [[lmk.x, lmk.y, lmk.z] for lmk in results.pose_landmarks.landmark]
+          pose_landmarks = [[lmk.x, lmk.y, lmk.z] for lmk in results.pose_world_landmarks.landmark]
+          #print(results.left_hand_landmarks)
+          #print(results.right_hand_landmarks)
+          # Map pose landmarks from [0, 1] range to absolute coordinates to get
+          # correct aspect ratio.
+          #frame_height, frame_width = image.shape[:2]
+          #pose_landmarks *= np.array([frame_width, frame_height, frame_width])
+           # Write pose sample to CSV.
+          pose_landmarks = np.around(pose_landmarks, 5).flatten().astype(str).tolist()
+          pose_landmarks = pose_landmarks + [ball1] + [ball2] + [ball3] + [ball4] + [ball5] + [flight1] + [flight2] + [flight3] + [flight4] + [flight5] + [flight6] + [flight7] + [club1] + [club2] + [frame_number] + [label]
+          #pose_landmarks = pose_landmarks + [adjustment1] + [adjustment2] + [adjustment3] + [adjustment4] + [adjustment5] + [label]
+          alldata.append(pose_landmarks)
+          # use this break statement to check your data before processing the whole video
+          # Flip the image horizontally for a selfie-view display.
+         #cv2.imshow('MediaPipe Pose', cv2.flip(image, 1))
+          #Only label good frames of good swings
+          #if int(subdirname)>0:
+          cv2.imshow('MediaPipe Pose', image)
+          #if cv2.waitKey(5) & 0xFF == ord('0'):
+          #  label = 0
+          key = cv2.waitKey(1)
+          if key == 27:
             cap.release()
             cv2.destroyAllWindows()
             break
-         #Key 1 Pressed (Impact)
-         if key == 49:
+          #Key 1 Pressed (Impact)
+          if key == 49:
            if label == 1:
             label = 0
             ball1 = 0.0
@@ -220,8 +216,8 @@ for entry in list_of_files:
     df = df.rename(columns={99: "ball1", 100: "ball2", 101: "ball3", 102: "ball4", 103: "ball5"})
     df = df.rename(columns={104: "flight1",105: "flight2",106: "flight3",107: "flight4",108: "flight5",109: "flight6",110: "flight7"})
     df = df.rename(columns={111: "club1",112: "club2"})
-    df = df.rename(columns={113: "adjustment1", 114: "adjustment2", 115: "adjustment3", 116: "adjustment4", 117: "adjustment5"})
-    df = df.rename(columns={118: "label"})
+    #df = df.rename(columns={113: "adjustment1", 114: "adjustment2", 115: "adjustment3", 116: "adjustment4", 117: "adjustment5"})
+    df = df.rename(columns={113: "frame_number", 114: "label"})
     df.to_csv(outfile_path, index = False)
     print('save complete')
     
